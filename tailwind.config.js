@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fontOver: ["Font Over", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
       },
       colors: {
@@ -19,12 +18,4 @@ module.exports = {
     },
   },
   plugins: [],
-  corePlugins: {
-    fontFace: true,
-  },
-  fontFace: {
-    "Font Over": {
-      src: 'url("./assets/fonts/Font Over.otf")',
-    },
-  },
 };

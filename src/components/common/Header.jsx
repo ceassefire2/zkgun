@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <div>
+      <p className="font-manrope">Header</p>
+    </div>
+  );
+};
 
-export default Header
+export default Header;

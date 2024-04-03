@@ -11,6 +11,8 @@ module.exports = {
         primary: "#63C796",
         firefly: "#0B1426",
         danger: "#FF2100",
+        royalBlue: "#3D3DF4",
+        haiti: "#08081F",
       },
       fontSize: {
         "custom-xl": "120px",

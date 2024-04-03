@@ -6,6 +6,7 @@ import Finance from "./components/Finance";
 import JoinZkgun from "./components/JoinZkgun";
 import CoreValue from "./components/CoreValue";
 import OurEcosystem from "./components/OurEcosystem";
+import OurCapabilities from "./components/OurCapabilities";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Finance />
       <OurEcosystem />
       <CoreValue />
+      <OurCapabilities />
       <JoinZkgun />
       <Footer />
     </>

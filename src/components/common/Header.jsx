@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      <div>
+      <div className="max-w-[1368px] mx-auto px-4">
         <nav className="">
           <div className="">
             <div className="flex items-center justify-between mt-6">
@@ -61,7 +61,7 @@ const Header = () => {
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"
-                  className="bg-gray-900 inline-flex items-center relative z-50 justify-center p-2 rounded-md text-white hover.text-white transition-opacity duration-500"
+                  className="bg-gray-900 inline-flex items-center relative z-50 justify-center p-2 rounded-md text-white hover.text-white transition-opacity duration-500 focus-visible:border-none"
                   aria-controls="mobile-menu"
                   aria-expanded={isOpen ? "opacity-1" : "opacity-0"}
                 >
@@ -71,8 +71,8 @@ const Header = () => {
             </div>
           </div>
           <div
-            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen z-30 bg-dark top-0 ${
-              isOpen ? " translate-x-0" : "translate-x-[-100%]"
+            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen z-30 bg-dark top-0 start-0 ${
+              isOpen ? "translate-x-0" : "translate-x-[-100%]"
             }`}
             id="mobile-menu"
           >

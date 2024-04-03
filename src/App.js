@@ -4,6 +4,8 @@ import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
 import Finance from "./components/Finance";
 import JoinZkgun from "./components/JoinZkgun";
+import CoreValue from "./components/CoreValue";
+import OurEcosystem from "./components/OurEcosystem";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Finance />
+      <OurEcosystem />
+      <CoreValue />
       <JoinZkgun />
       <Footer />
     </>

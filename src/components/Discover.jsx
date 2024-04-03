@@ -7,7 +7,7 @@ import dollor_img from '../assets/images/png/download.png'
 import CommonBtn from './common/CommonBtn'
 
 
-const Dicover = () => {
+const Discover = () => {
     return (
         <>
             <div className='max-w-[1368px] mx-auto px-4 xl:p-0 '>
@@ -63,4 +63,4 @@ const Dicover = () => {
     )
 }
 
-export default Dicover
+export default Discover

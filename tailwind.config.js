@@ -17,6 +17,13 @@ module.exports = {
       fontSize: {
         "custom-xl": "120px",
       },
+      backgroundImage: {
+        "white-gradient":
+          "linear-gradient(to right, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.24) 100%)",
+      },
+      screens: {
+        "custom-xs": { max: "374.98px" },
+      },
     },
   },
   plugins: [],

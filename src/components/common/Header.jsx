@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
-import { CloseIcon, MenuIcon, NavIcon } from "./Icons";
+import { CloseIcon, MenuIcon } from "./Icons";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +22,8 @@ const Header = () => {
           <div className="">
             <div className="flex items-center justify-between mt-6">
               <div className="flex-shrink-0">
-                <a href="/">
-                  <NavIcon />
+                <a href="/" className="text-white">
+                  Nav logo
                 </a>
               </div>
               <div className="hidden md:block">
@@ -54,9 +54,11 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <button className="font-manrope font-bold text-sm md:text-base md:flex hidden border border-white border-opacity-25 border-solid px-8 py-5 text-white rounded-full !leading-5 bg-haiti uppercase">
-                swap now
-              </button>
+              <div className="bg-white-gradient rounded-full p-[1px]">
+                <button className="font-manrope font-bold text-sm md:text-base md:flex hidden px-8 py-5 text-white rounded-full !leading-5 bg-haiti uppercase">
+                  swap now
+                </button>
+              </div>
               <div className="flex md:hidden">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
@@ -104,9 +106,11 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <button className="font-manrope font-bold text-sm md:text-base flex md:hidden border border-white border-opacity-25 border-solid px-6 py-3 text-white rounded-full !leading-5 bg-haiti uppercase !mt-0">
-                swap now
-              </button>
+              <div className="bg-white-gradient rounded-full p-[1px]">
+                <button className="font-manrope font-bold text-sm md:text-base flex md:hidden px-6 py-3 text-white rounded-full !leading-5 bg-haiti uppercase !mt-0">
+                  swap now
+                </button>
+              </div>
             </ul>
           </div>
         </nav>

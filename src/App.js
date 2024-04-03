@@ -7,6 +7,7 @@ import JoinZkgun from "./components/JoinZkgun";
 import CoreValue from "./components/CoreValue";
 import OurEcosystem from "./components/OurEcosystem";
 import BackToTop from "./components/common/BackToTop";
+import Discover from "./components/Discover";
 import OurCapabilities from "./components/OurCapabilities";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <Finance />
       <OurEcosystem />
+      <Discover />
       <CoreValue />
       <OurCapabilities />
       <JoinZkgun />

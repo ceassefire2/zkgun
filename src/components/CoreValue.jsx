@@ -9,7 +9,7 @@ const CoreValue = () => {
             <div className="max-w-[1368px] mx-auto px-4 xl:p-0 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
                 <div className="flex justify-center items-center gap-2">
                     <ClipboardData />
-                    <p className='font-bold text-sm md:text-base text-white md:leading-[20.8px] font-manrope'>
+                    <p className='font-bold uppercase text-sm md:text-base text-white md:leading-[20.8px] font-manrope'>
                         Core values
                     </p>
                 </div>

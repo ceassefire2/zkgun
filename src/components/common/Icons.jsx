@@ -1,6 +1,7 @@
 export const ClipboardData = () => {
   return (
     <svg
+      className="w-5 h-5"
       width="16"
       height="16"
       viewBox="0 0 16 16"

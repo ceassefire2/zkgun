@@ -6,10 +6,12 @@ import Finance from "./components/Finance";
 import JoinZkgun from "./components/JoinZkgun";
 import CoreValue from "./components/CoreValue";
 import OurEcosystem from "./components/OurEcosystem";
+import BackToTop from "./components/common/BackToTop";
 
 function App() {
   return (
     <>
+      <BackToTop />
       <Header />
       <Hero />
       <Finance />

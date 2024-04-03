@@ -13,7 +13,7 @@ const CoreValue = () => {
                         Core values
                     </p>
                 </div>
-                <h2 className='text-white text-center pt-4 font_over font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]'>
+                <h2 className='text-white text-center pt-4 font_over font-medium text-3xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]'>
                     Our crypto creed
                 </h2>
                 <div className='py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20'>

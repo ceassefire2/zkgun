@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient_border::before {
+    background: linear-gradient(85.18deg, rgba(255, 255, 255, 0) 0.18%, rgba(255, 255, 255, 0.1) 100.43%);
+
+}

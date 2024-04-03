@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @font-face {
-    font-family: 'Font Over';
-    src: url("./assets/fonts/Font Over.otf");
+    font-family: 'FontOver';
+    src: url("./assets/fonts/FontOver.otf");
 }
 
 .font_over {
-    font-family: 'Font Over';
+    font-family: 'FontOver';
 }
 
 .manrope {
     font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #03031B;
 }

@@ -10,7 +10,7 @@ const Finance = () => {
                     <ClipboardData />
                     <p className='font-bold text-sm md:text-base text-white md:leading-[20.8px] font-manrope'>Fast and secure decentralized finance</p>
                 </div>
-                <h3 className='font-fontOver font-medium text-center text-white pt-4'>
+                <h3 className='font_over font-medium text-center text-2xl md:text-3xl lg:text-4xl lg:leading-[46.8px] text-white pt-4'>
                     Swap crypto across chains without a hitch, leveraging our deep liquidity pools from over 20+ sources for instant, vast transactions.
                     <span className='text-[#9a9aa4]'>
                         Our ERC-4337 wallet is your ticket to a seamless, gas-free crypto experience, enhanced with RAILGUN for enhanced privacy when swapping your wallets

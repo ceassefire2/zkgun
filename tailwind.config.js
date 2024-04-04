@@ -20,6 +20,8 @@ module.exports = {
       backgroundImage: {
         "white-gradient":
           "linear-gradient(to right, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.24) 100%)",
+        "white-gradient-card":
+          "linear-gradient(to right, rgba(255, 255, 255, 0) 0.18%, rgba(255, 255, 255, 0.08) 100.43%)",
       },
       screens: {
         "custom-xs": { max: "374.98px" },

@@ -7,7 +7,9 @@ import { ourEcoCardList } from "./common/Helper";
 const OurEcosystem = () => {
   return (
     <>
-      <div className="max-w-[1368px] mx-auto px-4 xl:p-0 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
+      <div className="max-w-[1368px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative">
+        <div className="bg-primary blur-[230px] h-[440px] w-[247px] absolute top-1/2 -translate-y-1/2 -end-[30%] rounded-full hidden sm:block"></div>
+        <div className="bg-danger blur-[380px] h-[849px] w-[477px] absolute top-[40%] -start-[65%] rounded-full hidden sm:block"></div>
         <div className="flex justify-center items-center gap-2">
           <ClipboardData />
           <p className="font-bold text-sm uppercase md:text-base text-white md:leading-[20.8px] font-manrope">
@@ -18,11 +20,9 @@ const OurEcosystem = () => {
           Decentralized network diversity
         </h2>
         <div
-          className="gradient_border hidden md:block  max-w-[1216px] mx-auto h-full relative overflow-hidden mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20 
-                                        before:absolute before:w-full before:h-full after:absolute after:bg-black after:rounded-[57px] lg:after:lg:rounded-[88.37px] after:w-[calc(100%-2px)] after:h-[calc(100%-2px)]
-                                        text-white  rounded-[32px]"
+          className="bg-white-gradient-card p-[1px] max-w-[1216px] mx-auto rounded-[32px] hidden md:block mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20"
         >
-          <div className="p-12 m-[1px]  rounded-[32px] relative z-50 bg-firefly ">
+          <div className="p-12  rounded-[32px] relative z-50 bg-firefly">
             <div className="flex">
               <div className="w-1/2 flex flex-col justify-between items-start">
                 <p className="text-white inline-block rounded-[100px] text-sm md:text-base font-normal leading-[20.8px] font-manrope py-2 px-4 bg-dark">
@@ -53,34 +53,36 @@ const OurEcosystem = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-[1216px] mx-auto pt-6 md:pt-4 flex flex-col md:flex-row gap-4">
+        <div className="max-w-[1216px] mx-auto pt-6 md:pt-4 flex flex-col md:flex-row gap-4 relative z-10">
           {ourEcoCardList.map((value, index) => {
             return (
-              <div
-                className={`p-6 lg:p-9 xl:p-12 w-full md:w-1/2 border rounded-2xl sm:rounded-[32px] flex flex-col justify-between bg-firefly ${value.hidden} `}
+              <div key={index}
+                className={`p-[1px] w-full md:w-1/2 bg-white-gradient-card rounded-2xl sm:rounded-[32px] flex flex-col justify-between  ${value.hidden} `}
               >
-                <div className="flex flex-col sm:flex-row justify-between items-start">
-                  <p className="text-white inline-block rounded-[100px] text-sm md:text-base font-normal leading-[20.8px] font-manrope py-2 px-4 bg-dark">
-                    {value.badge}
-                  </p>
-                  <img
-                    className={`max-w-[200px] mx-auto sm:mx-0 md:max-w-[110px] w-full lg:max-w-[150px] xl:max-w-[200px] ${value.rotate}`}
-                    height={200}
-                    width={200}
-                    src={value.image}
-                    alt="img"
-                  />
-                </div>
-                <div className="pt-3.5">
-                  <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:leading-[36px] text-white">
-                    {value.title}
-                  </h3>
-                  <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base md:leading-[20.8px]">
-                    {value.description}
-                    <span className="text-white text-opacity-60">
-                      {value.spandescription}
-                    </span>
-                  </p>
+                <div className="relative z-50 bg-firefly rounded-2xl md:rounded-[32px] p-6 lg:p-9 xl:p-12 flex flex-col justify-between h-full">
+                  <div className="flex flex-col sm:flex-row justify-between items-start">
+                    <p className="text-white inline-block rounded-[100px] text-sm md:text-base font-normal leading-[20.8px] font-manrope py-2 px-4 bg-dark">
+                      {value.badge}
+                    </p>
+                    <img
+                      className={`max-w-[200px] mx-auto sm:mx-0 md:max-w-[110px] w-full lg:max-w-[150px] xl:max-w-[200px] ${value.rotate}`}
+                      height={200}
+                      width={200}
+                      src={value.image}
+                      alt="img"
+                    />
+                  </div>
+                  <div className="pt-3.5">
+                    <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:leading-[36px] text-white">
+                      {value.title}
+                    </h3>
+                    <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base md:leading-[20.8px]">
+                      {value.description}
+                      <span className="text-white text-opacity-60">
+                        {value.spandescription}
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
             );

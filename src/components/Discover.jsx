@@ -9,7 +9,7 @@ import CommonBtn from "./common/CommonBtn";
 const Discover = () => {
   return (
     <>
-      <div className="max-w-[1368px] mx-auto px-4 xl:p-0 ">
+      <div className="max-w-[1368px] mx-auto px-4">
         <div className="bg-white-gradient p-[1px] rounded-[32px]">
           <div className=" py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 rounded-[32px] bg-firefly relative  overflow-hidden">
             <img

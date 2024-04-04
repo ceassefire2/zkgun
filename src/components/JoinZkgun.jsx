@@ -5,7 +5,7 @@ import CommonBtn from "./common/CommonBtn";
 const JoinZkgun = () => {
   return (
     <>
-      <div className="max-w-[1368px] mx-auto px-4 xl:p-0 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
+      <div className="max-w-[1368px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
         <img
           className="mx-auto"
           height={120}

@@ -13,8 +13,8 @@ const OurCapabilities = () => {
           Our capabilities
         </p>
       </div>
-      <h2 className="text-white text-center pt-4 font_over font-medium text-3xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
-        > 40 Our <br className="hidden md:block" /> capabilities
+      <h2 className="text-white text-center pt-4 font_over font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        &gt; 40 Our <br className="hidden md:block" /> capabilities
       </h2>
       <p className="font-normal text-sm md:text-base text-white text-opacity-60 md:leading-5 font-manrope text-center mt-5 custom-xs:px-0 px-10">
         With over 40 blockchains at your fingertips, your trading options{" "}

@@ -9,6 +9,7 @@ import OurEcosystem from "./components/OurEcosystem";
 import BackToTop from "./components/common/BackToTop";
 import Discover from "./components/Discover";
 import OurCapabilities from "./components/OurCapabilities";
+import Decentralized from "./components/Decentralized";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Discover />
       <CoreValue />
       <OurCapabilities />
+      <Decentralized />
       <JoinZkgun />
       <Footer />
     </>

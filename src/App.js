@@ -13,16 +13,18 @@ import OurCapabilities from "./components/OurCapabilities";
 function App() {
   return (
     <>
-      <BackToTop />
-      <Header />
-      <Hero />
-      <Finance />
-      <OurEcosystem />
-      <Discover />
-      <CoreValue />
-      <OurCapabilities />
-      <JoinZkgun />
-      <Footer />
+      <div className="overflow-hidden">
+        <BackToTop />
+        <Header />
+        <Hero />
+        <Finance />
+        <OurEcosystem />
+        <Discover />
+        <CoreValue />
+        <OurCapabilities />
+        <JoinZkgun />
+        <Footer />
+      </div>
     </>
   );
 }

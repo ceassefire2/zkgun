@@ -22,6 +22,11 @@ module.exports = {
           "linear-gradient(to right, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.24) 100%)",
         "white-gradient-card":
           "linear-gradient(to right, rgba(255, 255, 255, 0) 0.18%, rgba(255, 255, 255, 0.08) 100.43%)",
+        "primary-color-gradient":
+          "linear-gradient(180deg, rgba(99, 199, 150, 0) -23.62%, #63C796 55.73%)",
+        "primary-border-gradient":
+          "linear-gradient(270deg, rgba(99, 199, 150, 0.0768) 0%, rgba(99, 199, 150, 0.32) 49.63%, rgba(99, 199, 150, 0.0768) 100%)",
+
       },
       screens: {
         "custom-xs": { max: "374.98px" },

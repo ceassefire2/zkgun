@@ -9,22 +9,26 @@ import OurEcosystem from "./components/OurEcosystem";
 import BackToTop from "./components/common/BackToTop";
 import Discover from "./components/Discover";
 import OurCapabilities from "./components/OurCapabilities";
+import Dummy from "./components/Dummy";
 import Decentralized from "./components/Decentralized";
 
 function App() {
   return (
     <>
-      <BackToTop />
-      <Header />
-      <Hero />
-      <Finance />
-      <OurEcosystem />
-      <Discover />
-      <CoreValue />
-      <OurCapabilities />
-      <Decentralized />
-      <JoinZkgun />
-      <Footer />
+      <div className="overflow-hidden">
+        <BackToTop />
+        <Header />
+        <Hero />
+        <Finance />
+        <OurEcosystem />
+        <Discover />
+        <CoreValue />
+        <OurCapabilities />
+        {/* <Decentralized /> */}
+        <Dummy />
+        <JoinZkgun />
+        <Footer />
+      </div>
     </>
   );
 }

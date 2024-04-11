@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
-import { CloseIcon, MenuIcon } from "./Icons";
+import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
+import CommonBtn from "./CommonBtn";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +24,19 @@ const Header = () => {
             <div className="flex items-center justify-between mt-6">
               <div className="flex-shrink-0">
                 <a href="/" className="text-white">
-                  Nav logo
+                  <PageIcon />
                 </a>
               </div>
               <div className="hidden md:block">
                 <ul className="flex items-baseline gap-8">
+                  <li>
+                    <a
+                      href="#"
+                      className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+                    >
+                      Home
+                    </a>
+                  </li>
                   <li>
                     <a
                       href="#"
@@ -41,7 +50,7 @@ const Header = () => {
                       href="#"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
-                      About us
+                      Community
                     </a>
                   </li>
                   <li>
@@ -54,10 +63,8 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white-gradient rounded-full p-[1px]">
-                <button className="font-manrope font-bold text-sm md:text-base md:flex hidden px-8 py-5 text-white rounded-full !leading-5 bg-haiti uppercase">
-                  swap now
-                </button>
+              <div className="hidden md:inline-block">
+                <CommonBtn btntext={"swap now"} />
               </div>
               <div className="flex md:hidden">
                 <button
@@ -85,6 +92,15 @@ const Header = () => {
                   href="#"
                   className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
+                  Home
+                </a>
+              </li>
+              <li className="!m-0">
+                <a
+                  onClick={() => setIsOpen(!isOpen)}
+                  href="#"
+                  className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+                >
                   Services
                 </a>
               </li>
@@ -94,7 +110,7 @@ const Header = () => {
                   href="#"
                   className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
-                  About us
+                  Community
                 </a>
               </li>
               <li className="!m-0">
@@ -106,10 +122,8 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <div className="bg-white-gradient rounded-full p-[1px]">
-                <button className="font-manrope font-bold text-sm md:text-base flex md:hidden px-6 py-3 text-white rounded-full !leading-5 bg-haiti uppercase !mt-0">
-                  swap now
-                </button>
+              <div onClick={() => setIsOpen(!isOpen)}>
+                <CommonBtn btntext={"swap now"} />
               </div>
             </ul>
           </div>

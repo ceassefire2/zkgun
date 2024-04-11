@@ -1,9 +1,9 @@
 import React from "react";
 import { coreValueCardList } from "./common/Helper";
 import { ClipboardData } from "./common/Icons";
-import mobileImg from "../assets/images/png/core-mobile-img.png";
-import dollorImg from "../assets/images/png/dollor-image.png";
-import euroImg from "../assets/images/png/euro-image.png";
+// import mobileImg from "../assets/images/png/core-mobile-img.png";
+// import dollorImg from "../assets/images/png/dollor-image.png";
+// import euroImg from "../assets/images/png/euro-image.png";
 
 const CoreValue = () => {
   return (

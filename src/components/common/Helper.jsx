@@ -1,7 +1,7 @@
 import joinZKlogo from "../../assets/images/png/download.png";
-import ecoCardImg_first from "../../assets/images/png/our-eco-img-first.png";
-import ecoCardImg_second from "../../assets/images/png/our-eco-img-second.png";
-import ecoCardImg_third from "../../assets/images/png/our-eco-img-third.png";
+import ecoCardImg_first from "../../assets/images/webp/our-eco-img-first.webp";
+import ecoCardImg_second from "../../assets/images/webp/our-eco-img-second.webp";
+import ecoCardImg_third from "../../assets/images/webp/our-eco-img-third.webp";
 import star from "../../assets/images/png/star.png";
 import freedom from "../../assets/images/png/freedom.png";
 
@@ -38,6 +38,7 @@ export const ourEcoCardList = [
       "Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens",
     image: ecoCardImg_first,
     hidden: "md:hidden",
+    rotate:"rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
   },
   {
     badge: "ERC-4337",
@@ -46,6 +47,11 @@ export const ourEcoCardList = [
       "Experience freedom with our seedless, gasless web3 wallet. Store, buy, exchange",
     spandescription: ", and stake crypto on mobile and desktop platforms",
     image: ecoCardImg_second,
+    rotate: "mt-8 sm:mt-0",
+    badgeColor: "bg-[#FD9834]",
+    badgePosition: "-start-16",
+    blurOne: "w-[775px] h-[470px] top-[50%] start-[-126%]",
+    blurTwo: "w-[775px] h-[470px] top-[-126%] start-[46%]",
   },
   {
     badge: "Fast swapping process",
@@ -53,7 +59,9 @@ export const ourEcoCardList = [
     description: "Integrate your swapping process with Telegram",
     spandescription: " to make your trades even faster and more convenient",
     image: ecoCardImg_third,
-    rotate: "md:rotate-[59deg]",
+    rotate: "rotate-[30deg] md:rotate-[-59deg] mt-[43px] sm:mt-0",
+    blurOne: "w-[1105px] h-[438px] bottom-[-110%] start-[16%]",
+    blurTwo: "w-[1105px] h-[438px] top-[-116%] start-[-48%] ",
   },
 ];
 

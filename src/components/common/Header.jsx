@@ -122,7 +122,10 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <div onClick={() => setIsOpen(!isOpen)}>
+              <div
+                onClick={() => setIsOpen(!isOpen)}
+                className="custom-sm:w-full"
+              >
                 <CommonBtn btntext={"swap now"} />
               </div>
             </ul>

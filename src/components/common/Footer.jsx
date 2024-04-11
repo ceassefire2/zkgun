@@ -1,11 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { AffartsIcon, PageIcon } from "./Icons";
+import { AffartsIcon, HexagonIcon, PageIcon } from "./Icons";
 
 const Footer = () => {
   return (
     <div className="relative">
-      <div className="bg-danger blur-[130px] h-[300px] w-[150px] absolute bottom-0 -end-[192px] rounded-full hidden sm:block"></div>
+      <div className="bg-danger blur-[130px] h-[400px] md:w-[150px] absolute bottom-20 -end-[192px] rounded-full hidden sm:block"></div>
+      <div className="absolute -end-10 sm:end-0 -bottom-5 sm:bottom-0 -z-[1] footer_hexagon">
+        <HexagonIcon />
+      </div>
       <div className="max-w-[1368px] mx-auto px-4">
         <div className="flex flex-col sm:flex-row custom-xs:flex-col justify-between items-start sm:items-center pb-8 border-b border-b-white border-opacity-20 border-b-solid">
           <a href="/" className="text-white">
@@ -38,7 +41,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row flex-wrap justify-between items-start sm:items-center mb-8 lg:mb-12 mt-8">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-between items-start sm:items-center pb-8 lg:pb-12 pt-8">
           <p className="text-white text-opacity-60 text-base font-normal font-manrope h-full text-center">
             © 2023 ZKGUN All Rights Reserved
           </p>

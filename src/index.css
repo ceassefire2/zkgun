@@ -26,3 +26,33 @@ body {
     background: #63c796;
     border-radius: 10px;
 }
+
+.our_cripto .swiper-pagination-bullet {
+    background-color: #63C796 !important;
+}
+
+@media (max-width:1023.98px) {
+    .core_icons svg {
+        width: 105px;
+        height: 105px;
+    }
+
+    .our_cripto .swiper {
+        height: 360px !important;
+    }
+}
+
+/* ===== FOOTER CSS ===== */
+@media (max-width:767.98px) {
+    .footer_hexagon svg {
+        width: 270px;
+    }
+
+    .our_cripto .swiper {
+        height: 390px !important;
+    }
+
+    .our_cripto .swiper-slide {
+        padding: 0 6px !important;
+    }
+}

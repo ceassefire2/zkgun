@@ -4,6 +4,7 @@ import ecoCardImg_second from "../../assets/images/webp/our-eco-img-second.webp"
 import ecoCardImg_third from "../../assets/images/webp/our-eco-img-third.webp";
 import star from "../../assets/images/png/star.png";
 import freedom from "../../assets/images/png/freedom.png";
+import { ConfidentialityIcon, EfficiencyIcon, PrivacyIcon } from "./Icons";
 
 export const coreValueCardList = [
   {
@@ -11,22 +12,21 @@ export const coreValueCardList = [
     description:
       "Our Zero-Knowledge Privacy integrations provide untraceable transactions,",
     spandescription: " so your swaps are yours alone to know",
-    image: joinZKlogo,
+    image: <PrivacyIcon />,
   },
   {
     title: "Efficiency",
     description:
       "We offer limitless swapping with minimal fees and rapid processing,",
     spandescription: " so your trades are as seamless as they are efficient",
-    image: joinZKlogo,
+    image: <EfficiencyIcon />,
   },
   {
     title: "Confidentiality",
     description:
       "Discretion is a non-negotiable. We promise no KYC, absolute control of your funds,",
     spandescription: " and ironclad encryption for every transaction you make",
-    image: joinZKlogo,
-    gridCenter: "sm:col-span-2 md:col-span-1",
+    image: <ConfidentialityIcon />,
   },
 ];
 export const ourEcoCardList = [
@@ -38,7 +38,7 @@ export const ourEcoCardList = [
       "Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens",
     image: ecoCardImg_first,
     hidden: "md:hidden",
-    rotate:"rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
+    rotate: "rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
   },
   {
     badge: "ERC-4337",
@@ -95,5 +95,4 @@ export const decentralizedList = [
     subImage: freedom,
     subtitle: "Decentralized finance made simple",
   },
-
 ];

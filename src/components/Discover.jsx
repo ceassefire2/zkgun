@@ -1,9 +1,9 @@
 import React from "react";
-import joinZKlogo from "../assets/images/png/download.png";
-import first_img from "../assets/images/png/download.png";
+import joinZKlogo from "../assets/images/png/z-logo.png";
+import first_img from "../assets/images/png/monero.png";
 import second_img from "../assets/images/png/download.png";
 import third_img from "../assets/images/png/download.png";
-import dollor_img from "../assets/images/png/download.png";
+import dollor_img from "../assets/images/webp/dai-dollor.webp";
 import CommonBtn from "./common/CommonBtn";
 
 const Discover = () => {
@@ -13,7 +13,7 @@ const Discover = () => {
         <div className="bg-white-gradient p-[1px] rounded-[32px]">
           <div className=" py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 rounded-[32px] bg-firefly relative  overflow-hidden">
             <img
-              className="absolute rotate-[30deg] top-[66px] start-[22%]"
+              className="absolute rotate-[-30deg] top-[66px] start-[22%]"
               height={64}
               width={64}
               src={first_img}
@@ -33,13 +33,16 @@ const Discover = () => {
               src={third_img}
               alt="zklogo"
             />
-            <img
-              className="absolute rotate-[26deg] top-[-36px] end-[10%]"
-              height={140}
-              width={140}
-              src={dollor_img}
-              alt="zklogo"
-            />
+            <div className="relative">
+              <span className="h-[130px] w-[130px] bg-[#FED515] absolute rotate-[-26.9deg] -top-[90px] end-[11%] blur-[140px] block"></span>
+              <img
+                className="absolute rotate-[-26.9deg] -top-[106px] end-[10%]"
+                height={140}
+                width={140}
+                src={dollor_img}
+                alt="zklogo"
+              />
+           </div>
             <div className="relative z-10 px-4">
               <img
                 className="mx-auto"

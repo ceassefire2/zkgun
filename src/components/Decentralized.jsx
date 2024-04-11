@@ -41,7 +41,7 @@ const Decentralized = () => {
                 {value.imageUrl ? (
                   <div className={`${value.className}`}>
                     <img
-                      className={`w-full absolute max-w-[180px] bottom-0 ${value.position}`}
+                      className={`w-full absolute max-w-[180px] ${value.position}`}
                       src={value.imageUrl}
                       alt={value.title}
                     />

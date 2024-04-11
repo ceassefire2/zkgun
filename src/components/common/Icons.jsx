@@ -233,3 +233,74 @@ export const EcoSystem = () => {
     </svg>
   );
 };
+export const GradientImage = () => {
+  return (
+    <svg className="max-w-[350px] lg:max-w-[576px] w-full" width="576" height="373" viewBox="0 0 576 373" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="515.953" cy="516.731" r="365.5" transform="rotate(-41.5411 515.953 516.731)" fill="url(#paint0_linear_4796_11705)" fill-opacity="0.06" />
+      <circle cx="515.79" cy="516.198" r="265.5" transform="rotate(-41.5411 515.79 516.198)" fill="url(#paint1_linear_4796_11705)" fill-opacity="0.06" />
+      <defs>
+        <linearGradient id="paint0_linear_4796_11705" x1="685.182" y1="210.072" x2="600.245" y2="396.608" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_4796_11705" x1="628.27" y1="285.494" x2="520.937" y2="471.96" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+  );
+};
+export const MobileGradientImage = () => {
+  return (
+    <svg width="126" height="196" viewBox="0 0 126 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="98.2697" cy="98.27" r="97.6336" transform="rotate(-71.5411 98.2697 98.27)" fill="url(#paint0_linear_4601_2297)" fill-opacity="0.06" />
+      <circle cx="98.1614" cy="98.1688" r="70.9213" transform="rotate(-71.5411 98.1614 98.1688)" fill="url(#paint1_linear_4601_2297)" fill-opacity="0.06" />
+      <defs>
+        <linearGradient id="paint0_linear_4601_2297" x1="143.475" y1="16.3542" x2="120.786" y2="66.1824" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_4601_2297" x1="128.208" y1="36.5424" x2="99.5364" y2="86.3517" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+  );
+};
+export const DollorClipBoard = () => {
+  return (
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.49984 4.16667H5.83317C5.39114 4.16667 4.96722 4.34226 4.65466 4.65482C4.3421 4.96738 4.1665 5.39131 4.1665 5.83333V15.8333C4.1665 16.2754 4.3421 16.6993 4.65466 17.0118C4.96722 17.3244 5.39114 17.5 5.83317 17.5H14.1665C14.6085 17.5 15.0325 17.3244 15.345 17.0118C15.6576 16.6993 15.8332 16.2754 15.8332 15.8333V5.83333C15.8332 5.39131 15.6576 4.96738 15.345 4.65482C15.0325 4.34226 14.6085 4.16667 14.1665 4.16667H12.4998M7.49984 4.16667C7.49984 3.72464 7.67543 3.30072 7.98799 2.98816C8.30055 2.67559 8.72448 2.5 9.1665 2.5H10.8332C11.2752 2.5 11.6991 2.67559 12.0117 2.98816C12.3242 3.30072 12.4998 3.72464 12.4998 4.16667M7.49984 4.16667C7.49984 4.60869 7.67543 5.03262 7.98799 5.34518C8.30055 5.65774 8.72448 5.83333 9.1665 5.83333H10.8332C11.2752 5.83333 11.6991 5.65774 12.0117 5.34518C12.3242 5.03262 12.4998 4.60869 12.4998 4.16667M11.6665 9.16667H9.58317C9.25165 9.16667 8.93371 9.29836 8.69929 9.53278C8.46487 9.7672 8.33317 10.0851 8.33317 10.4167C8.33317 10.7482 8.46487 11.0661 8.69929 11.3006C8.93371 11.535 9.25165 11.6667 9.58317 11.6667H10.4165C10.748 11.6667 11.066 11.7984 11.3004 12.0328C11.5348 12.2672 11.6665 12.5851 11.6665 12.9167C11.6665 13.2482 11.5348 13.5661 11.3004 13.8005C11.066 14.035 10.748 14.1667 10.4165 14.1667H8.33317M9.99984 14.1667V15M9.99984 8.33333V9.16667" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+};
+export const Telegram = () => {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_4796_11797)">
+        <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.24285 15.8314C11.9072 13.7993 15.0175 12.4595 16.5737 11.8122C21.0171 9.96408 21.9404 9.64304 22.5421 9.63244C22.6745 9.63011 22.9704 9.66291 23.1621 9.81846C23.324 9.9498 23.3686 10.1272 23.3899 10.2518C23.4112 10.3763 23.4377 10.66 23.4166 10.8816C23.1758 13.4116 22.1339 19.5512 21.6039 22.3848C21.3796 23.5838 20.938 23.9858 20.5104 24.0252C19.5813 24.1107 18.8757 23.4111 17.9758 22.8212C16.5676 21.8981 15.7721 21.3235 14.4051 20.4227C12.8254 19.3817 13.8495 18.8096 14.7498 17.8745C14.9854 17.6298 19.0792 13.9061 19.1585 13.5683C19.1684 13.5261 19.1776 13.3686 19.084 13.2855C18.9905 13.2023 18.8524 13.2307 18.7527 13.2533C18.6115 13.2854 16.3619 14.7723 12.0038 17.7141C11.3653 18.1526 10.7869 18.3662 10.2687 18.355C9.69743 18.3427 8.59851 18.032 7.78158 17.7665C6.77957 17.4408 5.9832 17.2686 6.05255 16.7154C6.08867 16.4273 6.48544 16.1326 7.24285 15.8314Z" fill="url(#paint0_linear_4796_11797)" />
+      </g>
+      <defs>
+        <linearGradient id="paint0_linear_4796_11797" x1="14.7363" y1="9.63232" x2="14.7363" y2="23.9255" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2AABEE" />
+          <stop offset="1" stop-color="#229ED9" />
+        </linearGradient>
+        <clipPath id="clip0_4796_11797">
+          <rect width="32" height="32" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+export const Twitter = () => {
+  return (
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24.4352 2.53857H28.9332L19.1065 13.7699L30.6668 29.0532H21.6151L14.5255 19.784L6.41343 29.0532H1.91274L12.4234 17.04L1.3335 2.53857H10.615L17.0234 11.011L24.4352 2.53857ZM22.8566 26.3609H25.3489L9.26069 5.08942H6.58611L22.8566 26.3609Z" fill="#0A140F" />
+    </svg>
+  );
+};

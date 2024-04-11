@@ -2,8 +2,9 @@ import joinZKlogo from "../../assets/images/png/download.png";
 import ecoCardImg_first from "../../assets/images/webp/our-eco-img-first.webp";
 import ecoCardImg_second from "../../assets/images/webp/our-eco-img-second.webp";
 import ecoCardImg_third from "../../assets/images/webp/our-eco-img-third.webp";
-import star from "../../assets/images/png/star.png";
-import freedom from "../../assets/images/png/freedom.png";
+import star from "../../assets/images/webp/star-image.webp";
+import freedom from "../../assets/images/webp/no-red-tap.webp";
+import z_logo from "../../assets/images/webp/gradient-z-image.webp";
 
 export const coreValueCardList = [
   {
@@ -12,6 +13,7 @@ export const coreValueCardList = [
       "Our Zero-Knowledge Privacy integrations provide untraceable transactions,",
     spandescription: " so your swaps are yours alone to know",
     image: joinZKlogo,
+    
   },
   {
     title: "Efficiency",
@@ -38,7 +40,7 @@ export const ourEcoCardList = [
       "Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens",
     image: ecoCardImg_first,
     hidden: "md:hidden",
-    rotate:"rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
+    rotate: "rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
   },
   {
     badge: "ERC-4337",
@@ -48,7 +50,7 @@ export const ourEcoCardList = [
     spandescription: ", and stake crypto on mobile and desktop platforms",
     image: ecoCardImg_second,
     rotate: "mt-8 sm:mt-0",
-    badgeColor: "bg-[#FD9834]",
+    badgeColor: "bg-neonCarrot",
     badgePosition: "-start-16",
     blurOne: "w-[775px] h-[470px] top-[50%] start-[-126%]",
     blurTwo: "w-[775px] h-[470px] top-[-126%] start-[46%]",
@@ -73,27 +75,38 @@ export const decentralizedList = [
     description:
       "We kick KYC back to the past and embrace a non-custodial approach, giving you the freedom to manage your crypto your way. At zkGUN, you're in control, with the autonomy to move your assets freely while shielded by RAILGUN-enhanced security measures",
     imageUrl: freedom,
+    order: "order-1",
+      className: "pt-[125px]",
+    position: "rotate-[136deg] start-0 -bottom-[48px]",
+    maxWidth:"sm:max-w-full max-w-[220px]"
   },
   {
     imageUrl: star,
-
+    className: "pt-[143px]",
+    position: "rotate-[38deg] !end-0 -bottom-[44px]",
     title: "Privacy at our core",
     description:
       "Your privacy is our top priority. We integrate Zero-Knowledge Privacy into our app, ensuring your transactions stay anonymous and secure. With zkGUN, your crypto actions remain yours alone, transparent only to you.",
+    order: "order-5 sm:order-2",
+     maxWidth: "sm:max-w-full max-w-[249px]"
   },
   {
     title: "Swap without limits",
     description:
       "Our platform lets you exchange any amount of crypto across multiple chains quickly and without fuss. We’re talking minutes, not hours, making sure you’re always a step ahead in the fast-moving crypto market",
+    order: "order-2"
   },
   {
     title: "More than just a swap service",
     description:
       "zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet introduces gasless transactions to boost your crypto handling experience. Plus, our Telegram Bot brings swapping directly to your chat window for extra convenience",
+    order: "order-4",
+     maxWidth: "sm:max-w-full max-w-[257px]"
   },
   {
-    subImage: freedom,
-    subtitle: "Decentralized finance made simple",
+    subImage: z_logo,
+    order: "order-3 sm:order-5"
+
   },
 
 ];

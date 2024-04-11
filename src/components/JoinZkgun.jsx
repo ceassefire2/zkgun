@@ -1,6 +1,7 @@
 import React from "react";
-import joinZKlogo from "../assets/images/png/download.png";
+import joinZKlogo from "../assets/images/png/z-logo.png";
 import CommonBtn from "./common/CommonBtn";
+import { Telegram, Twitter } from "./common/Icons";
 
 const JoinZkgun = () => {
   return (
@@ -13,16 +14,21 @@ const JoinZkgun = () => {
           src={joinZKlogo}
           alt="zklogo"
         />
-        <h2 className="max-w-[855px] mx-auto text-white text-center pt-6 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        <h2 className="max-w-[855px] uppercase mx-auto text-white text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%]">
           Join the zkGUN community
         </h2>
-        <p className="text-white mx-auto text-center text-sm md:text-base md:leading-[20.8px] font-manrope font-normal max-w-[583px] py-4 text-opacity-60">
+        <p className="text-white mx-auto text-center text-sm md:text-base !leading-[130%px] font-manrope font-normal max-w-[582px] py-4 text-opacity-60">
           Ready for a crypto experience that actually delivers on its promise of
           freedom? zkGUN is your opportunity to join the next big thing in
           decentralized finance. Let’s change the crypto world together.
         </p>
-        <div className="mt-2 flex justify-center">
-          <CommonBtn btntext="Swap now" />
+        <div className="mt-2 flex justify-center gap-[22px] sm:gap-3 w-full">
+          <a href="/" className="py-[15px] px-8 rounded-[100px] w-full flex justify-center sm:w-auto link_gradient cursor-pointer">
+            <Telegram/>
+         </a>
+          <a href="/" className="py-[15px] px-8 rounded-[100px] w-full flex justify-center sm:w-auto bg-white cursor-pointer">
+            <Twitter/>
+         </a>
         </div>
       </div>
     </>

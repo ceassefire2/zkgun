@@ -21,9 +21,9 @@ function App() {
         <Hero />
         <Finance />
         <OurEcosystem />
-        <Discover />
         <CoreValue />
         <OurCapabilities />
+        <Discover />
         {/* <Decentralized /> */}
         <Dummy />
         <JoinZkgun />

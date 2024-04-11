@@ -15,7 +15,7 @@ const CoreValue = () => {
             Core values
           </p>
         </div>
-        <h2 className="text-white text-center pt-4 font_over font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        <h2 className="text-white text-center pt-4 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
           Our crypto creed
         </h2>
         {/* <div className="my-6 sm:my-8 md:my-12 lg:my-16 xl:my-20">

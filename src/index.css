@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @font-face {
-    font-family: 'FontOver';
-    src: url("./assets/fonts/actaywide-bold.otf");
+    font-family: 'Actay-Wide';
+    src: url("./assets/fonts/ActayWide-Bold.otf");
 }
 
-.font_over {
-    font-family: 'FontOver';
+.font_actay_wide {
+    font-family: 'Actay-Wide';
 }
 
 .manrope {

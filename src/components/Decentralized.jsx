@@ -12,7 +12,7 @@ const Decentralized = () => {
             Decentralized finance made simple
           </p>
         </div>
-        <h2 className="text-white text-center pt-4 pb-4 sm:pb-5 font_over font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        <h2 className="text-white text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
           Help us break the <br className="hidden md:block" />
           chains
         </h2>
@@ -26,38 +26,33 @@ const Decentralized = () => {
         {decentralizedList.map((obj, index) => (
           <div
             key={index}
-            className={` ${
-              index === 0 || index === 3 ? "max-w-[460px]" : "w-[60.8%] h-full"
-            } ${index === 3 ? "mt-[-278px]" : ""}`}
+            className={` ${index === 0 || index === 3 ? "max-w-[460px]" : "w-[60.8%] h-full"
+              } ${index === 3 ? "mt-[-278px]" : ""}`}
           >
             <div
-              className={`bg-white-gradient rounded-[32px] p-[1px] ${
-                index === 0 || index === 3 ? "max-w-[460px] w-full" : "w-auto"
-              }`}
+              className={`bg-white-gradient rounded-[32px] p-[1px] ${index === 0 || index === 3 ? "max-w-[460px] w-full" : "w-auto"
+                }`}
             >
               <div
-                className={`text-white p-12 bg-firefly rounded-[32px] overflow-hidden ${
-                  index === 0 || index === 3 ? "pb-0" : ""
-                }`}
+                className={`text-white p-12 bg-firefly rounded-[32px] overflow-hidden ${index === 0 || index === 3 ? "pb-0" : ""
+                  }`}
               >
-                <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9">
+                <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9">
                   {obj.title}
                 </h3>
                 <p
-                  className={`font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4 ${
-                    index === 2 || index === 4 ? "" : "mb-10"
-                  }`}
+                  className={`font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4 ${index === 2 || index === 4 ? "" : "mb-10"
+                    }`}
                 >
                   {obj.description}
                 </p>
                 {obj.imageUrl ? (
                   <div className={`flex ${index === 3 ? "justify-end" : ""}`}>
                     <img
-                      className={`w-full max-w-[360px] max-h-[360px] h-full ${
-                        index === 3
+                      className={`w-full max-w-[360px] max-h-[360px] h-full ${index === 3
                           ? "rotate-[37deg] -me-16 -mb-[107px]"
                           : "-mb-32 -ms-3"
-                      }`}
+                        }`}
                       src={obj.imageUrl}
                       alt={obj.title}
                     />

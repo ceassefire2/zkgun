@@ -16,7 +16,7 @@ const OurEcosystem = () => {
             Our ecosystem
           </p>
         </div>
-        <h2 className="text-white mx-auto max-w-[1037px] text-center pt-4 font_over font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        <h2 className="text-white mx-auto max-w-[1037px] text-center pt-4 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
           Decentralized network diversity
         </h2>
         <div
@@ -29,7 +29,7 @@ const OurEcosystem = () => {
                   Trade without limits
                 </p>
                 <div>
-                  <h3 className="font_over font-medium max-w-[355px] text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:leading-[36px] text-white">
+                  <h3 className="font_actay_wide font-medium max-w-[355px] text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:leading-[36px] text-white">
                     Anonymous cross-chain swap
                   </h3>
                   <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base md:leading-[20.8px]">
@@ -73,7 +73,7 @@ const OurEcosystem = () => {
                     />
                   </div>
                   <div className="pt-3.5">
-                    <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:leading-[36px] text-white">
+                    <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:leading-[36px] text-white">
                       {value.title}
                     </h3>
                     <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base md:leading-[20.8px]">

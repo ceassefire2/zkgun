@@ -14,7 +14,7 @@ const Decentralized = () => {
             Decentralized finance made simple
           </p>
         </div>
-        <h2 className="text-white text-center pt-4 pb-4 sm:pb-5 font_over font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        <h2 className="text-white text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
           Help us break the <br className="hidden md:block" />
           chains
         </h2>
@@ -28,7 +28,7 @@ const Decentralized = () => {
           return (
             <div key={index} className=" bg-white-gradient p-[1px] rounded-2xl md:rounded-[32px] ">
               <div className="bg-firefly h-full rounded-2xl md:rounded-[32px] text-white p-4 sm:p-6 md:p-8">
-                <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9">
+                <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9">
                   {value.title}
                 </h3>
                 <p
@@ -62,7 +62,7 @@ const Decentralized = () => {
       <div className="lg:flex hidden gap-4 justify-center lg:mt-16 xl:mt-20">
         <div className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient p-[1px] rounded-[32px]">
           <div className="bg-firefly rounded-[32px] h-full p-10 xl:p-12 overflow-hidden relative">
-            <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white">
+            <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white">
               No red tape—just freedom
             </h3>
             <p
@@ -80,7 +80,7 @@ const Decentralized = () => {
         <div className="flex flex-col gap-4">
           <div className="max-w-[626px] xl:max-w-[740px] w-full min-h-[220px] p-[1px] bg-white-gradient rounded-[32px]">
             <div className="bg-firefly h-full rounded-[32px] p-10 xl:p-12 flex flex-col justify-center">
-              <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white ">
+              <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white ">
                 Swap without limits
               </h3>
               <p
@@ -105,7 +105,7 @@ const Decentralized = () => {
       <div className="lg:flex hidden gap-4 mt-4 justify-center items-end h-full mb-[-300px] -translate-y-[300px]">
         <div className="max-w-[626px] xl:max-w-[740px] w-full min-h-[220px] h-full p-[1px] bg-white-gradient rounded-[32px]">
           <div className="h-full rounded-[32px] min-h-[220px] bg-firefly px-10 xl:px-12 flex flex-col justify-center">
-            <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white ">
+            <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white ">
               More than just <br /> a swap service
             </h3>
             <p
@@ -117,7 +117,7 @@ const Decentralized = () => {
         </div>
         <div className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient rounded-[32px] p-[1px]">
           <div className="h-full min-h-[520px] bg-firefly rounded-[32px] p-10 xl:p-12 relative overflow-hidden">
-            <h3 className="font_over font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white">
+            <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white">
               Privacy at our core
             </h3>
             <p

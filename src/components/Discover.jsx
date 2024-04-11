@@ -1,7 +1,7 @@
 import React from "react";
 import joinZKlogo from "../assets/images/png/z-logo.png";
 import first_img from "../assets/images/png/monero.png";
-import second_img from "../assets/images/png/download.png";
+import second_img from "../assets/images/webp/flow.webp";
 import third_img from "../assets/images/png/download.png";
 import dollor_img from "../assets/images/webp/dai-dollor.webp";
 import CommonBtn from "./common/CommonBtn";
@@ -45,22 +45,22 @@ const Discover = () => {
            </div>
             <div className="relative z-10 px-4">
               <img
-                className="mx-auto"
+                className="max-w-[39px] sm:max-w-12 md:max-w-[70px] lg:max-w-[84px] w-full sm:mx-auto"
                 height={84}
                 width={77}
                 src={joinZKlogo}
                 alt="zklogo"
               />
-              <h2 className="max-w-[1200px] mx-auto text-white text-center pt-6 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+              <h2 className="max-w-[1200px] custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%]">
                 Discover freedom <br className="hidden xl:block" />
                 in every transaction
               </h2>
-              <p className="text-white mx-auto text-center text-sm md:text-base md:leading-[20.8px] font-manrope font-normal max-w-[512px] py-4 text-opacity-60">
+              <p className="text-white sm:mx-auto  sm:text-center text-sm md:text-base !leading-[130%] font-manrope font-normal sm:max-w-[512px] py-4 text-opacity-60">
                 Our platform offers a robust and reliable solution for anyone in
                 the ecosystem. It's time to join a community where every crypto
                 enthusiast can find their place
               </p>
-              <div className="mt-2 flex justify-center">
+              <div className="flex sm:justify-center mt-2">
                 <CommonBtn btntext="Swap now" />
               </div>
             </div>

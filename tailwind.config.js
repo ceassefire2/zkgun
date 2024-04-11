@@ -28,6 +28,7 @@ module.exports = {
           "linear-gradient(270deg, rgba(99, 199, 150, 0.0768) 0%, rgba(99, 199, 150, 0.32) 49.63%, rgba(99, 199, 150, 0.0768) 100%)",
       },
       screens: {
+        "custom-2xs": { max: "401.98px" },
         "custom-xs": { max: "374.98px" },
         "custom-sm": { max: "479.98px" },
       },

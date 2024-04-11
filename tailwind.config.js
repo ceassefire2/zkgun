@@ -26,10 +26,10 @@ module.exports = {
           "linear-gradient(180deg, rgba(99, 199, 150, 0) -23.62%, #63C796 55.73%)",
         "primary-border-gradient":
           "linear-gradient(270deg, rgba(99, 199, 150, 0.0768) 0%, rgba(99, 199, 150, 0.32) 49.63%, rgba(99, 199, 150, 0.0768) 100%)",
-
       },
       screens: {
         "custom-xs": { max: "374.98px" },
+        "custom-sm": { max: "479.98px" },
       },
     },
   },

@@ -13,7 +13,7 @@ const OurCapabilities = () => {
         alt="capabilities-hexagon"
       />
       <div className="bg-danger blur-[130px] h-[200px] sm:h-[300px] w-[150px] absolute -top-[30%] md:top-0 -end-[192px] rounded-full "></div>
-      <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 mb-6 sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+      <div className="max-w-[1400px] mx-auto px-4 py-[30px] md:py-16 xl:py-20 mb-[50px] md:mb-16 xl:mb-20">
         <div className="flex sm:justify-center items-center gap-2">
           <CapabilitiesIcon />
           <p className="font-bold text-base text-white !leading-[130%] font-manrope uppercase">

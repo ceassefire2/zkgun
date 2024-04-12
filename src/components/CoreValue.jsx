@@ -37,9 +37,9 @@ const CoreValue = () => {
           <div className="md:grid grid-cols-3 gap-4">
             {coreValueCardList.map((obj, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <div
-                    key={index}
+                   
                     className={`${obj.gridCenter} bg-firefly p-6 lg:p-10 rounded-[32px] relative overflow-hidden custom-xs:min-h-[350px] min-h-[325px] md:min-h-[295px] lg:min-h-[403px] xl:min-h-[420px] max-w-[500px] mx-auto sm:max-w-none`}
                   >
                     <span className="hidden md:inline-block bg-[#63C796] w-[200px] h-[100px] absolute -top-36 start-1/2 -translate-x-1/2 blur-[100px]"></span>

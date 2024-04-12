@@ -11,10 +11,9 @@ const JoinZkgun = () => {
         <img src={joinZkgunHexagone} alt="joinZkgunHexagone"
           className="absolute -start-[205px] rotate-[-51deg] -top-[16%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[505px] -z-[1] hidden sm:flex"
         />
-        <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
+        <div className="max-w-[1400px] mx-auto px-4 py-[30px] md:py-16 xl:py-20">
           <img
-            className="mx-auto"
-            height={120}
+            className="mx-auto max-w-[52px] sm:max-w-14 md:max-w-16 lg:max-w-20 xl:max-w-[110px]"
             width={110}
             src={joinZKlogo}
             alt="zklogo"

@@ -8,11 +8,11 @@ import top_end from "../assets/images/png/decentralized-top-end.png";
 
 const Decentralized = () => {
   return (
-    <div className="relative mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20 ">
+    <div className="relative mt-5 md:mt-16 xl:mt-20 ">
       <span className="sm:block hidden w-[437px] h-[809px] green_blur top-[340px] start-[-327px] rounded-[50%] blur-[320px] bg-opacity-[48%] -z-[1] absolute"></span>
       <img className="absolute top-[20%] lg:top-16 end-0 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] -z-[1] hidden sm:block"
         src={top_end} alt="star_image" />
-      <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative">
+      <div className="max-w-[1400px] mx-auto px-4 py-[50px] md:py-16 xl:py-20 relative">
         <div>
           <div className="flex sm:justify-center items-center gap-2">
             <DollorClipBoard />

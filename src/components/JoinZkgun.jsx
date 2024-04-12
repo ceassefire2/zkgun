@@ -6,7 +6,7 @@ import { Telegram, Twitter } from "./common/Icons";
 const JoinZkgun = () => {
   return (
     <>
-      <div className="max-w-[1368px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
+      <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
         <img
           className="mx-auto"
           height={120}
@@ -23,10 +23,10 @@ const JoinZkgun = () => {
           decentralized finance. Let’s change the crypto world together.
         </p>
         <div className="mt-2 flex justify-center gap-[22px] sm:gap-3 w-full">
-          <a href="/" className="py-[15px] px-8 rounded-[100px] w-full flex justify-center sm:w-auto link_gradient cursor-pointer">
+          <a target="_blank" href="https://web.telegram.org/" className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto link_gradient cursor-pointer">
             <Telegram/>
          </a>
-          <a href="/" className="py-[15px] px-8 rounded-[100px] w-full flex justify-center sm:w-auto bg-white cursor-pointer">
+          <a target="_blank" href="https://twitter.com/" className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto bg-white cursor-pointer">
             <Twitter/>
          </a>
         </div>

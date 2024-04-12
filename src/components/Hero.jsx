@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="mt-[70px] text-center px-4 relative mb-24 md:mb-28"
+      className="mt-[70px] text-center px-4 md:px-5 relative mb-24 md:mb-28"
     >
       <img
         className="hero_gallery absolute top-24 sm:top-0 -start-4 sm:start-16 md:start-24 lg:start-36 max-w-[39px] sm:max-w-[64px] rounded-full bg-lightPink"

@@ -22,7 +22,7 @@ const CoreValue = () => {
           alt="coreValueHexagonImgColored"
           className="absolute -end-9 top-[14%] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]"
         />
-        <div className="max-w-[1400px] mx-auto px-4 py-[50px] md:py-16 xl:py-20 our_cripto">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 our_cripto">
           <p className="font-bold uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
           </p>

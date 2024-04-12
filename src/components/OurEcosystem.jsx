@@ -16,7 +16,7 @@ const OurEcosystem = () => {
         />
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
         <div className="red_blur danger_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[500px] rounded-[50%] hidden -z-[1] sm:block"></div>
-        <div className="max-w-[1400px] mx-auto px-4 py-[50px] md:py-16 xl:py-20 relative">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 relative">
           <div className="flex sm:justify-center items-center gap-2">
             <EcoSystem />
             <p className="font-bold uppercase text-base text-white !leading-[130%] font-manrope">

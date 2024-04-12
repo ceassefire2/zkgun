@@ -1,7 +1,6 @@
 import React from "react";
 import joinZKlogo from "../assets/images/png/z-logo.png";
 import joinZkgunHexagone from "../assets/images/png/zkgun-join-hexagon-image.png";
-import CommonBtn from "./common/CommonBtn";
 import { Telegram, Twitter } from "./common/Icons";
 
 const JoinZkgun = () => {
@@ -13,7 +12,7 @@ const JoinZkgun = () => {
           alt="joinZkgunHexagone"
           className="absolute -start-[205px] rotate-[-51deg] -top-[16%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[505px] -z-[1] hidden sm:flex"
         />
-        <div className="max-w-[1400px] mx-auto px-4 py-[30px] md:py-16 xl:py-20">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[30px] md:py-16 xl:py-20">
           <img
             className="mx-auto max-w-[52px] sm:max-w-14 md:max-w-16 lg:max-w-20 xl:max-w-[110px]"
             width={110}

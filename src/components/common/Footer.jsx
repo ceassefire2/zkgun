@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="absolute -end-10 sm:end-0 -bottom-5 sm:bottom-0 -z-[1] footer_hexagon">
         <HexagonIcon />
       </div>
-      <div className="max-w-[1400px] mx-auto px-4 pt-[50px] md:pt-16 xl:pt-20">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-5 pt-[50px] md:pt-16 xl:pt-20">
         <div className="flex flex-col items-center sm:flex-row custom-xs:flex-col  sm:justify-between sm:items-center pb-8 border-b border-b-white border-opacity-20 border-b-solid">
           <a href="#home" className="text-white">
             <PageIcon />

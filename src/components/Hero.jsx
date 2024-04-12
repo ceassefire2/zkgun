@@ -50,7 +50,7 @@ const Hero = () => {
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction
       </p>
-      <div className="custom-sm:w-full mt-12 mb-10">
+      <div className="custom-sm:w-full my-8 md:mt-12 md:mb-10">
         <CommonBtn btntext={"swap now"} />
       </div>
       <img

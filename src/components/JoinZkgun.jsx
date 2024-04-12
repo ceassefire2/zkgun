@@ -7,8 +7,10 @@ import { Telegram, Twitter } from "./common/Icons";
 const JoinZkgun = () => {
   return (
     <>
-      <div className="relative">
-        <img src={joinZkgunHexagone} alt="joinZkgunHexagone"
+      <div id="contact" className="relative">
+        <img
+          src={joinZkgunHexagone}
+          alt="joinZkgunHexagone"
           className="absolute -start-[205px] rotate-[-51deg] -top-[16%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[505px] -z-[1] hidden sm:flex"
         />
         <div className="max-w-[1400px] mx-auto px-4 py-[30px] md:py-16 xl:py-20">
@@ -22,15 +24,23 @@ const JoinZkgun = () => {
             Join the zkGUN community
           </h2>
           <p className="text-white mx-auto text-center text-sm md:text-base !leading-[130%px] font-manrope font-normal max-w-[582px] py-4 text-opacity-60">
-            Ready for a crypto experience that actually delivers on its promise of
-            freedom? zkGUN is your opportunity to join the next big thing in
+            Ready for a crypto experience that actually delivers on its promise
+            of freedom? zkGUN is your opportunity to join the next big thing in
             decentralized finance. Let’s change the crypto world together.
           </p>
           <div className="mt-2 flex justify-center gap-[22px] sm:gap-3 w-full">
-            <a target="_blank" href="https://web.telegram.org/" className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto link_gradient cursor-pointer">
+            <a
+              target="_blank"
+              href="https://web.telegram.org/"
+              className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto link_gradient cursor-pointer"
+            >
               <Telegram />
             </a>
-            <a target="_blank" href="https://twitter.com/" className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto bg-white cursor-pointer">
+            <a
+              target="_blank"
+              href="https://twitter.com/"
+              className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto bg-white cursor-pointer"
+            >
               <Twitter />
             </a>
           </div>

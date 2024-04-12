@@ -8,7 +8,7 @@ import { ourEcoCardList } from "./common/Helper";
 const OurEcosystem = () => {
   return (
     <>
-      <div className="relative">
+      <div id="community" className="relative">
         <img
           className="absolute top-[20%] lg:top-[38%] -start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10 hidden sm:block danger_blur"
           src={ecosystemHexagon}

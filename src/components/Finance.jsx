@@ -5,7 +5,7 @@ import financeHexagonImg from "../assets/images/png/finance-hexagon.png";
 const Finance = () => {
   return (
     <>
-      <div className="relative">
+      <div id="services" className="relative">
         <img
           src={financeHexagonImg}
           alt="financeHexagonImg"

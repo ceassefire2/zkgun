@@ -5,9 +5,13 @@ import heroImg from "../assets/images/png/hero-img.png";
 import heroGallery from "../assets/images/png/hero-gallery.png";
 import heroPolkadot from "../assets/images/png/hero-polkadot.png";
 import heroSkull from "../assets/images/png/hero-skull.png";
+import heroFtx from "../assets/images/png/hero-ftx.png";
 const Hero = () => {
   return (
-    <div className="mt-[70px] text-center px-4 relative mb-24 md:mb-28">
+    <div
+      id="hero"
+      className="mt-[70px] text-center px-4 relative mb-24 md:mb-28"
+    >
       <img
         className="hero_gallery absolute top-24 sm:top-0 -start-4 sm:start-16 md:start-24 lg:start-36 max-w-[39px] sm:max-w-[64px] rounded-full bg-lightPink"
         src={heroGallery}
@@ -22,6 +26,11 @@ const Hero = () => {
         className="hero_skull absolute top-[65%] sm:top-[33%] -start-7 sm:start-12 md:start-8 lg:start-28 xl:start-32 max-w-[53px] sm:max-w-[90px] md:max-w-[138px] rounded-full bg-funBlue"
         src={heroSkull}
         alt="heroSkull"
+      />
+      <img
+        className="hero_skull absolute bottom-[15%] sm:bottom-[20%] -end-0 sm:end-7 md:end-8 lg:end-28 xl:end-32 max-w-[32px] sm:max-w-[39px] md:max-w-[64px] rounded-full bg-funBlue"
+        src={heroFtx}
+        alt="heroFtx"
       />
       <div class="glitch-container"></div>
       <span className="hero_left_hexagon absolute custom-2xs:-start-[40%] -start-[34%] sm:-start-[20%] -rotate-12 sm:rotate-0 md:-start-44 top-0 xl:top-16 -z-[1]">
@@ -39,7 +48,7 @@ const Hero = () => {
       </h1>
       <p className="font-manrope font-normal text-base sm:text-xl text-white ">
         Non-Custodial, Decentralized & Anonymous.{" "}
-        <br className="block sm:hidden" /> Freedom in every transaction
+        <br className="block lg:hidden" /> Freedom in every transaction
       </p>
       <div className="custom-sm:w-full mt-12 mb-10">
         <CommonBtn btntext={"swap now"} />

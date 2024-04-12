@@ -31,7 +31,7 @@ const Header = () => {
                 <ul className="flex items-baseline gap-8">
                   <li>
                     <a
-                      href="#"
+                      href="#home"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
                       Home
@@ -39,7 +39,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#services"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
                       Services
@@ -47,7 +47,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#community"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
                       Community
@@ -55,7 +55,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="#contact"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
                       Contact
@@ -89,7 +89,7 @@ const Header = () => {
               <li className="!m-0">
                 <a
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#"
+                  href="#home"
                   className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Home
@@ -98,7 +98,7 @@ const Header = () => {
               <li className="!m-0">
                 <a
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#"
+                  href="#services"
                   className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Services
@@ -107,7 +107,7 @@ const Header = () => {
               <li className="!m-0">
                 <a
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#"
+                  href="#community"
                   className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Community
@@ -116,7 +116,7 @@ const Header = () => {
               <li className="!m-0">
                 <a
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#"
+                  href="#contact"
                   className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Contact

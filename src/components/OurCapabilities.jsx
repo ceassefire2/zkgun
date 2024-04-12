@@ -13,20 +13,20 @@ const OurCapabilities = () => {
         alt="capabilities-hexagon"
       />
       <div className="bg-danger blur-[130px] h-[200px] sm:h-[300px] w-[150px] absolute -top-[30%] md:top-0 -end-[192px] rounded-full "></div>
-      <div className="max-w-[1400px] mx-auto px-4 my-6 sm:my-8 md:my-12 lg:my-20 xl:my-40">
-        <div className="flex justify-center items-center gap-2">
+      <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 mb-6 sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+        <div className="flex sm:justify-center items-center gap-2">
           <CapabilitiesIcon />
-          <p className="font-bold text-sm md:text-base text-white md:leading-[20.8px] font-manrope uppercase">
+          <p className="font-bold text-base text-white !leading-[130%] font-manrope uppercase">
             Our capabilities
           </p>
         </div>
-        <h2 className="text-white text-center py-4 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px] uppercase">
+        <h2 className="text-white sm:text-center py-4 font_actay_wide font-medium custom-xs:text-3xl text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%] uppercase">
           Over 40 blockchains <br className="hidden md:block" /> and growing
         </h2>
-        <p className="font-normal text-sm md:text-base text-white text-opacity-60 md:leading-5 font-manrope text-center custom-xs:px-0 px-10">
+        <p className="font-normal text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center custom-xs:px-0 sm:px-10">
           Explore over 40 blockchains for a broad range of trading options.
         </p>
-        <div className="flex justify-center mt-6 md:mt-8">
+        <div className="flex sm:justify-center mt-6 md:mt-8">
           <CommonBtn btntext="View all capabilities" />
         </div>
         <img

@@ -19,13 +19,13 @@ const CoreValue = () => {
           className="absolute -end-9 top-[14%] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]"
         />
         <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 our_cripto">
-          <p className="font-bold uppercase text-sm md:text-base text-white md:leading-[20.8px] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
+          <p className="font-bold uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
           </p>
           <h2 className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%] uppercase">
             Our crypto creed
           </h2>
-          <div className="text-center mb-20 hidden sm:flex">
+          <div className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">
             <CommonBtn btntext={"Learn about us"} />
           </div>
           <Swiper
@@ -46,25 +46,27 @@ const CoreValue = () => {
             <div className="md:grid grid-cols-3 gap-4">
               {coreValueCardList.map((obj, index) => {
                 return (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide key={index} className="h-full">
+                    <div className="card_border p-[1px] overflow-hidden rounded-[20px] md:rounded-[32px]">
                     <div
 
-                      className={`${obj.gridCenter} bg-firefly p-6 lg:p-10 rounded-[32px] relative overflow-hidden custom-xs:min-h-[350px] min-h-[325px] md:min-h-[295px] lg:min-h-[403px] xl:min-h-[420px] max-w-[500px] mx-auto sm:max-w-none`}
+                        className={`${obj.gridCenter} bg-firefly p-6 lg:p-10 rounded-[20px] md:rounded-[32px] relative overflow-hidden flex flex-col justify-between lg:justify-start custom-xs:min-h-[303px] min-h-[302px] md:min-h-[295px] lg:min-h-[403px] xl:min-h-[420px] max-w-[500px] mx-auto sm:max-w-none`}
                     >
                       <span className="hidden md:inline-block bg-[#63C796] w-[200px] h-[100px] absolute -top-36 start-1/2 -translate-x-1/2 blur-[100px]"></span>
                       <span className="hidden md:inline-block bg-[#63C796] w-[200px] h-[100px] absolute -bottom-40 start-1/2 -translate-x-1/2 blur-[100px]"></span>
-                      <h4 className="text-white text-center text-xl md:text-xl lg:text-3xl xl:text-4xl font-bold font-manrope md:leading-[31.2px] uppercase">
+                        <h4 className="text-white text-center custom-xs:text-2xl text-[30px] xl:text-4xl font-bold font-manrope !leading-[100%] uppercase">
                         {obj.title}
                       </h4>
-                      <div className="my-3 lg:my-8 xl:my-12 flex justify-center core_icons">
+                      <div className="lg:my-8 xl:my-12 flex justify-center core_icons">
                         {obj.image}
                       </div>
-                      <p className="text-white max-w-[400px] mx-auto text-center font-manrope font-normal text-base md:leading-[20.8px]">
+                      <p className="text-white max-w-[400px] mx-auto text-center font-manrope font-normal text-sm md:text-base !leading-[130%]">
                         {obj.description}
                         <span className="text-white text-opacity-60">
                           {obj.spandescription}
                         </span>
                       </p>
+                    </div>
                     </div>
                   </SwiperSlide>
                 );

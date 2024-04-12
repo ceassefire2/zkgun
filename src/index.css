@@ -27,9 +27,9 @@ body {
     border-radius: 10px;
 }
 
-.our_cripto .swiper-pagination-bullet {
+/* .our_cripto .swiper-pagination-bullet {
     background-color: #63C796 !important;
-}
+} */
 
 .hero_left_hexagon svg {
     max-width: 700px;
@@ -165,7 +165,7 @@ body {
     }
 
     .our_cripto .swiper {
-        height: 360px !important;
+        height: 336px !important;
     }
 
     .hero_left_hexagon svg {
@@ -184,7 +184,7 @@ body {
     }
 
     .our_cripto .swiper {
-        height: 390px !important;
+        height: 340px !important;
     }
 
     .our_cripto .swiper-slide {

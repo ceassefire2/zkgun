@@ -12,7 +12,7 @@ const OurCapabilities = () => {
         src={capabilitiesHexagonImg}
         alt="capabilities-hexagon"
       />
-      <div className="bg-danger blur-[130px] h-[300px] w-[150px] absolute top-0 -end-[192px] rounded-full hidden sm:block"></div>
+      <div className="bg-scarlet-gradient blur-[130px] h-[300px] w-[150px] absolute top-0 -end-[192px] rounded-full hidden sm:block"></div>
       <div className="max-w-[1368px] mx-auto px-4 my-6 sm:my-8 md:my-12 lg:my-20 xl:my-40">
         <div className="flex justify-center items-center gap-2">
           <CapabilitiesIcon />

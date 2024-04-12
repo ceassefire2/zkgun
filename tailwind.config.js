@@ -10,7 +10,7 @@ module.exports = {
         dark: "#03031B",
         primary: "#63C796",
         firefly: "#0B1426",
-        danger: "#FF2100",
+        // scarlet: "#FF2100",
         royalBlue: "#3D3DF4",
         haiti: "#08081F",
         gold: "#FED515",
@@ -20,6 +20,7 @@ module.exports = {
         neonCarrot: "#FD9834",
       },
       fontSize: {
+        "custom-lg": "56px",
         "custom-xl": "120px",
       },
       backgroundImage: {
@@ -31,6 +32,8 @@ module.exports = {
           "linear-gradient(180deg, rgba(99, 199, 150, 0) -23.62%, #63C796 55.73%)",
         "primary-border-gradient":
           "linear-gradient(270deg, rgba(99, 199, 150, 0.0768) 0%, rgba(99, 199, 150, 0.32) 49.63%, rgba(99, 199, 150, 0.0768) 100%)",
+        "scarlet-gradient":
+          "linear-gradient(180deg, rgba(255, 33, 0, 0.00) -23.62%, #FF2100 55.73%)",
       },
       screens: {
         "custom-2xs": { max: "401.98px" },

@@ -31,6 +31,34 @@ body {
     background-color: #63C796 !important;
 }
 
+.hero_left_hexagon svg {
+    max-width: 700px;
+}
+
+.hero_right_hexagon svg {
+    max-width: 780px;
+}
+
+@media (max-width:1439.98px) {
+    .hero_left_hexagon svg {
+        max-width: 580px;
+    }
+
+    .hero_right_hexagon svg {
+        max-width: 690px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .hero_left_hexagon svg {
+        max-width: 550px;
+    }
+
+    .hero_right_hexagon svg {
+        max-width: 630px;
+    }
+}
+
 @media (max-width:1023.98px) {
     .core_icons svg {
         width: 105px;
@@ -39,6 +67,14 @@ body {
 
     .our_cripto .swiper {
         height: 360px !important;
+    }
+
+    .hero_left_hexagon svg {
+        max-width: 500px;
+    }
+
+    .hero_right_hexagon svg {
+        max-width: 570px;
     }
 }
 
@@ -54,5 +90,23 @@ body {
 
     .our_cripto .swiper-slide {
         padding: 0 6px !important;
+    }
+
+    .hero_left_hexagon svg {
+        max-width: 400px;
+    }
+
+    .hero_right_hexagon svg {
+        max-width: 400px;
+    }
+}
+
+@media (max-width:479.98px) {
+    .hero_left_hexagon svg {
+        max-width: 300px;
+    }
+
+    .hero_right_hexagon svg {
+        max-width: 320px;
     }
 }

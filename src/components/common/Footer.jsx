@@ -5,7 +5,7 @@ import { AffartsIcon, HexagonIcon, PageIcon } from "./Icons";
 const Footer = () => {
   return (
     <div className="relative">
-      <div className="bg-danger blur-[130px] h-[400px] md:w-[150px] absolute bottom-20 -end-[192px] rounded-full hidden sm:block"></div>
+      <div className="bg-scarlet-gradient blur-[130px] h-[400px] md:w-[150px] absolute bottom-20 -end-[192px] rounded-full hidden sm:block"></div>
       <div className="absolute -end-10 sm:end-0 -bottom-5 sm:bottom-0 -z-[1] footer_hexagon">
         <HexagonIcon />
       </div>
@@ -52,7 +52,9 @@ const Footer = () => {
             <p className="font-manrope font-normal text-white text-opacity-60 relative text-base !leading-5">
               Design by
             </p>
-            <AffartsIcon />
+            <span className="cursor-pointer">
+              <AffartsIcon />
+            </span>
           </div>
         </div>
       </div>

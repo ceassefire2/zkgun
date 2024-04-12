@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper/modules";
 import coreValueHexagonImg from "../assets/images/png/core-value-hexagon.png";
+import coreValueHexagonImgColored from "../assets/images/png/core-value-hexagon-colored.png";
 import "swiper/css/pagination";
 const CoreValue = () => {
   return (
@@ -14,14 +15,17 @@ const CoreValue = () => {
         <img src={coreValueHexagonImg} alt="coreValueHexagonImg"
           className="absolute top-[81%] sm:top-1/2 md:top-36 max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[500px] xl:max-w-[600px] -z-[1]"
         />
+        <img src={coreValueHexagonImgColored} alt="coreValueHexagonImgColored"
+          className="absolute -end-9 top-[14%] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]"
+        />
         <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 our_cripto">
           <p className="font-bold uppercase text-sm md:text-base text-white md:leading-[20.8px] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
           </p>
-          <h2 className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px] uppercase">
+          <h2 className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%] uppercase">
             Our crypto creed
           </h2>
-          <div className="text-center mb-20">
+          <div className="text-center mb-20 hidden sm:flex">
             <CommonBtn btntext={"Learn about us"} />
           </div>
           <Swiper

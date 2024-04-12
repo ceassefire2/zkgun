@@ -39,6 +39,73 @@ body {
     max-width: 780px;
 }
 
+
+.hero_gallery {
+    animation: heroGallery 3s ease-in-out infinite;
+}
+
+@keyframes heroGallery {
+    0% {
+        filter: blur(0);
+        box-shadow: 0 0 50px #d58484;
+    }
+
+    50% {
+        filter: blur(1px);
+        box-shadow: 0 0 90px #d58484;
+    }
+
+    100% {
+        filter: blur(0);
+        box-shadow: 0 0 50px #d58484;
+    }
+
+}
+
+.hero_polkadot {
+    animation: heroPolkadot 3s ease-in-out infinite;
+}
+
+@keyframes heroPolkadot {
+    0% {
+        filter: blur(0);
+        box-shadow: 0 0 50px rgba(255, 37, 181, 0.7);
+    }
+
+    50% {
+        filter: blur(1px);
+        box-shadow: 0 0 90px rgba(255, 37, 181, 0.7);
+    }
+
+    100% {
+        filter: blur(0);
+        box-shadow: 0 0 50px rgba(255, 37, 181, 0.7);
+    }
+
+}
+
+.hero_skull {
+    animation: heroSkull 3s ease-in-out infinite;
+}
+
+@keyframes heroSkull {
+    0% {
+        filter: blur(0);
+        box-shadow: 0 0 50px #265CAD;
+    }
+
+    50% {
+        filter: blur(1px);
+        box-shadow: 0 0 90px #265CAD;
+    }
+
+    100% {
+        filter: blur(0);
+        box-shadow: 0 0 50px #265CAD;
+    }
+
+}
+
 @media (max-width:1439.98px) {
     .hero_left_hexagon svg {
         max-width: 580px;

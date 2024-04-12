@@ -18,6 +18,9 @@ module.exports = {
         mirage: "#1E2637",
         lightBlue: "#8F20EF",
         neonCarrot: "#FD9834",
+        lightPink: "#d58484",
+        finn: "#5C2854",
+        funBlue: "#1952A8",
       },
       fontSize: {
         "custom-lg": "56px",

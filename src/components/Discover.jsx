@@ -8,7 +8,7 @@ import flow from "../assets/images/webp/flow.webp";
 import z_logo from "../assets/images/png/z-logo-transparent.png";
 import mobile_z_logo from "../assets/images/png/mobile-z-logo-transparent.png";
 import CommonBtn from "./common/CommonBtn";
-import { GradientImage, MobileGradientImage } from './common/Icons';
+import { GradientImage, MobileGradientImage } from "./common/Icons";
 
 const Discover = () => {
   return (
@@ -37,27 +37,27 @@ const Discover = () => {
               alt="zklogo"
             />
             <img
-              className="absolute  max-w-[200px] w-full md:hidden top-0 start-0"
+              className="absolute max-w-[200px] w-full md:hidden top-0 start-0"
               width={100}
               src={mobile_z_logo}
               alt="zklogo"
             />
             <img
-              className="absolute max-w-8 sm:max-w-10 md:max-w-14 lg:max-w-16 w-full rotate-[-30deg] top-[77px] sm:start-4 md:start-[12%] -start-4 sm:top-[66px] lg:start-[22%]"
+              className="hero_polkadot !shadow-none absolute max-w-8 sm:max-w-10 md:max-w-14 lg:max-w-16 w-full top-[77px] sm:start-4 md:start-[12%] -start-4 sm:top-[66px] lg:start-[22%]"
               height={64}
               width={64}
               src={first_img}
               alt="zklogo"
             />
             <img
-              className="absolute max-w-[70px] sm:max-w-20 md:max-28 lg:max-w-40 -rotate-[37deg] bottom-[42%] -start-[50px] sm:bottom-10 md:bottom-4 md:start-[-2%] lg:bottom-[-36px] lg:start-[3%]"
+              className="hero_polkadot bg-lightPink rounded-full !shadow-none absolute max-w-[70px] sm:max-w-20 md:max-28 lg:max-w-40 -rotate-[37deg] bottom-[42%] -start-[50px] sm:bottom-10 md:bottom-4 md:start-[-2%] lg:bottom-[-36px] lg:start-[3%]"
               height={160}
               width={160}
               src={flow}
               alt="zklogo"
             />
             <img
-              className="absolute max-w-[26px] w-full sm:max-w-9 md:max-14 lg:max-w-16 rotate-[-29deg] bottom-28 sm:end-4 md:bottom-16 md:end-10 -end-2 lg:bottom-[66px] lg:end-[22%]"
+              className="absolute hero_polkadot !shadow-none max-w-[26px] w-full sm:max-w-9 md:max-14 lg:max-w-16 bottom-28 sm:end-4 md:bottom-16 md:end-10 -end-2 lg:bottom-[66px] lg:end-[22%]"
               height={64}
               width={64}
               src={third_img}
@@ -66,7 +66,7 @@ const Discover = () => {
             <div className="relative">
               <span className="lg:h-[114px] lg:w-[114px] h-[40px] sm:h-16 md:h-24 w-[40px] sm:w-16 md:w-24 bg-gold bg-opacity-75 absolute rotate-[-26.9deg] -top-9 lg:-top-[77px] end-[13%] sm:end-[11%] blur-[33px] sm:blur-[63px] block"></span>
               <img
-                className="absolute max-w-[50px] w-full sm:max-w-16 md:max-w-24 lg:max-w-[140px] rotate-[-26.9deg] -top-[37px] md:-top-16 lg:-top-[106px] end-[10%]"
+                className="absolute dollor_icon bg-fireBush rounded-full max-w-[50px] w-full sm:max-w-16 md:max-w-24 lg:max-w-[140px] rotate-[-26.9deg] -top-[37px] md:-top-16 lg:-top-[106px] end-[10%]"
                 height={140}
                 width={140}
                 src={dollor_img}

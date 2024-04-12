@@ -84,6 +84,28 @@ body {
 
 }
 
+.dollor_icon {
+    animation: heroPolkadot 3s ease-in-out infinite;
+}
+
+@keyframes heroPolkadot {
+    0% {
+        filter: blur(0);
+        box-shadow: 0 0 50px #a78a59;
+    }
+
+    50% {
+        filter: blur(1px);
+        box-shadow: 0 0 90px #a78a59;
+    }
+
+    100% {
+        filter: blur(0);
+        box-shadow: 0 0 50px #a78a59;
+    }
+
+}
+
 .hero_skull {
     animation: heroSkull 3s ease-in-out infinite;
 }

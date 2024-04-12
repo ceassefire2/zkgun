@@ -45,7 +45,7 @@ const Hero = () => {
         <CommonBtn btntext={"swap now"} />
       </div>
       <img
-        className="max-w-[500px] sm:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto px-5 hue_img"
+        className="max-w-[500px] sm:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto px-5"
         src={heroImg}
         alt="hero img"
       />

@@ -1158,6 +1158,7 @@ export const GradientImage = () => {
 export const MobileGradientImage = () => {
   return (
     <svg
+      className="wifi_icon"
       width="126"
       height="196"
       viewBox="0 0 126 196"
@@ -1165,6 +1166,7 @@ export const MobileGradientImage = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle
+        className="first_circle"
         cx="98.2697"
         cy="98.27"
         r="97.6336"
@@ -1173,6 +1175,7 @@ export const MobileGradientImage = () => {
         fillOpacity="0.06"
       />
       <circle
+        className="last_circle"
         cx="98.1614"
         cy="98.1688"
         r="70.9213"

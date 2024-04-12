@@ -11,7 +11,7 @@ const Finance = () => {
           alt="financeHexagonImg"
           className="absolute end-0 sm:top-1/2 md:top-20 max-w-[250px] md:max-w-[420px] lg:max-w-[500px] xl:max-w-[580px] -z-[1] hidden sm:block"
         />
-        <div className="max-w-[1400px] mx-auto px-4 py-[50px] md:py-16 xl:py-20">
+        <div className="max-w-[1400px] mx-auto px-4 pb-[50px] md:pb-16 xl:pb-20">
           <div className="flex sm:justify-center sm:items-center gap-2">
             <ClipboardData />
             <p className="font-bold !leading-[130%] text-base text-white md:leading-[20.8px] font-manrope uppercase">
@@ -19,9 +19,9 @@ const Finance = () => {
             </p>
           </div>
           <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8">
-            <CommonBtn btntext="more about us" />
+            <CommonBtn btntext="learn more about us" />
           </div>
-          <h3 className="font_actay_wide font-medium uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white">
+          <h3 className="font_actay_wide font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white">
             Swap crypto across chains without a hitch, leveraging our deep
             liquidity pools from over 20+ sources for instant, vast
             transactions.{" "}

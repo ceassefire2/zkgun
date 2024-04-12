@@ -20,7 +20,7 @@ const OurCapabilities = () => {
             Our capabilities
           </p>
         </div>
-        <h2 className="text-white sm:text-center py-4 font_actay_wide font-medium custom-xs:text-3xl text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%] uppercase">
+        <h2 className="text-white sm:text-center py-4 font_actay_wide font-medium custom-xs:text-3xl text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%] uppercase">
           Over 40 blockchains <br className="hidden md:block" /> and growing
         </h2>
         <p className="font-normal text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center custom-xs:px-0 sm:px-10">

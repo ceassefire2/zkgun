@@ -22,6 +22,7 @@ module.exports = {
         finn: "#5C2854",
         funBlue: "#1952A8",
         fireBush: "#E59E2B",
+        racingGreen: "#0A140F",
       },
       fontSize: {
         "custom-lg": "56px",

@@ -14,7 +14,7 @@ const Decentralized = () => {
             Decentralized finance made simple
           </p>
         </div>
-        <h2 className="text-white text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-2xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-[72px]">
+        <h2 className="text-white text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-2xl sm:text-5xl md:text-[52px] lg:text-7xl lg:leading-[72px]">
           Help us break the <br className="hidden md:block" />
           chains
         </h2>

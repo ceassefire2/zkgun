@@ -20,7 +20,7 @@ const Decentralized = () => {
               Decentralized finance made simple
             </p>
           </div>
-          <h2 className="text-white sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl uppercase !leading-[100%]">
+          <h2 className="text-white sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl uppercase !leading-[100%]">
             Help us break the
             chains
           </h2>
@@ -50,7 +50,7 @@ const Decentralized = () => {
                   {value.imageUrl ? (
                     <div className={`${value.className}`}>
                       <img
-                        className={`w-full absolute max-w-[180px] ${value.position}`}
+                        className={`w-full absolute max-w-[200px] ${value.position}`}
                         src={value.imageUrl}
                         alt={value.title}
                       />

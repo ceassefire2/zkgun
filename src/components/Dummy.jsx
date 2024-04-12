@@ -6,7 +6,7 @@ import freedom from "../assets/images/png/freedom.png";
 
 const Decentralized = () => {
   return (
-    <div className="max-w-[1368px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative">
+    <div className="max-w-[1400px] mx-auto px-4 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 relative">
       <div>
         <div className="flex justify-center items-center gap-2">
           <ClipboardData />
@@ -26,14 +26,15 @@ const Decentralized = () => {
       <div className="grid sm:grid-cols-2 gap-4 lg:hidden mt-6 sm:mt-8 md:mt-12 ">
         {decentralizedList.map((value, index) => {
           return (
-            <div key={index} className=" bg-white-gradient p-[1px] rounded-2xl md:rounded-[32px] ">
+            <div
+              key={index}
+              className=" bg-white-gradient p-[1px] rounded-2xl md:rounded-[32px] "
+            >
               <div className="bg-firefly h-full rounded-2xl md:rounded-[32px] text-white p-4 sm:p-6 md:p-8">
                 <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9">
                   {value.title}
                 </h3>
-                <p
-                  className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4"
-                >
+                <p className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4">
                   {value.description}
                 </p>
                 {value.imageUrl ? (
@@ -45,17 +46,26 @@ const Decentralized = () => {
                 ) : (
                   ""
                 )}
-                {value.subImage ? (<img
-                  className="w-full max-w-[103px] min-h-[120px] mx-auto -mt-4"
-                  src={value.subImage}
-                  alt="img"
-                />) : ""}
+                {value.subImage ? (
+                  <img
+                    className="w-full max-w-[103px] min-h-[120px] mx-auto -mt-4"
+                    src={value.subImage}
+                    alt="img"
+                  />
+                ) : (
+                  ""
+                )}
 
-                {value.subtitle ? (<p className="text-white px-3 font-bold text-sm md:text-base md:!leading-5 text-center pt-4">{value.subtitle}</p>) : ""}
-
+                {value.subtitle ? (
+                  <p className="text-white px-3 font-bold text-sm md:text-base md:!leading-5 text-center pt-4">
+                    {value.subtitle}
+                  </p>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
-          )
+          );
         })}
       </div>
 
@@ -65,10 +75,11 @@ const Decentralized = () => {
             <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white">
               No red tape—just freedom
             </h3>
-            <p
-              className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4"
-            >
-              We kick KYC back to the past and embrace a non-custodial approach, giving you the freedom to manage your crypto your way. At zkGUN, you're in control, with the autonomy to move your assets freely while shielded by RAILGUN-enhanced security measures
+            <p className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4">
+              We kick KYC back to the past and embrace a non-custodial approach,
+              giving you the freedom to manage your crypto your way. At zkGUN,
+              you're in control, with the autonomy to move your assets freely
+              while shielded by RAILGUN-enhanced security measures
             </p>
             <img
               className="w-full max-w-[300px] xl:max-w-[360px] absolute"
@@ -83,10 +94,11 @@ const Decentralized = () => {
               <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white ">
                 Swap without limits
               </h3>
-              <p
-                className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4"
-              >
-                Our platform lets you exchange any amount of crypto across multiple chains quickly and without fuss. We’re talking minutes, not hours, making sure you’re always a step ahead in the fast-moving crypto market
+              <p className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4">
+                Our platform lets you exchange any amount of crypto across
+                multiple chains quickly and without fuss. We’re talking minutes,
+                not hours, making sure you’re always a step ahead in the
+                fast-moving crypto market
               </p>
             </div>
           </div>
@@ -97,7 +109,9 @@ const Decentralized = () => {
                 src={freedom}
                 alt="img"
               />
-              <p className="text-white px-3 font-bold text-base !leading-5 text-center pt-4">Decentralized finance made simple</p>
+              <p className="text-white px-3 font-bold text-base !leading-5 text-center pt-4">
+                Decentralized finance made simple
+              </p>
             </div>
           </div>
         </div>
@@ -108,10 +122,11 @@ const Decentralized = () => {
             <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white ">
               More than just <br /> a swap service
             </h3>
-            <p
-              className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4"
-            >
-              zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet introduces gasless transactions to boost your crypto handling experience. Plus, our Telegram Bot brings swapping directly to your chat window for extra convenience
+            <p className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4">
+              zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet
+              introduces gasless transactions to boost your crypto handling
+              experience. Plus, our Telegram Bot brings swapping directly to
+              your chat window for extra convenience
             </p>
           </div>
         </div>
@@ -120,10 +135,11 @@ const Decentralized = () => {
             <h3 className="font_actay_wide font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl lg:!leading-9 text-white">
               Privacy at our core
             </h3>
-            <p
-              className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4"
-            >
-              Your privacy is our top priority. We integrate Zero-Knowledge Privacy into our app, ensuring your transactions stay anonymous and secure. With zkGUN, your crypto actions remain yours alone, transparent only to you.
+            <p className="font-manrope font-normal !leading-5 text-white text-opacity-60 mt-4">
+              Your privacy is our top priority. We integrate Zero-Knowledge
+              Privacy into our app, ensuring your transactions stay anonymous
+              and secure. With zkGUN, your crypto actions remain yours alone,
+              transparent only to you.
             </p>
             <img
               className="w-full max-w-[300px] xl:max-w-[350px] absolute"
@@ -132,7 +148,6 @@ const Decentralized = () => {
             />
           </div>
         </div>
-
       </div>
     </div>
   );

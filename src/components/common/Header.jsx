@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="max-w-[1368px] mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
         <nav className="">
           <div className="">
             <div className="flex items-center justify-between mt-6">

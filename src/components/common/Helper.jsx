@@ -75,7 +75,7 @@ export const decentralizedList = [
     imageUrl: freedom,
     order: "order-1",
     className: "pt-[125px]",
-    position: "rotate-[136deg] start-0 -bottom-[48px]",
+    position: "start-0 -bottom-[48px]",
     maxWidth: "sm:max-w-full max-w-[220px]",
   },
   {

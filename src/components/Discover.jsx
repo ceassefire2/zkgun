@@ -81,7 +81,7 @@ const Discover = () => {
                 src={joinZKlogo}
                 alt="zklogo"
               />
-              <h2 className="max-w-[1200px] custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%]">
+              <h2 className="max-w-[1200px] custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%]">
                 Discover freedom <br className="hidden xl:block" />
                 in every transaction
               </h2>

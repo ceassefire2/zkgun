@@ -26,7 +26,7 @@ const CoreValue = () => {
           <p className="font-bold uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
           </p>
-          <h2 className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%] uppercase">
+          <h2 className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%] uppercase">
             Our crypto creed
           </h2>
           <div className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">

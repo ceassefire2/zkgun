@@ -18,7 +18,7 @@ const JoinZkgun = () => {
             src={joinZKlogo}
             alt="zklogo"
           />
-          <h2 className="max-w-[855px] uppercase mx-auto text-white text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%]">
+          <h2 className="max-w-[855px] uppercase mx-auto text-white text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%]">
             Join the zkGUN community
           </h2>
           <p className="text-white mx-auto text-center text-sm md:text-base !leading-[130%px] font-manrope font-normal max-w-[582px] py-4 text-opacity-60">

@@ -21,6 +21,7 @@ module.exports = {
         lightPink: "#d58484",
         finn: "#5C2854",
         funBlue: "#1952A8",
+        racingGreen:"#0A140F"
       },
       fontSize: {
         "custom-lg": "56px",

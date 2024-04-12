@@ -10,12 +10,12 @@ const OurEcosystem = () => {
     <>
       <div className="relative">
         <img
-          className="absolute top-[20%] lg:top-[38%] -start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10 hidden sm:block danger_blur"
+          className="absolute top-[72%] sm:top-[20%] lg:top-[38%] -start-10 sm:-start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10"
           src={ecosystemHexagon}
           alt="ecosystemHexagon"
         />
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
-        <div className="red_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[600px] rounded-[50%] hidden -z-[1] sm:block"></div>
+        <div className="red_blur danger_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[500px] rounded-[50%] hidden -z-[1] sm:block"></div>
         <div className="max-w-[1400px] mx-auto px-4 py-[50px] md:py-16 xl:py-20 relative">
           <div className="flex sm:justify-center items-center gap-2">
             <EcoSystem />
@@ -23,7 +23,7 @@ const OurEcosystem = () => {
               Our ecosystem
             </p>
           </div>
-          <h2 className="text-white uppercase mx-auto max-w-[1037px] sm:text-center pt-4 font_actay_wide font-medium custom-xs:text-3xl custom-2xs:text-4xl text-[40px] sm:text-5xl md:text-6xl lg:text-7xl !leading-[100%]">
+          <h2 className="text-white uppercase mx-auto max-w-[1037px] sm:text-center pt-4 font_actay_wide font-medium custom-xs:text-3xl custom-2xs:text-4xl text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%]">
             Decentralized network diversity
           </h2>
           <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8">
@@ -35,7 +35,7 @@ const OurEcosystem = () => {
               <span className="w-[700px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -top-[90%] start-[88%] blur-[240px]"></span>
               <div className="flex">
                 <div className="w-7/12 lg:w-1/2 lg:py-3 flex flex-col justify-between items-start">
-                  <div className="py-2 px-4 bg-mirage rounded-[100px] relative overflow-hidden">
+                  <div className="md:h-[37px] flex items-center px-4 bg-mirage rounded-[100px] relative overflow-hidden">
                     <span className="w-[108px] h-[39px] bg-lightBlue absolute -top-12 start-[117px] blur-[33px]"></span>
                     <span className="w-[84px] h-[39px] bg-lightBlue absolute -bottom-12 -start-10 blur-[33px]"></span>
                     <p className="text-white inline-block text-sm md:text-base font-normal !leading-[130%] font-manrope ">
@@ -82,7 +82,7 @@ const OurEcosystem = () => {
                       className={`hidden md:flex bg-primary absolute opacity-30  blur-[240px] ${value.blurTwo}`}
                     ></span>
                     <div className="flex flex-col sm:flex-row justify-between items-start">
-                      <div className="py-2 px-4 bg-mirage rounded-[100px] relative overflow-hidden">
+                      <div className="h-[34px] md:h-[37px] flex items-center px-4 bg-mirage rounded-[100px] relative overflow-hidden">
                         <span
                           className={`w-[108px] h-[39px] bg-lightBlue absolute -top-14 end-[-70px] blur-[36px] ${value.badgeColor}`}
                         ></span>

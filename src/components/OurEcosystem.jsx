@@ -9,8 +9,11 @@ const OurEcosystem = () => {
   return (
     <>
       <div className="relative">
-        <img className="absolute top-[20%] lg:top-[38%] -start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10 hidden sm:block"
-          src={ecosystemHexagon} alt="ecosystemHexagon" />
+        <img
+          className="absolute top-[20%] lg:top-[38%] -start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10 hidden sm:block danger_blur"
+          src={ecosystemHexagon}
+          alt="ecosystemHexagon"
+        />
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
         <div className="red_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[600px] rounded-[50%] hidden -z-[1] sm:block"></div>
         <div className="max-w-[1400px] mx-auto px-4 py-[50px] md:py-16 xl:py-20 relative">
@@ -26,9 +29,7 @@ const OurEcosystem = () => {
           <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8">
             <CommonBtn btntext="Learn more about our services" />
           </div>
-          <div
-            className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20"
-          >
+          <div className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
             <div className="lg:px-12 p-9 rounded-[32px] relative z-50 bg-firefly ">
               <span className="w-[1084px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -bottom-[90%] start-[50%] blur-[240px]"></span>
               <span className="w-[700px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -top-[90%] start-[88%] blur-[240px]"></span>
@@ -46,17 +47,17 @@ const OurEcosystem = () => {
                       Anonymous cross-chain swap
                     </h3>
                     <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base !leading-[130%]">
-                      Trade without limits or custody.
-                      {" "}<span className="text-white text-opacity-60">
-                        Our platform offers unmatched rates and fast swaps across
-                        an expansive network of blockchains and tokens
+                      Trade without limits or custody.{" "}
+                      <span className="text-white text-opacity-60">
+                        Our platform offers unmatched rates and fast swaps
+                        across an expansive network of blockchains and tokens
                       </span>
                     </p>
                   </div>
                 </div>
                 <div className="w-5/12 lg:w-1/2 flex justify-end xl:pe-4">
                   <img
-                    className="max-w-[290px] lg:max-w-[370px] w-full max-h-[370px] rotate-[17deg]"
+                    className="max-w-[290px] lg:max-w-[370px] w-full max-h-[370px] rotate-[17deg] hue_img"
                     src={img_first}
                     alt="img"
                     height={370}
@@ -69,22 +70,31 @@ const OurEcosystem = () => {
           <div className="max-w-[1216px] mx-auto md:pt-4 flex flex-col md:flex-row gap-4 relative z-10">
             {ourEcoCardList.map((value, index) => {
               return (
-                <div key={index}
+                <div
+                  key={index}
                   className={`p-[1px] w-full md:w-1/2 bg-white-gradient-card rounded-[20px] overflow-hidden md:rounded-[32px] flex flex-col justify-between  ${value.hidden} `}
                 >
                   <div className="relative z-50 bg-firefly rounded-[20px] md:rounded-[32px] p-6 lg:p-9 xl:p-12 flex flex-col justify-between min-h-[481px] h-full sm:min-h-full">
-                    <span className={`hidden md:flex bg-primary absolute opacity-30  blur-[240px] ${value.blurOne}`}></span>
-                    <span className={`hidden md:flex bg-primary absolute opacity-30  blur-[240px] ${value.blurTwo}`}></span>
+                    <span
+                      className={`hidden md:flex bg-primary absolute opacity-30  blur-[240px] ${value.blurOne}`}
+                    ></span>
+                    <span
+                      className={`hidden md:flex bg-primary absolute opacity-30  blur-[240px] ${value.blurTwo}`}
+                    ></span>
                     <div className="flex flex-col sm:flex-row justify-between items-start">
                       <div className="py-2 px-4 bg-mirage rounded-[100px] relative overflow-hidden">
-                        <span className={`w-[108px] h-[39px] bg-lightBlue absolute -top-14 end-[-70px] blur-[36px] ${value.badgeColor}`}></span>
-                        <span className={`w-[84px] h-[39px] bg-lightBlue absolute -bottom-14 -start-14 blur-[36px] ${value.badgePosition} ${value.badgeColor}`}></span>
+                        <span
+                          className={`w-[108px] h-[39px] bg-lightBlue absolute -top-14 end-[-70px] blur-[36px] ${value.badgeColor}`}
+                        ></span>
+                        <span
+                          className={`w-[84px] h-[39px] bg-lightBlue absolute -bottom-14 -start-14 blur-[36px] ${value.badgePosition} ${value.badgeColor}`}
+                        ></span>
                         <p className="text-white inline-block text-sm md:text-base font-normal !leading-[130%] font-manrope ">
                           {value.badge}
                         </p>
                       </div>
                       <img
-                        className={`max-w-[200px] mx-auto sm:mx-0 md:max-w-[110px] w-full lg:max-w-[150px] xl:max-w-[200px] ${value.rotate}`}
+                        className={`max-w-[200px] mx-auto sm:mx-0 md:max-w-[110px] w-full lg:max-w-[150px] xl:max-w-[200px] hue_img ${value.rotate}`}
                         height={200}
                         width={200}
                         src={value.image}

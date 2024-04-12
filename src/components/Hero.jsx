@@ -23,13 +23,14 @@ const Hero = () => {
         src={heroSkull}
         alt="heroSkull"
       />
+      <div class="glitch-container"></div>
       <span className="hero_left_hexagon absolute custom-2xs:-start-[40%] -start-[34%] sm:-start-[20%] -rotate-12 sm:rotate-0 md:-start-44 top-0 xl:top-16 -z-[1]">
         <HeroLeftHexagon />
       </span>
       <span className="hero_right_hexagon absolute -rotate-[16deg] sm:rotate-0 custom-sm:-end-[40%] -end-[35%] sm:-end-44 -bottom-24 sm:-bottom-10 lg:bottom-16 xl:bottom-24 -z-[1]">
         <HeroRightHexagon />
       </span>
-      <div className="bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
+      <div className="danger_blur bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
       <p className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
         <NoKycIcon /> No KYC
       </p>

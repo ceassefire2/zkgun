@@ -13,17 +13,16 @@ import { GradientImage, MobileGradientImage } from './common/Icons';
 const Discover = () => {
   return (
     <>
-      
       <div className="max-w-[1400px] mx-auto px-4 ">
         <div className="bg-white-gradient p-[1px] rounded-[32px] relative">
           <div className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 rounded-[32px] bg-firefly relative  overflow-hidden">
             <span className="block w-[234px] h-[643px] red_blur -bottom-[120px] start-[-285px] rounded-[50%] blur-[240px] bg-opacity-[48%] absolute"></span>
             <span className="block w-[227px] h-[386px] z-10 green_blur -top-[100px] end-[-147px] rounded-[50%] blur-[240px] bg-opacity-[48%] absolute"></span>
             <div className="absolute hidden sm:flex bottom-0 end-0">
-              <GradientImage/>
+              <GradientImage />
             </div>
             <div className="absolute sm:hidden bottom-[70px] end-0">
-              <MobileGradientImage/>
+              <MobileGradientImage />
             </div>
             <img
               className="absolute hidden md:flex max-w-[260px] bottom-0 start-0 w-full "
@@ -32,7 +31,7 @@ const Discover = () => {
               alt="zklogo"
             />
             <img
-              className="absolute hidden md:flex md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] w-full top-0 start-0"
+              className="absolute hidden md:flex md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] w-full top-0 start-0 danger_blur"
               width={600}
               src={z_logo}
               alt="zklogo"
@@ -73,7 +72,7 @@ const Discover = () => {
                 src={dollor_img}
                 alt="zklogo"
               />
-           </div>
+            </div>
             <div className="relative z-10 custom-2xs:px-4 px-6">
               <img
                 className="max-w-[39px] sm:max-w-12 md:max-w-[70px] lg:max-w-[84px] w-full sm:mx-auto"

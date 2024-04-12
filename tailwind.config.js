@@ -13,7 +13,7 @@ module.exports = {
         danger: "#FF2100",
         royalBlue: "#3D3DF4",
         haiti: "#08081F",
-        gold: "#FED515",
+        gold: "rgb(189 175 111);",
         whiteBlue: "#9a9aa4",
         mirage: "#1E2637",
         lightBlue: "#8F20EF",

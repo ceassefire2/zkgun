@@ -19,10 +19,10 @@ const Discover = () => {
           <div className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 rounded-[32px] bg-firefly relative  overflow-hidden">
             <span className="block w-[234px] h-[643px] red_blur -bottom-[120px] start-[-285px] rounded-[50%] blur-[240px] bg-opacity-[48%] absolute"></span>
             <span className="block w-[227px] h-[386px] z-10 green_blur -top-[100px] end-[-147px] rounded-[50%] blur-[240px] bg-opacity-[48%] absolute"></span>
-            <div className="absolute hidden md:flex bottom-0 end-0">
+            <div className="absolute hidden sm:flex bottom-0 end-0">
               <GradientImage/>
             </div>
-            <div className="absolute md:hidden bottom-[70px] end-0">
+            <div className="absolute sm:hidden bottom-[70px] end-0">
               <MobileGradientImage/>
             </div>
             <img
@@ -65,7 +65,7 @@ const Discover = () => {
               alt="zklogo"
             />
             <div className="relative">
-              <span className="lg:h-[130px] lg:w-[130px] h-[40px] sm:h-16 md:h-24 w-[40px] sm:w-16 md:w-24  bg-gold bg-opacity-75 absolute rotate-[-26.9deg] -top-9 lg:-top-[90px] end-[13%] sm:end-[11%] blur-[33px] sm:blur-3xl md:blur-[120px] lg:blur-[140px] block"></span>
+              <span className="lg:h-[114px] lg:w-[114px] h-[40px] sm:h-16 md:h-24 w-[40px] sm:w-16 md:w-24 bg-gold bg-opacity-75 absolute rotate-[-26.9deg] -top-9 lg:-top-[77px] end-[13%] sm:end-[11%] blur-[33px] sm:blur-[63px] block"></span>
               <img
                 className="absolute max-w-[50px] w-full sm:max-w-16 md:max-w-24 lg:max-w-[140px] rotate-[-26.9deg] -top-[37px] md:-top-16 lg:-top-[106px] end-[10%]"
                 height={140}

@@ -1103,7 +1103,7 @@ export const EcoSystem = () => {
 export const GradientImage = () => {
   return (
     <svg
-      className="max-w-[350px] lg:max-w-[576px] w-full"
+      className="max-w-[350px] lg:max-w-[576px] w-full wifi_icon"
       width="576"
       height="373"
       viewBox="0 0 576 373"
@@ -1111,6 +1111,7 @@ export const GradientImage = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle
+        className="first_circle"
         cx="515.953"
         cy="516.731"
         r="365.5"
@@ -1119,6 +1120,7 @@ export const GradientImage = () => {
         fillOpacity="0.06"
       />
       <circle
+        className="last_circle"
         cx="515.79"
         cy="516.198"
         r="265.5"

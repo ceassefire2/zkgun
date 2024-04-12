@@ -85,10 +85,10 @@ body {
 }
 
 .dollor_icon {
-    animation: heroPolkadot 3s ease-in-out infinite;
+    animation: dollorIcon 3s ease-in-out infinite;
 }
 
-@keyframes heroPolkadot {
+@keyframes dollorIcon {
     0% {
         filter: blur(0);
         box-shadow: 0 0 50px #a78a59;
@@ -157,6 +157,38 @@ body {
 
     100% {
         filter: hue-rotate(0deg);
+    }
+}
+
+.wifi_icon .first_circle {
+    animation: wifiIcon 2s ease-in-out infinite 1s;
+}
+
+@keyframes wifiIcon {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.wifi_icon .last_circle {
+    animation: wifiIconLast 2s ease-in-out infinite;
+}
+
+@keyframes wifiIconLast {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
     }
 }
 

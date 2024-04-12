@@ -9,7 +9,7 @@ import heroFtx from "../assets/images/png/hero-ftx.png";
 const Hero = () => {
   return (
     <div
-      id="hero"
+      id="home"
       className="mt-[70px] text-center px-4 md:px-5 relative mb-24 md:mb-28"
     >
       <img

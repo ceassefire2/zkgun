@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
 import CommonBtn from "./common/CommonBtn";
-import heroImg from "../assets/images/png/hero-img.png";
+import heroImg from "../assets/images/webp/hero-img.webp";
 import heroGallery from "../assets/images/png/hero-gallery.png";
 import heroPolkadot from "../assets/images/png/hero-polkadot.png";
 import heroSkull from "../assets/images/png/hero-skull.png";

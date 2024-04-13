@@ -1,6 +1,6 @@
 import React from "react";
 import { CapabilitiesIcon } from "./common/Icons";
-import capabilitiesImg from "../assets/images/png/capabilities-img.png";
+import capabilitiesImg from "../assets/images/webp/capabilities-img.webp";
 import capabilitiesHexagonImg from "../assets/images/png/capabilities-hexagon.png";
 import CommonBtn from "./common/CommonBtn";
 

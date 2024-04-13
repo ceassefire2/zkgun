@@ -1,19 +1,13 @@
 import React from "react";
-import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
-import CommonBtn from "./common/CommonBtn";
 import img_first from "../assets/images/webp/our-eco-img-first.webp";
-import ecosystemHexagon from "../assets/images/png/our-eco-hexagon-colored.png";
+import CommonBtn from "./common/CommonBtn";
 import { ourEcoCardList } from "./common/Helper";
+import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
 
 const OurEcosystem = () => {
   return (
     <>
       <div className="relative">
-        {/* <img
-          className="absolute top-[72%] sm:top-[20%] lg:top-[38%] -start-10 sm:-start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10"
-          src={ecosystemHexagon}
-          alt="ecosystemHexagon"
-        /> */}
         <div className="absolute top-[68%] sm:top-[30%] lg:top-[43%] -start-[500px] sm:-start-[400px] lg:-start-40 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10">
           <HeroLeftHexagon />
         </div>

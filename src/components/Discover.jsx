@@ -31,7 +31,7 @@ const Discover = () => {
               alt="zklogo"
             />
             <img
-              className="absolute hidden md:flex md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] w-full top-0 start-0 danger_blur"
+              className="absolute hidden md:flex md:max-w-[400px] lg:max-w-[500px] xl:max-w-[600px] w-full top-0 start-0 "
               width={600}
               src={z_logo}
               alt="zklogo"
@@ -81,7 +81,7 @@ const Discover = () => {
                 src={joinZKlogo}
                 alt="zklogo"
               />
-              <h2 className="max-w-[1200px] custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%]">
+              <h2 className="max-w-[1200px] custom-2xs:text-4xl custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]">
                 Discover freedom <br className="hidden xl:block" />
                 in every transaction
               </h2>

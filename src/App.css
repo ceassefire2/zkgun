@@ -39,3 +39,19 @@
 .card_border {
     background: linear-gradient(85.18deg, rgba(255, 255, 255, 0) 0.18%, rgba(255, 255, 255, 0.08) 100.43%);
 }
+
+
+.hero_hexagone .first_circle {
+    animation: hexagoneIcon 4s ease-in-out infinite 3s;
+}
+
+@keyframes hexagoneIcon {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

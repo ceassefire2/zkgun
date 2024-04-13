@@ -43,7 +43,7 @@ const Hero = () => {
       <p className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
         <NoKycIcon /> No KYC
       </p>
-      <h1 className="font_actay_wide text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
+      <h1 className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
         Break the <br /> Chains
       </h1>
       <p className="font-manrope font-normal text-base sm:text-xl text-white ">

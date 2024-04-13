@@ -16,11 +16,11 @@ const OurCapabilities = () => {
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[30px] md:py-16 xl:py-20 mb-[50px] md:mb-16 xl:mb-20">
         <div className="flex sm:justify-center items-center gap-2">
           <CapabilitiesIcon />
-          <p className="font-bold text-base text-white !leading-[130%] font-manrope uppercase">
+          <p className="font-bold custom-2xs:text-sm text-base text-white !leading-[130%] font-manrope uppercase">
             Our capabilities
           </p>
         </div>
-        <h2 className="text-white sm:text-center py-4 font_actay_wide font-medium custom-xs:text-3xl text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%] uppercase">
+        <h2 className="text-white custom-2xs:text-4xl sm:text-center py-4 font_actay_wide font-medium custom-xs:text-3xl text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%] uppercase">
           Over 40 blockchains <br className="hidden md:block" /> and growing
         </h2>
         <p className="font-normal text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center custom-xs:px-0 sm:px-10">

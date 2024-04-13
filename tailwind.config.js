@@ -25,6 +25,9 @@ module.exports = {
         racingGreen: "#0A140F",
       },
       fontSize: {
+        "custom-sm": "22px",
+        "custom-md": "40px",
+        "custom-2md": "52px",
         "custom-lg": "56px",
         "custom-xl": "120px",
       },

@@ -1,13 +1,12 @@
 import React from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import coreValueHexagonImg from "../assets/images/png/core-value-hexagon.png";
+import CommonBtn from "./common/CommonBtn";
 import { coreValueCardList } from "./common/Helper";
 import { CoreValueRightHexagon, CoreValuesIcon } from "./common/Icons";
-import CommonBtn from "./common/CommonBtn";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { Pagination } from "swiper/modules";
-import coreValueHexagonImg from "../assets/images/png/core-value-hexagon.png";
-import coreValueHexagonImgColored from "../assets/images/png/core-value-hexagon-colored.png";
-import "swiper/css/pagination";
 const CoreValue = () => {
   return (
     <>
@@ -21,11 +20,6 @@ const CoreValue = () => {
         <div className="absolute -end-20 md:-end-[120px] -top-[100px] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]">
           <CoreValueRightHexagon />
         </div> 
-        {/* <img
-          src={coreValueHexagonImgColored}
-          alt="coreValueHexagonImgColored"
-          className="absolute -end-9 top-[14%] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]"
-        /> */}
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 our_cripto">
           <p className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
@@ -61,9 +55,9 @@ const CoreValue = () => {
                       >
                         <span className="hidden md:inline-block bg-primary w-[200px] h-[100px] absolute -top-36 start-1/2 -translate-x-1/2 blur-[100px]"></span>
                         <span className="hidden md:inline-block group-hover:bg-primary duration-300 bg-scarlet w-[200px] h-[90px] absolute -bottom-44 start-1/2 -translate-x-1/2 blur-[100px]"></span>
-                        <h4 className="text-white text-center custom-xs:text-2xl text-[30px] xl:text-4xl font-bold font-manrope !leading-[100%] uppercase">
+                        <h3 className="text-white text-center custom-xs:text-2xl text-[30px] xl:text-4xl font-bold font-manrope !leading-[100%] uppercase">
                           {obj.title}
-                        </h4>
+                        </h3>
                         <div className="lg:my-8 xl:my-12 flex justify-center core_icons">
                           {obj.image}
                         </div>

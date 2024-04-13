@@ -1,12 +1,12 @@
 import React from "react";
+import mobile_z_logo from "../assets/images/png/mobile-z-logo-transparent.png";
 import first_img from "../assets/images/png/monero.png";
 import third_img from "../assets/images/png/tezor.png";
+import z_logo from "../assets/images/png/z-logo-transparent.png";
 import joinZKlogo from "../assets/images/png/z-logo.png";
 import dollor_img from "../assets/images/webp/dai-dollor.webp";
-import gradient from "../assets/images/webp/gradient.webp";
 import flow from "../assets/images/webp/flow.webp";
-import z_logo from "../assets/images/png/z-logo-transparent.png";
-import mobile_z_logo from "../assets/images/png/mobile-z-logo-transparent.png";
+import gradient from "../assets/images/webp/gradient.webp";
 import CommonBtn from "./common/CommonBtn";
 import { GradientImage, MobileGradientImage } from "./common/Icons";
 

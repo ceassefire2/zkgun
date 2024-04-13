@@ -1,10 +1,10 @@
+import z_logo from "../../assets/images/webp/gradient-z-image.webp";
+import freedom from "../../assets/images/webp/no-red-tap.webp";
 import ecoCardImg_first from "../../assets/images/webp/our-eco-img-first.webp";
 import ecoCardImg_second from "../../assets/images/webp/our-eco-img-second.webp";
 import ecoCardImg_third from "../../assets/images/webp/our-eco-img-third.webp";
-import { ConfidentialityIcon, EfficiencyIcon, PrivacyIcon } from "./Icons";
 import star from "../../assets/images/webp/star-image.webp";
-import freedom from "../../assets/images/webp/no-red-tap.webp";
-import z_logo from "../../assets/images/webp/gradient-z-image.webp";
+import { ConfidentialityIcon, EfficiencyIcon, PrivacyIcon } from "./Icons";
 
 export const coreValueCardList = [
   {

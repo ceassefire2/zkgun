@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
-import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
 import CommonBtn from "./CommonBtn";
+import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +31,7 @@ const Header = () => {
                 <ul className="flex items-baseline gap-8">
                   <li>
                     <a
+                      rel="noreferrer"
                       href="#home"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
@@ -39,6 +40,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
+                      rel="noreferrer"
                       href="#services"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
@@ -47,6 +49,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
+                      rel="noreferrer"
                       href="#community"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
@@ -55,6 +58,7 @@ const Header = () => {
                   </li>
                   <li>
                     <a
+                      rel="noreferrer"
                       href="#contact"
                       className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                     >
@@ -88,6 +92,7 @@ const Header = () => {
             <ul className="px-4 pt-2 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
               <li className="!m-0">
                 <a
+                  rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#home"
                   className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
@@ -97,6 +102,7 @@ const Header = () => {
               </li>
               <li className="!m-0">
                 <a
+                  rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#services"
                   className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
@@ -106,6 +112,7 @@ const Header = () => {
               </li>
               <li className="!m-0">
                 <a
+                  rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#community"
                   className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
@@ -122,12 +129,12 @@ const Header = () => {
                   Contact
                 </a>
               </li>
-              <div
+              <li
                 onClick={() => setIsOpen(!isOpen)}
                 className="custom-sm:w-full"
               >
                 <CommonBtn btntext={"swap now"} />
-              </div>
+              </li>
             </ul>
           </div>
         </nav>

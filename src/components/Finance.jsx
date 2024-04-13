@@ -1,11 +1,11 @@
 import React from "react";
-import { ClipboardData } from "./common/Icons";
-import CommonBtn from "./common/CommonBtn";
 import financeHexagonImg from "../assets/images/png/finance-hexagon.png";
+import CommonBtn from "./common/CommonBtn";
+import { ClipboardData } from "./common/Icons";
 const Finance = () => {
   return (
     <>
-      <div id="services" className="relative">
+      <div className="relative">
         <img
           src={financeHexagonImg}
           alt="financeHexagonImg"

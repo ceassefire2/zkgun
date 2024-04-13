@@ -10,7 +10,7 @@ module.exports = {
         dark: "#03031B",
         primary: "#63C796",
         firefly: "#0B1426",
-        // scarlet: "#FF2100",
+        scarlet: "#FF2100",
         royalBlue: "#3D3DF4",
         haiti: "#08081F",
         gold: "rgb(189 175 111);",

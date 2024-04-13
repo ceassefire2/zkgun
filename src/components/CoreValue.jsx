@@ -1,6 +1,6 @@
 import React from "react";
 import { coreValueCardList } from "./common/Helper";
-import { CoreValuesIcon } from "./common/Icons";
+import { CoreValueRightHexagon, CoreValuesIcon } from "./common/Icons";
 import CommonBtn from "./common/CommonBtn";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -17,11 +17,15 @@ const CoreValue = () => {
           alt="coreValueHexagonImg"
           className="absolute top-[81%] sm:top-1/2 md:top-36 max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[500px] xl:max-w-[600px] -z-[1]"
         />
-        <img
+       
+        <div className="absolute -end-20 md:-end-[120px] -top-[100px] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]">
+          <CoreValueRightHexagon />
+        </div> 
+        {/* <img
           src={coreValueHexagonImgColored}
           alt="coreValueHexagonImgColored"
           className="absolute -end-9 top-[14%] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]"
-        />
+        /> */}
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 our_cripto">
           <p className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
@@ -51,12 +55,12 @@ const CoreValue = () => {
               {coreValueCardList.map((obj, index) => {
                 return (
                   <SwiperSlide key={index} className="h-full">
-                    <div className="card_border p-[1px] overflow-hidden rounded-[20px] md:rounded-[32px]">
+                    <div className="card_border group duration-300 max-w-[500px] mx-auto p-[1px] overflow-hidden rounded-[20px] md:rounded-[32px]">
                       <div
                         className={`${obj.gridCenter} bg-firefly p-6 lg:p-10 rounded-[20px] md:rounded-[32px] relative overflow-hidden flex flex-col justify-between lg:justify-start custom-xs:min-h-[303px] min-h-[302px] md:min-h-[295px] lg:min-h-[403px] xl:min-h-[420px] max-w-[500px] mx-auto sm:max-w-none`}
                       >
-                        <span className="hidden md:inline-block bg-[#63C796] w-[200px] h-[100px] absolute -top-36 start-1/2 -translate-x-1/2 blur-[100px]"></span>
-                        <span className="hidden md:inline-block bg-[#63C796] w-[200px] h-[100px] absolute -bottom-40 start-1/2 -translate-x-1/2 blur-[100px]"></span>
+                        <span className="hidden md:inline-block bg-primary w-[200px] h-[100px] absolute -top-36 start-1/2 -translate-x-1/2 blur-[100px]"></span>
+                        <span className="hidden md:inline-block group-hover:bg-primary duration-300 bg-scarlet w-[200px] h-[90px] absolute -bottom-44 start-1/2 -translate-x-1/2 blur-[100px]"></span>
                         <h4 className="text-white text-center custom-xs:text-2xl text-[30px] xl:text-4xl font-bold font-manrope !leading-[100%] uppercase">
                           {obj.title}
                         </h4>

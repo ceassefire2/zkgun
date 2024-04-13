@@ -1,17 +1,20 @@
 import React from "react";
 import joinZKlogo from "../assets/images/png/z-logo.png";
 import joinZkgunHexagone from "../assets/images/png/zkgun-join-hexagon-image.png";
-import { Telegram, Twitter } from "./common/Icons";
+import { HeroLeftHexagon, JoinLeftHexagon, Telegram, Twitter } from "./common/Icons";
 
 const JoinZkgun = () => {
   return (
     <>
       <div id="contact" className="relative">
-        <img
+        {/* <img
           src={joinZkgunHexagone}
           alt="joinZkgunHexagone"
           className="absolute -start-[205px] rotate-[-51deg] -top-[16%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[505px] -z-[1] hidden sm:flex"
-        />
+        /> */}
+        <div className="absolute -top-[16]  -start-[500px] sm:-start-[100px] lg:-start-36 max-w-[300px] md:max-w-[400px] xl:max-w-[500px] -z-[1] hidden sm:flex">
+          <JoinLeftHexagon />
+        </div>
         <div id="community" className="max-w-[1400px] mx-auto px-4 md:px-5 py-[30px] md:py-16 xl:py-20">
           <img
             className="mx-auto max-w-[52px] sm:max-w-14 md:max-w-16 lg:max-w-20 xl:max-w-[110px]"

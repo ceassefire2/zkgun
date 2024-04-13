@@ -1,5 +1,5 @@
 import React from "react";
-import { EcoSystem } from "./common/Icons";
+import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
 import CommonBtn from "./common/CommonBtn";
 import img_first from "../assets/images/webp/our-eco-img-first.webp";
 import ecosystemHexagon from "../assets/images/png/our-eco-hexagon-colored.png";
@@ -9,11 +9,14 @@ const OurEcosystem = () => {
   return (
     <>
       <div className="relative">
-        <img
+        {/* <img
           className="absolute top-[72%] sm:top-[20%] lg:top-[38%] -start-10 sm:-start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10"
           src={ecosystemHexagon}
           alt="ecosystemHexagon"
-        />
+        /> */}
+        <div className="absolute top-[68%] sm:top-[30%] lg:top-[43%] -start-[500px] sm:-start-[400px] lg:-start-40 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10">
+          <HeroLeftHexagon />
+        </div>
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
         <div className="red_blur danger_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[500px] rounded-[50%] hidden -z-[1] sm:block"></div>
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 relative">

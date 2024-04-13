@@ -85,7 +85,7 @@ const Header = () => {
             }`}
             id="mobile-menu"
           >
-            <ul className="px-2 pt-2 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
+            <ul className="px-4 pt-2 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
               <li className="!m-0">
                 <a
                   onClick={() => setIsOpen(!isOpen)}

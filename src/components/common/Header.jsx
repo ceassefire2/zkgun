@@ -23,7 +23,7 @@ const Header = () => {
           <div className="">
             <div className="flex items-center justify-between mt-6">
               <div className="flex-shrink-0">
-                <a href="#home" className="text-white">
+                <a href="#home" rel="noreferrer" className="text-white">
                   <PageIcon />
                 </a>
               </div>
@@ -74,6 +74,7 @@ const Header = () => {
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"
+                  aria-label="mobile-menu"
                   className="bg-gray-900 inline-flex items-center relative z-50 justify-center p-2 rounded-md text-white hover.text-white transition-opacity duration-500 focus-visible:border-none"
                   aria-controls="mobile-menu"
                   aria-expanded={isOpen ? "opacity-1" : "opacity-0"}
@@ -122,6 +123,7 @@ const Header = () => {
               </li>
               <li className="!m-0">
                 <a
+                  rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#contact"
                   className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "

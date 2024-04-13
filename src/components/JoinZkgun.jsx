@@ -25,14 +25,14 @@ const JoinZkgun = () => {
             decentralized finance. Let’s change the crypto world together.
           </p>
           <div className="mt-2 flex justify-center gap-[22px] sm:gap-3 w-full">
-            <a
+            <a rel="noreferrer"
               target="_blank"
               href="https://web.telegram.org/"
               className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto link_gradient cursor-pointer"
             >
               <Telegram />
             </a>
-            <a
+            <a rel="noreferrer"
               target="_blank"
               href="https://twitter.com/"
               className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center sm:w-auto bg-white cursor-pointer"

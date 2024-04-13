@@ -32,7 +32,7 @@ const Hero = () => {
         src={heroFtx}
         alt="heroFtx"
       />
-      <div class="glitch-container"></div>
+      <div className="glitch-container"></div>
       <span className="hero_left_hexagon absolute custom-2xs:-start-[40%] -start-[34%] sm:-start-[20%] -rotate-12 sm:rotate-0 md:-start-44 top-0 xl:top-16 -z-[1]">
         <HeroLeftHexagon />
       </span>
@@ -50,7 +50,7 @@ const Hero = () => {
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction
       </p>
-      <div className="custom-sm:w-full my-8 md:mt-12 md:mb-10">
+      <div className="flex sm:justify-center my-8 md:mt-12 md:mb-10">
         <CommonBtn btntext={"swap now"} />
       </div>
       <img

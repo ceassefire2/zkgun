@@ -84,7 +84,7 @@ const Decentralized = () => {
         </div>
 
         <div className="lg:flex hidden gap-4 justify-center lg:mt-16 xl:mt-20">
-          <div className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient p-[1px] rounded-[32px]">
+          <div className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient p-[1px] rounded-[32px] relative z-10">
             <div className="bg-firefly rounded-[32px] h-full p-10 xl:p-12 overflow-hidden relative">
               <h3 className="font_actay_wide uppercase font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
                 No red tape—just freedom
@@ -97,7 +97,7 @@ const Decentralized = () => {
                 measures
               </p>
               <img
-                className="w-full max-w-[300px] xl:max-w-[360px] -start-2 -bottom-28 rotate-[136deg] absolute"
+                className="w-full max-w-[300px] xl:max-w-[360px] -start-2 -bottom-28 rotate-[136deg] absolute hue_img"
                 src={freedom}
                 alt="img"
               />
@@ -117,7 +117,7 @@ const Decentralized = () => {
                 </p>
               </div>
             </div>
-            <div className="max-w-[262px] xl:max-w-[264px] min-h-[284px] w-full bg-white-gradient px-[1px] rounded-[32px] overflow-hidden relative">
+            <div className="max-w-[262px] xl:max-w-[264px] min-h-[284px] w-full bg-white-gradient px-[1px] rounded-[32px] overflow-hidden relative z-10">
               <div className="h-full bg-firefly relative rounded-[32px] px-6 xl:px-8 flex flex-col justify-center">
                 <span className="block w-[137px] h-[244px] red_blur -bottom-[58px] start-[-140px] rounded-[50%] blur-[100px] bg-opacity-[48%] absolute"></span>
                 <span className="block w-[147px] h-[261px] green_blur bottom-[78px] end-[-157px] rounded-[50%] blur-[120px] bg-opacity-[48%] absolute"></span>
@@ -156,7 +156,7 @@ const Decentralized = () => {
                 transparent only to you.
               </p>
               <img
-                className="w-full max-w-[300px] xl:max-w-[352px] -end-1 -bottom-[85px] rotate-[38deg] absolute"
+                className="w-full max-w-[300px] xl:max-w-[352px] -end-1 -bottom-[85px] rotate-[38deg] absolute hue_img"
                 src={star}
                 alt="img"
               />

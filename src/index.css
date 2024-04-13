@@ -161,7 +161,7 @@ body {
 }
 
 .wifi_icon .first_circle {
-    animation: wifiIcon 2s ease-in-out infinite 1s;
+    animation: wifiIcon 2s ease-in-out infinite 3s;
 }
 
 @keyframes wifiIcon {

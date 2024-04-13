@@ -46,16 +46,24 @@ const Footer = () => {
           <p className="text-white text-opacity-60 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center">
             © {year} ZKGUN All Rights Reserved
           </p>
-          <p className="text-white text-opacity-60 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center mt-4 mb-8 sm:my-0">
+          <a
+            href="mailto:support@zkgunproject.org"
+            className="text-white text-opacity-60 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center mt-4 mb-8 sm:my-0"
+          >
             support@zkgunproject.org
-          </p>
+          </a>
           <div className="flex items-center justify-center sm:justify-start gap-3">
             <p className="font-manrope font-normal text-white text-opacity-60 relative text-base sm:text-sm md:text-base !leading-5">
               Design by
             </p>
-            <span className="cursor-pointer">
+            <a
+              href="https://affarts.com/"
+              target="_blank"
+              className="cursor-pointer"
+              rel="noreferrer"
+            >
               <AffartsIcon />
-            </span>
+            </a>
           </div>
         </div>
       </div>

@@ -21,13 +21,13 @@ const CoreValue = () => {
           <CoreValueRightHexagon />
         </div> 
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 our_cripto">
-          <p className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
+          <p data-aos="zoom-out" data-aos-delay="600" className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
           </p>
-          <h2 className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%] uppercase">
+          <h2 data-aos="zoom-in" data-aos-delay="800" className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%] uppercase">
             Our crypto creed
           </h2>
-          <div data-aos="zoom-in" data-aos-delay="1000" className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">
+          <div data-aos="zoom-out" data-aos-delay="1000" className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">
             <CommonBtn btntext={"Learn about us"} />
           </div>
           <Swiper

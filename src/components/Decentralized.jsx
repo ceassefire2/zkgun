@@ -23,10 +23,10 @@ const Decentralized = () => {
               Decentralized finance made simple
             </p>
           </div>
-          <h2 className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl uppercase !leading-[100%]">
+          <h2 data-aos="zoom-in" data-aos-delay="800" className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl uppercase !leading-[100%]">
             Help us break the chains
           </h2>
-          <p className="font-normal max-w-[871px] text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center sm:mx-auto">
+          <p data-aos="fade-up" data-aos-delay="1000" className="font-normal max-w-[871px] text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center sm:mx-auto">
             zkGUN was founded on a single mission: to simplify and anonymize
             your crypto experience. Our cryptocurrency wallet and cross-chain
             swap platform offer a financial approach where crypto transactions

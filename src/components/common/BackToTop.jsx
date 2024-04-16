@@ -33,7 +33,7 @@ const BackToTop = ({ className }) => {
     <div
       className={`${
         showButton ? "translate-y-0 scale-100" : "translate-y-[50px] scale-0"
-      } transition-all duration-300 z-[200] fixed right-5 bottom-5 sm:bottom-16 lg:bottom-20 sm:right-4 `}
+      } transition-all duration-300 z-[200] back_to_top fixed right-5 bottom-5 sm:bottom-16 lg:bottom-20 sm:right-4 `}
     >
       <button
         className={`group border outline-none flex items-center bg-primary border-white justify-center hover:bg-transparent group sm:w-12 sm:h-12 w-10 h-10 transition-all duration-300 rounded-full hover:shadow-[0px_0px_50px_-2px] hover:shadow-primary  ${

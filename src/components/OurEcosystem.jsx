@@ -1,35 +1,32 @@
 import React from "react";
-import { EcoSystem } from "./common/Icons";
-import CommonBtn from "./common/CommonBtn";
 import img_first from "../assets/images/webp/our-eco-img-first.webp";
-import ecosystemHexagon from "../assets/images/png/our-eco-hexagon-colored.png";
+import CommonBtn from "./common/CommonBtn";
 import { ourEcoCardList } from "./common/Helper";
+import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
 
 const OurEcosystem = () => {
   return (
     <>
-      <div id="community" className="relative">
-        <img
-          className="absolute top-[72%] sm:top-[20%] lg:top-[38%] -start-10 sm:-start-4 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10"
-          src={ecosystemHexagon}
-          alt="ecosystemHexagon"
-        />
+      <div id="services" className="relative">
+        <div className="absolute top-[68%] sm:top-[30%] lg:top-[43%] -start-[500px] sm:-start-[400px] lg:-start-40 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10">
+          <HeroLeftHexagon />
+        </div>
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
         <div className="red_blur danger_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[500px] rounded-[50%] hidden -z-[1] sm:block"></div>
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 relative">
           <div data-aos="zoom-out" data-aos-delay="600" className="flex sm:justify-center items-center gap-2">
             <EcoSystem />
-            <p className="font-bold uppercase text-base text-white !leading-[130%] font-manrope">
+            <p className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope">
               Our ecosystem
             </p>
           </div>
-          <h2 data-aos="zoom-out" data-aos-delay="800" className="text-white uppercase mx-auto max-w-[1037px] sm:text-center pt-4 font_actay_wide font-medium custom-xs:text-3xl custom-2xs:text-4xl text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%]">
+          <h2 className="text-white custom-2xs:text-4xl uppercase mx-auto max-w-[1037px] sm:text-center pt-4 font_actay_wide font-medium custom-xs:text-3xl text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]">
             Decentralized network diversity
           </h2>
-          <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8" data-aos="zoom-out" data-aos-delay="1000" >
+          <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8 md:mb-0">
             <CommonBtn btntext="Learn more about our services" />
           </div>
-          <div data-aos="zoom-in" data-aos-delay="1000" className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20">
+          <div className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block  md:mt-12 lg:mt-16 xl:mt-20">
             <div className="lg:px-12 p-9 rounded-[32px] relative z-50 bg-firefly ">
               <span className="w-[1084px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -bottom-[90%] start-[50%] blur-[240px]"></span>
               <span className="w-[700px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -top-[90%] start-[88%] blur-[240px]"></span>
@@ -43,7 +40,7 @@ const OurEcosystem = () => {
                     </p>
                   </div>
                   <div>
-                    <h3 className="font_actay_wide uppercase font-bold max-w-[350px] xl:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
+                    <h3 className="font_actay_wide  uppercase font-bold max-w-[350px] xl:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
                       Anonymous cross-chain swap
                     </h3>
                     <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base !leading-[130%]">
@@ -103,7 +100,7 @@ const OurEcosystem = () => {
                       />
                     </div>
                     <div className="sm:pt-3.5">
-                      <h3 className="font_actay_wide uppercase font-bold max-w-[273px] md:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
+                      <h3 className="font_actay_wide custom-2xs:text-custom-sm uppercase font-bold custom-2xs:max-w-[250px] max-w-[273px] md:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
                         {value.title}
                       </h3>
                       <p className="text-white max-w-[555px] pt-2 sm:pt-3 md:pt-4 font-manrope font-normal text-sm md:text-base !leading-[130%]">

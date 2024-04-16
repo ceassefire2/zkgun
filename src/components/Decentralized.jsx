@@ -1,10 +1,10 @@
 import React from "react";
-import { ClipboardData, DollorClipBoard } from "./common/Icons";
-import { decentralizedList } from "./common/Helper";
-import star from "../assets/images/webp/star-image.webp";
-import freedom from "../assets/images/webp/no-red-tap.webp";
-import z_logo from "../assets/images/webp/gradient-z-image.webp";
 import top_end from "../assets/images/png/decentralized-top-end.png";
+import z_logo from "../assets/images/webp/gradient-z-image.webp";
+import freedom from "../assets/images/webp/no-red-tap.webp";
+import star from "../assets/images/webp/star-image.webp";
+import { decentralizedList } from "./common/Helper";
+import { DollorClipBoard } from "./common/Icons";
 
 const Decentralized = () => {
   return (
@@ -19,14 +19,14 @@ const Decentralized = () => {
         <div>
           <div data-aos="zoom-out" data-aos-delay="600" className="flex sm:justify-center items-center gap-2">
             <DollorClipBoard />
-            <p className="font-bold text-base text-white !leading-[130%] font-manrope uppercase">
+            <p className="font-bold custom-2xs:text-sm text-base text-white !leading-[130%] font-manrope uppercase">
               Decentralized finance made simple
             </p>
           </div>
-          <h2 data-aos="zoom-out" data-aos-delay="600" className="text-white sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl uppercase !leading-[100%]">
+          <h2 className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl uppercase !leading-[100%]">
             Help us break the chains
           </h2>
-          <p data-aos="zoom-in" data-aos-delay="1200" className="font-normal max-w-[871px] text-base md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center sm:mx-auto">
+          <p className="font-normal max-w-[871px] text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center sm:mx-auto">
             zkGUN was founded on a single mission: to simplify and anonymize
             your crypto experience. Our cryptocurrency wallet and cross-chain
             swap platform offer a financial approach where crypto transactions
@@ -50,7 +50,7 @@ const Decentralized = () => {
                     </div>
                   )}
                   <h3
-                    className={`font_actay_wide font-medium uppercase text-2xl md:text-3xl xl:text-4xl !leading-[130%] w-full ${value.maxWidth}`}
+                    className={`font_actay_wide font-medium uppercase custom-2xs:text-custom-sm text-2xl md:text-3xl xl:text-4xl !leading-[130%] w-full ${value.maxWidth}`}
                   >
                     {value.title}
                   </h3>

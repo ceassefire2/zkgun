@@ -177,18 +177,20 @@ body {
 }
 
 .wifi_icon .last_circle {
-    animation: wifiIconLast 2s ease-in-out infinite;
+    animation: wifiIconLast 4s ease-in-out infinite;
 }
 
 @keyframes wifiIconLast {
 
     0%,
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 
     50% {
-        opacity: 0;
+        opacity: 1;
+        position: relative;
+        z-index: 100;
     }
 }
 

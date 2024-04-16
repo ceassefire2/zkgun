@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
 import CommonBtn from "./common/CommonBtn";
-import heroImg from "../assets/images/png/hero-img.png";
+import heroImg from "../assets/images/webp/hero-img.webp";
 import heroGallery from "../assets/images/png/hero-gallery.png";
 import heroPolkadot from "../assets/images/png/hero-polkadot.png";
 import heroSkull from "../assets/images/png/hero-skull.png";
@@ -32,7 +32,7 @@ const Hero = () => {
         src={heroFtx}
         alt="heroFtx"
       />
-      <div class="glitch-container"></div>
+      <div className="glitch-container"></div>
       <span className="hero_left_hexagon absolute custom-2xs:-start-[40%] -start-[34%] sm:-start-[20%] -rotate-12 sm:rotate-0 md:-start-44 top-0 xl:top-16 -z-[1]">
         <HeroLeftHexagon />
       </span>
@@ -43,15 +43,14 @@ const Hero = () => {
       <p data-aos="zoom-in" data-aos-delay="300" className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
         <NoKycIcon /> No KYC
       </p>
-      <h1 data-aos="fade-right"
-        data-aos-delay="500" className="font_actay_wide text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
+      <h1 className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
         Break the <br /> Chains
       </h1>
       <p data-aos="fade-left" data-aos-delay="600" className="font-manrope font-normal text-base sm:text-xl text-white ">
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction
       </p>
-      <div className="custom-sm:w-full my-8 md:mt-12 md:mb-10" data-aos="zoom-in" data-aos-delay="300" >
+      <div className="flex sm:justify-center my-8 md:mt-12 md:mb-10">
         <CommonBtn btntext={"swap now"} />
       </div>
       <img

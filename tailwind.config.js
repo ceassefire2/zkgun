@@ -10,7 +10,7 @@ module.exports = {
         dark: "#03031B",
         primary: "#63C796",
         firefly: "#0B1426",
-        // scarlet: "#FF2100",
+        scarlet: "#FF2100",
         royalBlue: "#3D3DF4",
         haiti: "#08081F",
         gold: "rgb(189 175 111);",
@@ -25,6 +25,9 @@ module.exports = {
         racingGreen: "#0A140F",
       },
       fontSize: {
+        "custom-sm": "22px",
+        "custom-md": "40px",
+        "custom-2md": "52px",
         "custom-lg": "56px",
         "custom-xl": "120px",
       },

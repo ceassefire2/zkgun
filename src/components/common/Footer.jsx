@@ -12,29 +12,33 @@ const Footer = () => {
       </div>
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 pt-[50px] md:pt-16 xl:pt-20">
         <div className="flex flex-col items-center sm:flex-row custom-xs:flex-col  sm:justify-between sm:items-center pb-8 border-b border-b-white border-opacity-20 border-b-solid">
-          <a href="#home" className="text-white">
+          <a href="#home" rel="noreferrer" className="text-white">
             <PageIcon />
           </a>
           <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-8 sm:mt-0">
             <a
+              rel="noreferrer"
               href="#home"
               className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
             >
               Home
             </a>
             <a
+              rel="noreferrer"
               href="#services"
               className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
             >
               Services
             </a>
             <a
+              rel="noreferrer"
               href="#community"
               className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
             >
               Community
             </a>
             <a
+              rel="noreferrer"
               href="#contact"
               className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
             >
@@ -47,8 +51,9 @@ const Footer = () => {
             © {year} ZKGUN All Rights Reserved
           </p>
           <a
+            rel="noreferrer"
             href="mailto:support@zkgunproject.org"
-            className="text-white text-opacity-60 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center mt-4 mb-8 sm:my-0"
+            className="text-white text-opacity-60 hover:text-opacity-100 duration-300 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center mt-4 mb-8 sm:my-0"
           >
             support@zkgunproject.org
           </a>

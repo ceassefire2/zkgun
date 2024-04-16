@@ -12,19 +12,19 @@ const Finance = () => {
           className="absolute end-0 sm:top-1/2 md:top-20 max-w-[250px] md:max-w-[420px] lg:max-w-[500px] xl:max-w-[580px] -z-[1] hidden sm:block"
         />
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 pb-[50px] md:pb-16 xl:pb-20">
-          <div data-aos="zoom-in" data-aos-delay="600" className="flex sm:justify-center items-center gap-2">
+          <div data-aos="zoom-in" className="flex sm:justify-center items-center gap-2">
             <ClipboardData />
             <p className="font-bold custom-2xs:text-sm !leading-[130%] text-base text-white md:leading-[20.8px] font-manrope uppercase">
               Fast and secure decentralized finance
             </p>
           </div>
           <div data-aos="zoom-in"
-            data-aos-delay="800"  >
+          >
             <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8">
               <CommonBtn btntext="learn more about us" />
             </div>
           </div>
-          <h3 data-aos="zoom-out" data-aos-delay="1000" className="font_actay_wide custom-2xs:text-custom-sm font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white">
+          <h3 data-aos="zoom-out" className="font_actay_wide custom-2xs:text-custom-sm font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white">
             Swap crypto across chains without a hitch, leveraging our deep
             liquidity pools from over 20+ sources for instant, vast
             transactions.{" "}

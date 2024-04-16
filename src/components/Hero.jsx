@@ -1,11 +1,13 @@
 import React from "react";
-import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
-import CommonBtn from "./common/CommonBtn";
-import heroImg from "../assets/images/webp/hero-img.webp";
+import Lottie from 'react-lottie-player';
+import heroLottie from "../assets/images/json/hero-lottie.json";
+import heroFtx from "../assets/images/png/hero-ftx.png";
 import heroGallery from "../assets/images/png/hero-gallery.png";
 import heroPolkadot from "../assets/images/png/hero-polkadot.png";
 import heroSkull from "../assets/images/png/hero-skull.png";
-import heroFtx from "../assets/images/png/hero-ftx.png";
+import CommonBtn from "./common/CommonBtn";
+import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
+
 const Hero = () => {
   return (
     <div
@@ -40,24 +42,24 @@ const Hero = () => {
         <HeroRightHexagon />
       </span>
       <div className="danger_blur bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
-      <p data-aos="zoom-in" data-aos-delay="600" className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
+      <p data-aos="zoom-in" className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
         <NoKycIcon /> No KYC
       </p>
-      <h1 data-aos="fade-right" data-aos-delay="600" className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
+      <h1 data-aos="fade-right" className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
         Break the <br /> Chains
       </h1>
-      <p data-aos="fade-left" data-aos-delay="600" className="font-manrope font-normal text-base sm:text-xl text-white ">
+      <p data-aos="fade-left" className="font-manrope font-normal text-base sm:text-xl text-white ">
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction
       </p>
-      <div data-aos="zoom-in" data-aos-delay="800" className="flex sm:justify-center my-8 md:mt-12 md:mb-10">
+      <div data-aos="zoom-in" className="flex sm:justify-center my-8 md:mt-12 md:mb-10">
         <CommonBtn btntext={"swap now"} />
       </div>
-      <img
-        data-aos="zoom-out" data-aos-delay="1000" 
+      <Lottie
+        loop
+        animationData={heroLottie}
+        play
         className="max-w-[500px] sm:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto px-5"
-        src={heroImg}
-        alt="hero img"
       />
     </div>
   );

@@ -17,16 +17,16 @@ const Decentralized = () => {
       />
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 relative">
         <div>
-          <div data-aos="zoom-out" data-aos-delay="600" className="flex sm:justify-center items-center gap-2">
+          <div data-aos="zoom-out" className="flex sm:justify-center items-center gap-2">
             <DollorClipBoard />
             <p className="font-bold custom-2xs:text-sm text-base text-white !leading-[130%] font-manrope uppercase">
               Decentralized finance made simple
             </p>
           </div>
-          <h2 data-aos="zoom-in" data-aos-delay="800" className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl uppercase !leading-[100%]">
+          <h2 data-aos="zoom-in" className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-4 sm:pb-5 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl uppercase !leading-[100%]">
             Help us break the chains
           </h2>
-          <p data-aos="fade-up" data-aos-delay="1000" className="font-normal max-w-[871px] text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center sm:mx-auto">
+          <p data-aos="fade-up" className="font-normal max-w-[871px] text-sm md:text-base text-white text-opacity-60 !leading-[130%] font-manrope sm:text-center sm:mx-auto">
             zkGUN was founded on a single mission: to simplify and anonymize
             your crypto experience. Our cryptocurrency wallet and cross-chain
             swap platform offer a financial approach where crypto transactions
@@ -84,8 +84,8 @@ const Decentralized = () => {
         </div>
 
         <div className="lg:flex hidden gap-4 justify-center lg:mt-16 xl:mt-20">
-          <div data-aos="fade-right" data-aos-delay="1200" className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient p-[1px] rounded-[32px] relative z-10">
-            <div  className="bg-firefly rounded-[32px] h-full p-10 xl:p-12 overflow-hidden relative">
+          <div data-aos="fade-right" className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient p-[1px] rounded-[32px] relative z-10">
+            <div className="bg-firefly rounded-[32px] h-full p-10 xl:p-12 overflow-hidden relative">
               <h3 className="font_actay_wide uppercase font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
                 No red tape—just freedom
               </h3>
@@ -104,7 +104,7 @@ const Decentralized = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <div data-aos="fade-left" data-aos-delay="1200" className="max-w-[626px] xl:max-w-[740px] w-full min-h-[220px] p-[1px] bg-white-gradient rounded-[32px]">
+            <div data-aos="fade-left" className="max-w-[626px] xl:max-w-[740px] w-full min-h-[220px] p-[1px] bg-white-gradient rounded-[32px]">
               <div className="bg-firefly h-full rounded-[32px] p-10 xl:p-12 flex flex-col justify-center">
                 <h3 className="font_actay_wide uppercase font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl !leading-[130%] text-white ">
                   Swap without limits
@@ -117,7 +117,7 @@ const Decentralized = () => {
                 </p>
               </div>
             </div>
-            <div data-aos="zoom-in" data-aos-delay="1200" className="max-w-[262px] xl:max-w-[264px] min-h-[284px] w-full bg-white-gradient px-[1px] rounded-[32px] overflow-hidden relative z-10">
+            <div data-aos="zoom-in" className="max-w-[262px] xl:max-w-[264px] min-h-[284px] w-full bg-white-gradient px-[1px] rounded-[32px] overflow-hidden relative z-10">
               <div className="h-full bg-firefly relative rounded-[32px] px-6 xl:px-8 flex flex-col justify-center">
                 <span className="block w-[137px] h-[244px] red_blur -bottom-[58px] start-[-140px] rounded-[50%] blur-[100px] bg-opacity-[48%] absolute"></span>
                 <span className="block w-[147px] h-[261px] green_blur bottom-[78px] end-[-157px] rounded-[50%] blur-[120px] bg-opacity-[48%] absolute"></span>
@@ -131,7 +131,7 @@ const Decentralized = () => {
           </div>
         </div>
         <div className="lg:flex hidden gap-4 mt-4 justify-center items-end h-full mb-[-300px] -translate-y-[300px]">
-          <div data-aos="fade-right" data-aos-delay="1200" className="max-w-[626px]  xl:max-w-[740px] w-full min-h-[220px] h-full p-[1px] bg-white-gradient rounded-[32px]">
+          <div data-aos="fade-right" className="max-w-[626px]  xl:max-w-[740px] w-full min-h-[220px] h-full p-[1px] bg-white-gradient rounded-[32px]">
             <div className="h-full rounded-[32px] min-h-[220px] bg-firefly px-10 xl:px-12 flex flex-col justify-center">
               <h3 className="font_actay_wide uppercase font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl !leading-[130%] text-white ">
                 More than just <br /> a swap service
@@ -144,7 +144,7 @@ const Decentralized = () => {
               </p>
             </div>
           </div>
-          <div data-aos="fade-left" data-aos-delay="1200" className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient rounded-[32px] p-[1px]">
+          <div data-aos="fade-left" className="lg:max-w-[348px] xl:max-w-[460px] w-full min-h-[520px] bg-white-gradient rounded-[32px] p-[1px]">
             <div className="h-full min-h-[520px] bg-firefly rounded-[32px] p-10 xl:p-12 relative overflow-hidden">
               <h3 className="font_actay_wide uppercase font-medium text-xl sm:text-2xl md:text-3xl xl:text-4xl !leading-[130%] text-white">
                 Privacy at our core

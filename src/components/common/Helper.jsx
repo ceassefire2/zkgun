@@ -5,6 +5,9 @@ import ecoCardImg_second from "../../assets/images/webp/our-eco-img-second.webp"
 import ecoCardImg_third from "../../assets/images/webp/our-eco-img-third.webp";
 import star from "../../assets/images/webp/star-image.webp";
 import { ConfidentialityIcon, EfficiencyIcon, PrivacyIcon } from "./Icons";
+import privacy from "../../assets/images/json/privacy.json";
+import confidentiality from "../../assets/images/json/confidentiality.json";
+import efficiency from "../../assets/images/json/efficiency.json";
 
 export const coreValueCardList = [
   {
@@ -12,21 +15,21 @@ export const coreValueCardList = [
     description:
       "Our Zero-Knowledge Privacy integrations provide untraceable transactions,",
     spandescription: " so your swaps are yours alone to know",
-    image: <PrivacyIcon />,
+    lottieImage: privacy,
   },
   {
     title: "Efficiency",
     description:
       "We offer limitless swapping with minimal fees and rapid processing,",
     spandescription: " so your trades are as seamless as they are efficient",
-    image: <EfficiencyIcon />,
+    lottieImage: efficiency,
   },
   {
     title: "Confidentiality",
     description:
       "Discretion is a non-negotiable. We promise no KYC, absolute control of your funds,",
     spandescription: " and ironclad encryption for every transaction you make",
-    image: <ConfidentialityIcon />,
+    lottieImage: confidentiality,
   },
 ];
 export const ourEcoCardList = [
@@ -39,7 +42,7 @@ export const ourEcoCardList = [
     image: ecoCardImg_first,
     hidden: "md:hidden",
     rotate: "rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
-    aosAnimation:"fade-left",
+    aosAnimation: "fade-left",
   },
   {
     badge: "ERC-4337",

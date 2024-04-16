@@ -40,17 +40,18 @@ const Hero = () => {
         <HeroRightHexagon />
       </span>
       <div className="danger_blur bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
-      <p className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
+      <p data-aos="zoom-in" data-aos-delay="300" className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
         <NoKycIcon /> No KYC
       </p>
-      <h1 className="font_actay_wide text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
+      <h1 data-aos="fade-right"
+        data-aos-delay="500" className="font_actay_wide text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
         Break the <br /> Chains
       </h1>
-      <p className="font-manrope font-normal text-base sm:text-xl text-white ">
+      <p data-aos="fade-left" data-aos-delay="600" className="font-manrope font-normal text-base sm:text-xl text-white ">
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction
       </p>
-      <div className="custom-sm:w-full my-8 md:mt-12 md:mb-10">
+      <div className="custom-sm:w-full my-8 md:mt-12 md:mb-10" data-aos="zoom-in" data-aos-delay="300" >
         <CommonBtn btntext={"swap now"} />
       </div>
       <img

@@ -39,6 +39,7 @@ export const ourEcoCardList = [
     image: ecoCardImg_first,
     hidden: "md:hidden",
     rotate: "rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",
+    aosAnimation:"fade-left",
   },
   {
     badge: "ERC-4337",
@@ -52,6 +53,7 @@ export const ourEcoCardList = [
     badgePosition: "-start-16",
     blurOne: "w-[775px] h-[470px] top-[50%] start-[-126%]",
     blurTwo: "w-[775px] h-[470px] top-[-126%] start-[46%]",
+    aosAnimation: "fade-right",
   },
   {
     badge: "Fast swapping process",
@@ -62,6 +64,7 @@ export const ourEcoCardList = [
     rotate: "rotate-[30deg] md:rotate-[-59deg] mt-[43px] sm:mt-0",
     blurOne: "w-[1105px] h-[438px] bottom-[-110%] start-[16%]",
     blurTwo: "w-[1105px] h-[438px] top-[-116%] start-[-48%] ",
+    aosAnimation: "fade-left",
   },
 ];
 
@@ -77,6 +80,7 @@ export const decentralizedList = [
     className: "pt-[125px]",
     position: "start-0 -bottom-[48px]",
     maxWidth: "sm:max-w-full max-w-[220px]",
+    aosAnimation: "fade-left",
   },
   {
     imageUrl: star,
@@ -87,12 +91,14 @@ export const decentralizedList = [
       "Your privacy is our top priority. We integrate Zero-Knowledge Privacy into our app, ensuring your transactions stay anonymous and secure. With zkGUN, your crypto actions remain yours alone, transparent only to you.",
     order: "order-5 sm:order-2",
     maxWidth: "sm:max-w-full max-w-[249px]",
+    aosAnimation: "fade-left",
   },
   {
     title: "Swap without limits",
     description:
       "Our platform lets you exchange any amount of crypto across multiple chains quickly and without fuss. We’re talking minutes, not hours, making sure you’re always a step ahead in the fast-moving crypto market",
     order: "order-2",
+    aosAnimation: "fade-right",
   },
   {
     title: "More than just a swap service",
@@ -100,9 +106,11 @@ export const decentralizedList = [
       "zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet introduces gasless transactions to boost your crypto handling experience. Plus, our Telegram Bot brings swapping directly to your chat window for extra convenience",
     order: "order-4",
     maxWidth: "sm:max-w-full max-w-[257px]",
+    aosAnimation: "fade-right",
   },
   {
     subImage: z_logo,
     order: "order-3 sm:order-5",
+    aosAnimation: "fade-left",
   },
 ];

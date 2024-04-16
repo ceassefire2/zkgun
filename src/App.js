@@ -9,10 +9,18 @@ import OurEcosystem from "./components/OurEcosystem";
 import BackToTop from "./components/common/BackToTop";
 import Discover from "./components/Discover";
 import OurCapabilities from "./components/OurCapabilities";
-
 import Decentralized from "./components/Decentralized";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1200,
+    });
+  }, []);
   return (
     <>
       <div className="overflow-hidden">

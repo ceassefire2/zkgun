@@ -18,10 +18,13 @@ const Finance = () => {
               Fast and secure decentralized finance
             </p>
           </div>
-          <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8">
-            <CommonBtn btntext="learn more about us" />
+          <div data-aos="zoom-in"
+            data-aos-delay="1000"  >
+            <div className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8">
+              <CommonBtn btntext="learn more about us" />
+            </div>
           </div>
-          <h3 className="font_actay_wide font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white">
+          <h3 className="font_actay_wide font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white" data-aos="zoom-in" data-aos-delay="1000" >
             Swap crypto across chains without a hitch, leveraging our deep
             liquidity pools from over 20+ sources for instant, vast
             transactions.{" "}

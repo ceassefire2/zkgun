@@ -23,13 +23,13 @@ const CoreValue = () => {
           className="absolute -end-9 top-[14%] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]"
         />
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 our_cripto">
-          <p className="font-bold uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
+          <p data-aos="zoom-in" data-aos-delay="600" className="font-bold uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
             <CoreValuesIcon /> Core values
           </p>
-          <h2 className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%] uppercase">
+          <h2 data-aos="zoom-in" data-aos-delay="800" className="text-white sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-[40px] sm:text-5xl md:text-[52px] lg:text-7xl !leading-[100%] uppercase">
             Our crypto creed
           </h2>
-          <div className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">
+          <div data-aos="zoom-in" data-aos-delay="1000" className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">
             <CommonBtn btntext={"Learn about us"} />
           </div>
           <Swiper

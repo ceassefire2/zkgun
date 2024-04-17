@@ -18,7 +18,6 @@ const CoreValue = ({ setOpenPopUp, openPopUp }) => {
           alt="coreValueHexagonImg"
           className="absolute top-[81%] sm:top-1/2 md:top-36 max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[500px] xl:max-w-[600px] -z-[1]"
         />
-
         <div className="absolute -end-20 md:-end-[120px] -top-[100px] sm:top-1/4 md:top-[27%] max-w-[180px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[430px] -z-[1]">
           <CoreValueRightHexagon />
         </div>

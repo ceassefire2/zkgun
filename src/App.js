@@ -10,7 +10,7 @@ import BackToTop from "./components/common/BackToTop";
 import Discover from "./components/Discover";
 import OurCapabilities from "./components/OurCapabilities";
 import Decentralized from "./components/Decentralized";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,17 +21,19 @@ function App() {
       duration: 1200,
     });
   }, []);
+  const [openPopUp, setOpenPopUp] = useState(false);
+
   return (
     <>
       <div className="overflow-hidden">
         <BackToTop />
-        <Header />
-        <Hero />
-        <Finance />
-        <OurEcosystem />
-        <CoreValue />
+        <Header setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
+        <Hero setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
+        <Finance setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
+        <OurEcosystem setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
+        <CoreValue setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
         <OurCapabilities />
-        <Discover />
+        <Discover setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
         <Decentralized />
         <JoinZkgun />
         <Footer />

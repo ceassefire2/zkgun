@@ -94,7 +94,7 @@ const Decentralized = () => {
                 approach, giving you the freedom to manage your crypto your way.
                 At zkGUN, you're in control, with the autonomy to move your
                 assets freely while shielded by RAILGUN-enhanced security
-                measures
+                measures.
               </p>
               <img
                 className="w-full max-w-[300px] xl:max-w-[360px] -start-2 -bottom-28 rotate-[136deg] absolute hue_img"
@@ -113,7 +113,7 @@ const Decentralized = () => {
                   Our platform lets you exchange any amount of crypto across
                   multiple chains quickly and without fuss. We’re talking
                   minutes, not hours, making sure you’re always a step ahead in
-                  the fast-moving crypto market
+                  the fast-moving crypto market.
                 </p>
               </div>
             </div>
@@ -140,7 +140,7 @@ const Decentralized = () => {
                 zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet
                 introduces gasless transactions to boost your crypto handling
                 experience. Plus, our Telegram Bot brings swapping directly to
-                your chat window for extra convenience
+                your chat window for extra convenience.
               </p>
             </div>
           </div>

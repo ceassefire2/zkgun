@@ -7,9 +7,9 @@ import coreValueHexagonImg from "../assets/images/png/core-value-hexagon.png";
 import CommonBtn from "./common/CommonBtn";
 import { coreValueCardList } from "./common/Helper";
 import { CoreValueRightHexagon, CoreValuesIcon } from "./common/Icons";
-import Lottie from 'react-lottie-player'
+import Lottie from "react-lottie-player";
 
-const CoreValue = () => {
+const CoreValue = ({ setOpenPopUp, openPopUp }) => {
   return (
     <>
       <div className="relative">
@@ -23,15 +23,46 @@ const CoreValue = () => {
           <CoreValueRightHexagon />
         </div>
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 our_cripto">
-          <p data-aos="zoom-out" className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5">
+          <p
+            data-aos="zoom-out"
+            className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope flex items-center justify-start sm:justify-center gap-2.5"
+          >
             <CoreValuesIcon /> Core values
           </p>
-          <h2 data-aos="zoom-in" className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%] uppercase">
+          <h2
+            data-aos="zoom-in"
+            className="text-white custom-2xs:text-4xl sm:text-center pt-4 pb-6 sm:pb-8 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%] uppercase"
+          >
             Our crypto creed
           </h2>
-          <div data-aos="zoom-out" className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex">
+          <div
+            onClick={() => setOpenPopUp(true)}
+            data-aos="zoom-out"
+            className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex"
+          >
             <CommonBtn btntext={"Learn about us"} />
           </div>
+          {openPopUp && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center">
+              <div
+                className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
+                onClick={() => setOpenPopUp(false)}
+              ></div>{" "}
+              {/* Overlay */}
+              <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
+                {/* Popup content */}
+                <p className="font-manrope text-xl sm:text-2xl text-white">
+                  Coming Soon
+                </p>
+                <button
+                  className="absolute top-4 end-4 hover:opacity-40 duration-300"
+                  onClick={() => setOpenPopUp(false)}
+                >
+                  ❌
+                </button>
+              </div>
+            </div>
+          )}
           <Swiper
             pagination={true}
             modules={[Pagination]}

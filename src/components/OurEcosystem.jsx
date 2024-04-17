@@ -4,7 +4,7 @@ import CommonBtn from "./common/CommonBtn";
 import { ourEcoCardList } from "./common/Helper";
 import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
 
-const OurEcosystem = () => {
+const OurEcosystem = ({ setOpenPopUp, openPopUp }) => {
   return (
     <>
       <div id="services" className="relative">
@@ -14,19 +14,53 @@ const OurEcosystem = () => {
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
         <div className="red_blur danger_blur blur-[280px] h-[650px] w-[447px]  absolute top-[64%] -start-[500px] rounded-[50%] hidden -z-[1] sm:block"></div>
         <div className="max-w-[1400px] mx-auto px-4 md:px-5 py-[50px] md:py-16 xl:py-20 relative">
-          <div data-aos="zoom-out" className="flex sm:justify-center items-center gap-2">
+          <div
+            data-aos="zoom-out"
+            className="flex sm:justify-center items-center gap-2"
+          >
             <EcoSystem />
             <p className="font-bold custom-2xs:text-sm uppercase text-base text-white !leading-[130%] font-manrope">
               Our ecosystem
             </p>
           </div>
-          <h2 data-aos="zoom-in" className="text-white custom-2xs:text-4xl uppercase mx-auto max-w-[1037px] sm:text-center pt-4 font_actay_wide font-medium custom-xs:text-3xl text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]">
+          <h2
+            data-aos="zoom-in"
+            className="text-white custom-2xs:text-4xl uppercase mx-auto max-w-[1037px] sm:text-center pt-4 font_actay_wide font-medium custom-xs:text-3xl text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]"
+          >
             Decentralized network diversity
           </h2>
-          <div data-aos="zoom-out" className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8 md:mb-0">
+          <div
+            onClick={() => setOpenPopUp(true)}
+            data-aos="zoom-out"
+            className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8 md:mb-0"
+          >
             <CommonBtn btntext="Learn more about our services" />
           </div>
-          <div data-aos="zoom-in" className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block  md:mt-12 lg:mt-16 xl:mt-20">
+          {openPopUp && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center">
+              <div
+                className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
+                onClick={() => setOpenPopUp(false)}
+              ></div>{" "}
+              {/* Overlay */}
+              <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
+                {/* Popup content */}
+                <p className="font-manrope text-xl sm:text-2xl text-white">
+                  Coming Soon
+                </p>
+                <button
+                  className="absolute top-4 end-4 hover:opacity-40 duration-300"
+                  onClick={() => setOpenPopUp(false)}
+                >
+                  ❌
+                </button>
+              </div>
+            </div>
+          )}
+          <div
+            data-aos="zoom-in"
+            className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block  md:mt-12 lg:mt-16 xl:mt-20"
+          >
             <div className="lg:px-12 p-9 rounded-[32px] relative z-50 bg-firefly ">
               <span className="w-[1084px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -bottom-[90%] start-[50%] blur-[240px]"></span>
               <span className="w-[700px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -top-[90%] start-[88%] blur-[240px]"></span>
@@ -47,7 +81,7 @@ const OurEcosystem = () => {
                       Trade without limits or custody.{" "}
                       <span className="text-white text-opacity-60">
                         Our platform offers unmatched rates and fast swaps
-                        across an expansive network of blockchains and tokens
+                        across an expansive network of blockchains and tokens.
                       </span>
                     </p>
                   </div>

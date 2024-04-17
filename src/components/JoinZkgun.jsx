@@ -1,6 +1,7 @@
 import React from "react";
 import joinZKlogo from "../assets/images/png/z-logo.png";
 import { JoinLeftHexagon, Telegram, Twitter } from "./common/Icons";
+import ReactParallaxTilt from "react-parallax-tilt";
 
 const JoinZkgun = () => {
   return (
@@ -13,14 +14,23 @@ const JoinZkgun = () => {
           id="community"
           className="max-w-[1400px] mx-auto px-4 md:px-5 py-[30px] md:py-16 xl:py-20"
         >
-          <img
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            className="mx-auto max-w-[52px] sm:max-w-14 md:max-w-16 lg:max-w-20 xl:max-w-[110px]"
-            width={110}
-            src={joinZKlogo}
-            alt="zklogo"
-          />
+          <div className="text-center">
+            <ReactParallaxTilt
+              tiltMaxAngleX={20}
+              tiltMaxAngleY={20}
+              perspective={1000}
+              className="inline-block"
+            >
+              <img
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                className="mx-auto max-w-[52px] sm:max-w-14 md:max-w-16 lg:max-w-20 xl:max-w-[110px]"
+                width={110}
+                src={joinZKlogo}
+                alt="zklogo"
+              />
+            </ReactParallaxTilt>
+          </div>
           <h2
             data-aos="fade-up"
             className="max-w-[855px] custom-2xs:text-4xl uppercase mx-auto text-white text-center pt-6 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]"

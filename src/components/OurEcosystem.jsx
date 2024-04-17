@@ -3,12 +3,13 @@ import img_first from "../assets/images/webp/our-eco-img-first.webp";
 import CommonBtn from "./common/CommonBtn";
 import { ourEcoCardList } from "./common/Helper";
 import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
+import ReactParallaxTilt from "react-parallax-tilt";
 
 const OurEcosystem = ({ setOpenPopUp, openPopUp }) => {
   return (
     <>
       <div id="services" className="relative">
-        <div className="absolute top-[68%] sm:top-[30%] lg:top-[43%] -start-[500px] sm:-start-[400px] lg:-start-40 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] z-10">
+        <div className="absolute top-[68%] sm:top-[30%] lg:top-[43%] -start-[500px] sm:-start-[400px] lg:-start-40 max-w-[300px] md:max-w-[400px] xl:max-w-[490px] -z-[1]">
           <HeroLeftHexagon />
         </div>
         <div className="green_blur blur-[230px] h-[440px] w-[247px] absolute top-1/2 -end-[400px] rounded-full hidden -z-[1] sm:block"></div>
@@ -57,51 +58,62 @@ const OurEcosystem = ({ setOpenPopUp, openPopUp }) => {
               </div>
             </div>
           )}
-          <div
-            data-aos="zoom-in"
-            className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto rounded-[32px] hidden md:block  md:mt-12 lg:mt-16 xl:mt-20"
+          <ReactParallaxTilt
+            tiltMaxAngleX={3}
+            tiltMaxAngleY={3}
+            perspective={1100}
           >
-            <div className="lg:px-12 p-9 rounded-[32px] relative z-50 bg-firefly ">
-              <span className="w-[1084px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -bottom-[90%] start-[50%] blur-[240px]"></span>
-              <span className="w-[700px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -top-[90%] start-[88%] blur-[240px]"></span>
-              <div className="flex">
-                <div className="w-7/12 lg:w-1/2 lg:py-3 flex flex-col justify-between items-start">
-                  <div className="md:py-[6.5px] px-4 bg-mirage rounded-[100px] relative overflow-hidden">
-                    <span className="w-[108px] h-[39px] bg-lightBlue absolute -top-12 start-[117px] blur-[33px]"></span>
-                    <span className="w-[84px] h-[39px] bg-lightBlue absolute -bottom-12 -start-10 blur-[33px]"></span>
-                    <p className="text-white inline-block text-sm md:text-base font-normal !leading-[130%] font-manrope ">
-                      Trade without limits
-                    </p>
+            <div
+              data-aos="zoom-in"
+              className="bg-white-gradient-card p-[1px] overflow-hidden max-w-[1216px] mx-auto
+               rounded-[32px] hidden md:block  md:mt-12 lg:mt-16 xl:mt-20 tilt-on-hover"
+            >
+              <div className="lg:px-12 p-9 rounded-[32px] relative z-50 bg-firefly ">
+                <span className="w-[1084px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -bottom-[90%] start-[50%] blur-[240px]"></span>
+                <span className="w-[700px] h-[372px] hidden md:flex bg-primary absolute opacity-30 -top-[90%] start-[88%] blur-[240px]"></span>
+                <div className="flex">
+                  <div className="w-7/12 lg:w-1/2 lg:py-3 flex flex-col justify-between items-start">
+                    <div className="md:py-[6.5px] px-4 bg-mirage rounded-[100px] relative overflow-hidden">
+                      <span className="w-[108px] h-[39px] bg-lightBlue absolute -top-12 start-[117px] blur-[33px]"></span>
+                      <span className="w-[84px] h-[39px] bg-lightBlue absolute -bottom-12 -start-10 blur-[33px]"></span>
+                      <p className="text-white inline-block text-sm md:text-base font-normal !leading-[130%] font-manrope ">
+                        Trade without limits
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="font_actay_wide  uppercase font-bold max-w-[350px] xl:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
+                        Anonymous cross-chain swap
+                      </h3>
+                      <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base !leading-[130%]">
+                        Trade without limits or custody.{" "}
+                        <span className="text-white text-opacity-60">
+                          Our platform offers unmatched rates and fast swaps
+                          across an expansive network of blockchains and tokens.
+                        </span>
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font_actay_wide  uppercase font-bold max-w-[350px] xl:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
-                      Anonymous cross-chain swap
-                    </h3>
-                    <p className="text-white max-w-[555px] pt-4 font-manrope font-normal text-sm md:text-base !leading-[130%]">
-                      Trade without limits or custody.{" "}
-                      <span className="text-white text-opacity-60">
-                        Our platform offers unmatched rates and fast swaps
-                        across an expansive network of blockchains and tokens.
-                      </span>
-                    </p>
+                  <div className="w-5/12 lg:w-1/2 flex justify-end xl:pe-4">
+                    <img
+                      className="max-w-[290px] lg:max-w-[370px] w-full max-h-[370px] rotate-[17deg] hue_img"
+                      src={img_first}
+                      alt="img"
+                      height={370}
+                      width={370}
+                    />
                   </div>
-                </div>
-                <div className="w-5/12 lg:w-1/2 flex justify-end xl:pe-4">
-                  <img
-                    className="max-w-[290px] lg:max-w-[370px] w-full max-h-[370px] rotate-[17deg] hue_img"
-                    src={img_first}
-                    alt="img"
-                    height={370}
-                    width={370}
-                  />
                 </div>
               </div>
             </div>
-          </div>
+          </ReactParallaxTilt>
+
           <div className="max-w-[1216px] mx-auto md:pt-4 flex flex-col md:flex-row gap-4 relative z-10">
             {ourEcoCardList.map((value, index) => {
               return (
-                <div
+                <ReactParallaxTilt
+                  tiltMaxAngleX={2}
+                  tiltMaxAngleY={2}
+                  perspective={600}
                   data-aos={value.aosAnimation}
                   key={index}
                   className={`p-[1px] w-full md:w-1/2 bg-white-gradient-card rounded-[20px] overflow-hidden md:rounded-[32px] flex flex-col justify-between  ${value.hidden} `}
@@ -145,7 +157,7 @@ const OurEcosystem = ({ setOpenPopUp, openPopUp }) => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </ReactParallaxTilt>
               );
             })}
           </div>

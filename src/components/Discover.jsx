@@ -9,6 +9,7 @@ import flow from "../assets/images/webp/flow.webp";
 import gradient from "../assets/images/webp/gradient.webp";
 import CommonBtn from "./common/CommonBtn";
 import { GradientImage, MobileGradientImage } from "./common/Icons";
+import ReactParallaxTilt from "react-parallax-tilt";
 
 const Discover = ({ setOpenPopUp, openPopUp }) => {
   return (
@@ -74,14 +75,23 @@ const Discover = ({ setOpenPopUp, openPopUp }) => {
               />
             </div>
             <div className="relative z-10 custom-2xs:px-4 px-6">
-              <img
-                data-aos="zoom-out"
-                className="max-w-[39px] sm:max-w-12 md:max-w-[70px] lg:max-w-[84px] w-full sm:mx-auto"
-                height={84}
-                width={77}
-                src={joinZKlogo}
-                alt="zklogo"
-              />
+              <div className="text-center">
+                <ReactParallaxTilt
+                  tiltMaxAngleX={20}
+                  tiltMaxAngleY={20}
+                  perspective={1000}
+                  className="inline-block"
+                >
+                  <img
+                    data-aos="zoom-out"
+                    className="max-w-[39px] sm:max-w-12 md:max-w-[70px] lg:max-w-[84px] w-full sm:mx-auto"
+                    height={84}
+                    width={77}
+                    src={joinZKlogo}
+                    alt="zklogo"
+                  />
+                </ReactParallaxTilt>
+              </div>
               <h2
                 data-aos="fade-right"
                 className="max-w-[1200px] custom-2xs:text-4xl custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]"

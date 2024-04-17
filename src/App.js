@@ -32,7 +32,7 @@ function App() {
         <Finance setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
         <OurEcosystem setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
         <CoreValue setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <OurCapabilities />
+        <OurCapabilities setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
         <Discover setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
         <Decentralized />
         <JoinZkgun />

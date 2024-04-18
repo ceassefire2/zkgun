@@ -10,6 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie-player": "^2.0.0",
+    "react-parallax-tilt": "^1.7.221",
     "react-scripts": "5.0.1",
     "swiper": "^11.1.1",
     "web-vitals": "^2.1.4"

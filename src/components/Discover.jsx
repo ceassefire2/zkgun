@@ -9,8 +9,9 @@ import flow from "../assets/images/webp/flow.webp";
 import gradient from "../assets/images/webp/gradient.webp";
 import CommonBtn from "./common/CommonBtn";
 import { GradientImage, MobileGradientImage } from "./common/Icons";
+import ReactParallaxTilt from "react-parallax-tilt";
 
-const Discover = () => {
+const Discover = ({ setOpenPopUp, openPopUp }) => {
   return (
     <>
       <div className="max-w-[1400px] mx-auto px-4 md:px-5">
@@ -74,25 +75,66 @@ const Discover = () => {
               />
             </div>
             <div className="relative z-10 custom-2xs:px-4 px-6">
-              <img data-aos="zoom-out"
-                className="max-w-[39px] sm:max-w-12 md:max-w-[70px] lg:max-w-[84px] w-full sm:mx-auto"
-                height={84}
-                width={77}
-                src={joinZKlogo}
-                alt="zklogo"
-              />
-              <h2 data-aos="fade-right" className="max-w-[1200px] custom-2xs:text-4xl custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]">
+              <div className="text-center">
+                <ReactParallaxTilt
+                  tiltMaxAngleX={20}
+                  tiltMaxAngleY={20}
+                  perspective={1000}
+                  className="inline-block"
+                >
+                  <img
+                    data-aos="zoom-out"
+                    className="max-w-[39px] sm:max-w-12 md:max-w-[70px] lg:max-w-[84px] w-full sm:mx-auto"
+                    height={84}
+                    width={77}
+                    src={joinZKlogo}
+                    alt="zklogo"
+                  />
+                </ReactParallaxTilt>
+              </div>
+              <h2
+                data-aos="fade-right"
+                className="max-w-[1200px] custom-2xs:text-4xl custom-xs:text-3xl uppercase mx-auto text-white sm:text-center pt-6 font_actay_wide font-medium text-custom-md sm:text-5xl md:custom-2md lg:text-7xl !leading-[100%]"
+              >
                 Discover freedom <br className="hidden xl:block" />
                 in every transaction
               </h2>
-              <p data-aos="fade-left" className="text-white sm:mx-auto  sm:text-center text-sm md:text-base !leading-[130%] font-manrope font-normal sm:max-w-[512px] py-4 text-opacity-60">
+              <p
+                data-aos="fade-left"
+                className="text-white sm:mx-auto  sm:text-center text-sm md:text-base !leading-[130%] font-manrope font-normal sm:max-w-[512px] py-4 text-opacity-60"
+              >
                 Our platform offers a robust and reliable solution for anyone in
                 the ecosystem. It's time to join a community where every crypto
-                enthusiast can find their place
+                enthusiast can find their place.
               </p>
-              <div data-aos="fade-right" className="flex sm:justify-center mt-2 mb-6 md:mb-0">
-                <CommonBtn btntext="Swap now" />
-              </div>
+              <button
+                onClick={() => setOpenPopUp(true)}
+                data-aos="zoom-in"
+                className="flex justify-center w-full mt-2 mb-6 md:mb-0"
+              >
+                <CommonBtn btntext={"swap now"} />
+              </button>
+              {openPopUp && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center">
+                  <div
+                    className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
+                    onClick={() => setOpenPopUp(false)}
+                  ></div>{" "}
+                  {/* Overlay */}
+                  <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
+                    {/* Popup content */}
+                    <p className="font-manrope text-xl sm:text-2xl text-white">
+                      Coming Soon
+                    </p>
+                    <button
+                      className="absolute top-4 end-4 hover:opacity-40 duration-300"
+                      onClick={() => setOpenPopUp(false)}
+                    >
+                      ❌
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

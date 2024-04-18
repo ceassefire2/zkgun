@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { AffartsIcon, HexagonIcon, PageIcon } from "./Icons";
+import { HexagonIcon, PageIcon } from "./Icons";
+import baselineTelegram from "../../assets/images/svg/baseline-telegram.svg";
+import solarDocument from "../../assets/images/svg/solar-document.svg";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -15,35 +17,63 @@ const Footer = () => {
           <a href="#home" rel="noreferrer" className="text-white">
             <PageIcon />
           </a>
-          <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-8 sm:mt-0">
-            <a
-              rel="noreferrer"
-              href="#home"
-              className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
-            >
-              Home
-            </a>
-            <a
-              rel="noreferrer"
-              href="#services"
-              className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
-            >
-              Services
-            </a>
-            <a
-              rel="noreferrer"
-              href="#community"
-              className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
-            >
-              Community
-            </a>
-            <a
-              rel="noreferrer"
-              href="#contact"
-              className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
-            >
-              Contact
-            </a>
+          <div className="mt-8 sm:mt-0">
+            <div className="flex items-center gap-3 mb-4 justify-center sm:justify-end">
+              <a
+                className="cursor-pointer hover:scale-110 duration-300"
+                href="https://t.me/zkgunbot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="w-[30px]"
+                  src={baselineTelegram}
+                  alt="baseline telegram"
+                />
+              </a>
+              <a
+                className="cursor-pointer hover:scale-110 duration-300"
+                href="https://docs.zkgun.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="w-[30px]"
+                  src={solarDocument}
+                  alt="baseline telegram"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-6 sm:mt-0">
+              <a
+                rel="noreferrer"
+                href="#home"
+                className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+              >
+                Home
+              </a>
+              <a
+                rel="noreferrer"
+                href="#services"
+                className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+              >
+                Services
+              </a>
+              <a
+                rel="noreferrer"
+                href="#community"
+                className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+              >
+                Community
+              </a>
+              <a
+                rel="noreferrer"
+                href="#contact"
+                className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+              >
+                Contact
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center sm:flex-row flex-wrap sm:justify-between sm:items-center pb-8 lg:pb-12 pt-8">
@@ -57,19 +87,6 @@ const Footer = () => {
           >
             support@zkgunproject.org
           </a>
-          <div className="flex items-center justify-center sm:justify-start gap-3">
-            <p className="font-manrope font-normal text-white text-opacity-60 relative text-base sm:text-sm md:text-base !leading-5">
-              Design by
-            </p>
-            <a
-              href="https://affarts.com/"
-              target="_blank"
-              className="cursor-pointer"
-              rel="noreferrer"
-            >
-              <AffartsIcon />
-            </a>
-          </div>
         </div>
       </div>
     </div>

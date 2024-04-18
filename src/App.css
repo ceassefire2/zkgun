@@ -113,7 +113,7 @@
 
     0%,
     100% {
-        transform: translateY(0px) perspective(500px) ;
+        transform: translateY(0px) perspective(500px);
     }
 
     50% {

@@ -1,5 +1,5 @@
 import React from "react";
-import Lottie from 'react-lottie-player';
+import Lottie from "react-lottie-player";
 import heroLottie from "../assets/images/json/hero-lottie.json";
 import heroFtx from "../assets/images/png/hero-ftx.png";
 import heroGallery from "../assets/images/png/hero-gallery.png";
@@ -8,7 +8,7 @@ import heroSkull from "../assets/images/png/hero-skull.png";
 import CommonBtn from "./common/CommonBtn";
 import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
 
-const Hero = () => {
+const Hero = ({ setOpenPopUp, openPopUp }) => {
   return (
     <div
       id="home"
@@ -42,19 +42,54 @@ const Hero = () => {
         <HeroRightHexagon />
       </span>
       <div className="danger_blur bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
-      <p data-aos="zoom-in" className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase">
-        <NoKycIcon /> No KYC
+      <p
+        data-aos="zoom-in"
+        className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase"
+      >
+        <NoKycIcon /> Private Efficient Confidential
       </p>
-      <h1 data-aos="fade-right" className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4">
+      <h1
+        data-aos="fade-right"
+        className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4"
+      >
         Break the <br /> Chains
       </h1>
-      <p data-aos="fade-left" className="font-manrope font-normal text-base sm:text-xl text-white ">
+      <p
+        data-aos="fade-left"
+        className="font-manrope font-normal text-base sm:text-xl text-white "
+      >
         Non-Custodial, Decentralized & Anonymous.{" "}
-        <br className="block lg:hidden" /> Freedom in every transaction
+        <br className="block lg:hidden" /> Freedom in every transaction.
       </p>
-      <div data-aos="zoom-in" className="flex justify-center my-8 md:mt-12 md:mb-10">
+      <button
+        onClick={() => setOpenPopUp(true)}
+        data-aos="zoom-in"
+        className="flex justify-center w-full my-8 md:mt-12 md:mb-10"
+      >
         <CommonBtn btntext={"swap now"} />
-      </div>
+      </button>
+
+      {openPopUp && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center">
+          <div
+            className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
+            onClick={() => setOpenPopUp(false)}
+          ></div>{" "}
+          {/* Overlay */}
+          <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
+            {/* Popup content */}
+            <p className="font-manrope text-xl sm:text-2xl text-white">
+              Coming Soon
+            </p>
+            <button
+              className="absolute top-4 end-4 hover:opacity-40 duration-300"
+              onClick={() => setOpenPopUp(false)}
+            >
+              ❌
+            </button>
+          </div>
+        </div>
+      )}
       <Lottie
         loop
         animationData={heroLottie}

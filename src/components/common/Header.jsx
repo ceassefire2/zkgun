@@ -22,7 +22,7 @@ const Header = () => {
         <nav>
           <div className="flex items-center justify-between mt-6">
             <div className="flex-shrink-0">
-              <a href="#home" rel="noreferrer" className="text-white">
+              <a href="/" rel="noreferrer" className="text-white">
                 <PageIcon />
               </a>
             </div>

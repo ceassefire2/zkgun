@@ -41,7 +41,7 @@ const OurCapabilities = () => {
           data-aos="zoom-in"
           className="flex sm:justify-center w-full mt-6 md:mt-8"
         >
-          <CommonBtn btntext="View all capabilities" />
+          <CommonBtn btntext="View all capabilities" maxWidth="max-w-[242px]" />
         </div>
         
         <Lottie

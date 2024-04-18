@@ -112,7 +112,7 @@ const Discover = () => {
                 data-aos="zoom-in"
                 className="flex justify-center w-full mt-2 mb-6 md:mb-0"
               >
-                <CommonBtn btntext={"swap now"} />
+                <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
               </div>
               
             </div>

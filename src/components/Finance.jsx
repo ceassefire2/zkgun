@@ -26,7 +26,7 @@ const Finance = () => {
               
               className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8"
             >
-              <CommonBtn btntext="learn more about us" />
+              <CommonBtn btntext="learn more about us" maxWidth="max-w-[245px]" />
             </div>
             
           </div>

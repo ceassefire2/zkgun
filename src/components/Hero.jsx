@@ -65,7 +65,7 @@ const Hero = () => {
         data-aos="zoom-in"
         className="flex justify-center w-full my-8 md:mt-12 md:mb-10"
       >
-        <CommonBtn btntext={"swap now"} />
+        <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
       </div>
 
 

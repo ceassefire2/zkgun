@@ -67,7 +67,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="hidden w-[200px] md:flex justify-end" >
-              <CommonBtn btntext={"swap now"} />
+              <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
             </div>
 
             <div className="flex md:hidden">
@@ -134,7 +134,7 @@ const Header = () => {
                 className="custom-sm:w-full flex justify-center"
               >
 
-                <CommonBtn btntext={"swap now"} />
+                <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
 
 
               </li>

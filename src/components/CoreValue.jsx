@@ -40,7 +40,7 @@ const CoreValue = () => {
             data-aos="zoom-out"
             className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex"
           >
-            <CommonBtn btntext={"Learn about us"} />
+            <CommonBtn btntext={"Learn about us"} maxWidth="max-w-[197px]" />
           </div>
           <div className=" lg:hidden">
 

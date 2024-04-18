@@ -34,7 +34,7 @@ const OurEcosystem = () => {
             data-aos="zoom-out"
             className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8 md:mb-0"
           >
-            <CommonBtn btntext="Learn more about our services" />
+            <CommonBtn btntext="Learn more about our services" maxWidth="max-w-[338px]" />
           </div>
 
           <ReactParallaxTilt

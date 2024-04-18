@@ -52,7 +52,7 @@ const Hero = () => {
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction
       </p>
-      <div data-aos="zoom-in" className="flex sm:justify-center my-8 md:mt-12 md:mb-10">
+      <div data-aos="zoom-in" className="flex justify-center my-8 md:mt-12 md:mb-10">
         <CommonBtn btntext={"swap now"} />
       </div>
       <Lottie

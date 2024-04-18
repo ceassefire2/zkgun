@@ -4,7 +4,6 @@ import ecoCardImg_first from "../../assets/images/webp/our-eco-img-first.webp";
 import ecoCardImg_second from "../../assets/images/webp/our-eco-img-second.webp";
 import ecoCardImg_third from "../../assets/images/webp/our-eco-img-third.webp";
 import star from "../../assets/images/webp/star-image.webp";
-import { ConfidentialityIcon, EfficiencyIcon, PrivacyIcon } from "./Icons";
 import privacy from "../../assets/images/json/privacy.json";
 import confidentiality from "../../assets/images/json/confidentiality.json";
 import efficiency from "../../assets/images/json/efficiency.json";
@@ -38,7 +37,7 @@ export const ourEcoCardList = [
     title: "Anonymous cross-chain swap",
     description: "Trade without limits or custody.",
     spandescription:
-      "Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens",
+      " Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens",
     image: ecoCardImg_first,
     hidden: "md:hidden",
     rotate: "rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",

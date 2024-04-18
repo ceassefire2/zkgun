@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { DoubleArrowUpIcon, MenuIcon } from './Icons';
+import React, { useEffect, useState } from 'react';
+import { DoubleArrowUpIcon } from './Icons';
 const BackToTop = () => {
   const [showScroll, setShowScroll] = useState(false)
   useEffect(() => {

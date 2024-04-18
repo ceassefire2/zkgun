@@ -9,7 +9,7 @@ import { coreValueCardList } from "./common/Helper";
 import { CoreValueRightHexagon, CoreValuesIcon } from "./common/Icons";
 import Lottie from "react-lottie-player";
 
-const CoreValue = ({ setOpenPopUp, openPopUp }) => {
+const CoreValue = () => {
   return (
     <>
       <div className="relative">
@@ -35,33 +35,13 @@ const CoreValue = ({ setOpenPopUp, openPopUp }) => {
             Our crypto creed
           </h2>
           <div
-            onClick={() => setOpenPopUp(true)}
+
             data-aos="zoom-out"
             className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex"
           >
             <CommonBtn btntext={"Learn about us"} />
           </div>
-          {openPopUp && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center">
-              <div
-                className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
-                onClick={() => setOpenPopUp(false)}
-              ></div>{" "}
-              {/* Overlay */}
-              <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
-                {/* Popup content */}
-                <p className="font-manrope text-xl sm:text-2xl text-white">
-                  Coming Soon
-                </p>
-                <button
-                  className="absolute top-4 end-4 hover:opacity-40 duration-300"
-                  onClick={() => setOpenPopUp(false)}
-                >
-                  ❌
-                </button>
-              </div>
-            </div>
-          )}
+
           <Swiper
             pagination={true}
             modules={[Pagination]}

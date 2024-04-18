@@ -21,19 +21,18 @@ function App() {
       duration: 1200,
     });
   }, []);
-  const [openPopUp, setOpenPopUp] = useState(false);
 
   return (
     <>
       <div className="overflow-hidden">
         <BackToTop />
-        <Header setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <Hero setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <Finance setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <OurEcosystem setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <CoreValue setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <OurCapabilities setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
-        <Discover setOpenPopUp={setOpenPopUp} openPopUp={openPopUp} />
+        <Header />
+        <Hero />
+        <Finance />
+        <OurEcosystem />
+        <CoreValue />
+        <OurCapabilities />
+        <Discover />
         <Decentralized />
         <JoinZkgun />
         <Footer />

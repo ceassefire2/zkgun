@@ -11,7 +11,7 @@ import CommonBtn from "./common/CommonBtn";
 import { GradientImage, MobileGradientImage } from "./common/Icons";
 import ReactParallaxTilt from "react-parallax-tilt";
 
-const Discover = ({ setOpenPopUp, openPopUp }) => {
+const Discover = () => {
   return (
     <>
       <div className="max-w-[1400px] mx-auto px-4 md:px-5">
@@ -107,34 +107,14 @@ const Discover = ({ setOpenPopUp, openPopUp }) => {
                 the ecosystem. It's time to join a community where every crypto
                 enthusiast can find their place.
               </p>
-              <button
-                onClick={() => setOpenPopUp(true)}
+              <div
+
                 data-aos="zoom-in"
                 className="flex justify-center w-full mt-2 mb-6 md:mb-0"
               >
                 <CommonBtn btntext={"swap now"} />
-              </button>
-              {openPopUp && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center">
-                  <div
-                    className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
-                    onClick={() => setOpenPopUp(false)}
-                  ></div>{" "}
-                  {/* Overlay */}
-                  <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
-                    {/* Popup content */}
-                    <p className="font-manrope text-xl sm:text-2xl text-white">
-                      Coming Soon
-                    </p>
-                    <button
-                      className="absolute top-4 end-4 hover:opacity-40 duration-300"
-                      onClick={() => setOpenPopUp(false)}
-                    >
-                      ❌
-                    </button>
-                  </div>
-                </div>
-              )}
+              </div>
+              
             </div>
           </div>
         </div>

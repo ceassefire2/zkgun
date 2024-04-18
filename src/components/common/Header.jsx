@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 import CommonBtn from "./CommonBtn";
 import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
 
-const Header = ({ setOpenPopUp, openPopUp }) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
-    if (isOpen || openPopUp) {
+    if (isOpen) {
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
@@ -14,14 +14,14 @@ const Header = ({ setOpenPopUp, openPopUp }) => {
     return () => {
       document.body.classList.remove("overflow-hidden");
     };
-  }, [isOpen, openPopUp]);
+  }, [isOpen]);
 
   return (
     <>
       <div className="max-w-[1400px] mx-auto px-4 md:px-5">
         <nav className="">
           <div className="">
-            <div className="flex items-center justify-between mt-6">
+            <div className="flex items-center justify-between pt-6">
               <div className="flex-shrink-0">
                 <a href="#home" rel="noreferrer" className="text-white">
                   <PageIcon />
@@ -67,30 +67,10 @@ const Header = ({ setOpenPopUp, openPopUp }) => {
                   </li>
                 </ul>
               </div>
-              <a className="hidden md:block" onClick={() => setOpenPopUp(true)}>
+              <div className="hidden w-[200px] md:flex justify-end" >
                 <CommonBtn btntext={"swap now"} />
-              </a>
-              {openPopUp && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center">
-                  <div
-                    className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
-                    onClick={() => setOpenPopUp(false)}
-                  ></div>{" "}
-                  {/* Overlay */}
-                  <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
-                    {/* Popup content */}
-                    <p className="font-manrope text-xl sm:text-2xl text-white">
-                      Coming Soon
-                    </p>
-                    <button
-                      className="absolute top-4 end-4 hover:opacity-40 duration-300"
-                      onClick={() => setOpenPopUp(false)}
-                    >
-                      ❌
-                    </button>
-                  </div>
-                </div>
-              )}
+              </div>
+
               <div className="flex md:hidden">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
@@ -106,12 +86,11 @@ const Header = ({ setOpenPopUp, openPopUp }) => {
             </div>
           </div>
           <div
-            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen z-30 bg-dark top-0 start-0 ${
-              isOpen ? "translate-x-0" : "translate-x-[-100%]"
-            }`}
+            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen z-30 bg-dark top-0 start-0 ${isOpen ? "translate-x-0" : "translate-x-[-100%]"
+              }`}
             id="mobile-menu"
           >
-            <ul className="px-4 pt-2 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
+            <ul className="px-4 pt-6 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
               <li className="!m-0">
                 <a
                   rel="noreferrer"
@@ -153,33 +132,13 @@ const Header = ({ setOpenPopUp, openPopUp }) => {
                 </a>
               </li>
               <li
-                onClick={() => setIsOpen(!isOpen)}
+
                 className="custom-sm:w-full"
               >
-                <a onClick={() => setOpenPopUp(true)}>
-                  <CommonBtn btntext={"swap now"} />
-                </a>
-                {openPopUp && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center">
-                    <div
-                      className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
-                      onClick={() => setOpenPopUp(false)}
-                    ></div>{" "}
-                    {/* Overlay */}
-                    <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
-                      {/* Popup content */}
-                      <p className="font-manrope text-xl sm:text-2xl text-white">
-                        Coming Soon
-                      </p>
-                      <button
-                        className="absolute top-4 end-4 hover:opacity-40 duration-300"
-                        onClick={() => setOpenPopUp(false)}
-                      >
-                        ❌
-                      </button>
-                    </div>
-                  </div>
-                )}
+
+                <CommonBtn btntext={"swap now"} />
+
+
               </li>
             </ul>
           </div>

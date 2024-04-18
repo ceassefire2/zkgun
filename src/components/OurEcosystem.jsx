@@ -5,7 +5,7 @@ import { ourEcoCardList } from "./common/Helper";
 import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
 import ReactParallaxTilt from "react-parallax-tilt";
 
-const OurEcosystem = ({ setOpenPopUp, openPopUp }) => {
+const OurEcosystem = () => {
   return (
     <>
       <div id="services" className="relative">
@@ -31,33 +31,12 @@ const OurEcosystem = ({ setOpenPopUp, openPopUp }) => {
             Decentralized network diversity
           </h2>
           <div
-            onClick={() => setOpenPopUp(true)}
             data-aos="zoom-out"
             className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8 md:mb-0"
           >
             <CommonBtn btntext="Learn more about our services" />
           </div>
-          {openPopUp && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center">
-              <div
-                className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
-                onClick={() => setOpenPopUp(false)}
-              ></div>{" "}
-              {/* Overlay */}
-              <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
-                {/* Popup content */}
-                <p className="font-manrope text-xl sm:text-2xl text-white">
-                  Coming Soon
-                </p>
-                <button
-                  className="absolute top-4 end-4 hover:opacity-40 duration-300"
-                  onClick={() => setOpenPopUp(false)}
-                >
-                  ❌
-                </button>
-              </div>
-            </div>
-          )}
+
           <ReactParallaxTilt
             tiltMaxAngleX={3}
             tiltMaxAngleY={3}

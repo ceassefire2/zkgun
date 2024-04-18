@@ -8,7 +8,7 @@ import heroSkull from "../assets/images/png/hero-skull.png";
 import CommonBtn from "./common/CommonBtn";
 import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
 
-const Hero = ({ setOpenPopUp, openPopUp }) => {
+const Hero = () => {
   return (
     <div
       id="home"
@@ -61,35 +61,14 @@ const Hero = ({ setOpenPopUp, openPopUp }) => {
         Non-Custodial, Decentralized & Anonymous.{" "}
         <br className="block lg:hidden" /> Freedom in every transaction.
       </p>
-      <button
-        onClick={() => setOpenPopUp(true)}
+      <div
         data-aos="zoom-in"
         className="flex justify-center w-full my-8 md:mt-12 md:mb-10"
       >
         <CommonBtn btntext={"swap now"} />
-      </button>
+      </div>
 
-      {openPopUp && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center">
-          <div
-            className="fixed inset-0 bg-black opacity-50 cursor-pointer z-50"
-            onClick={() => setOpenPopUp(false)}
-          ></div>{" "}
-          {/* Overlay */}
-          <div className="relative z-50 bg-dark p-16 sm:p-20 rounded-md shadow-sm shadow-blalg">
-            {/* Popup content */}
-            <p className="font-manrope text-xl sm:text-2xl text-white">
-              Coming Soon
-            </p>
-            <button
-              className="absolute top-4 end-4 hover:opacity-40 duration-300"
-              onClick={() => setOpenPopUp(false)}
-            >
-              ❌
-            </button>
-          </div>
-        </div>
-      )}
+
       <Lottie
         loop
         animationData={heroLottie}

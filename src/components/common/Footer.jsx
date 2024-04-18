@@ -33,7 +33,8 @@ const Footer = () => {
               </a>
               <a
                 className="cursor-pointer hover:scale-110 duration-300"
-                href="https://docs.zkgun.org"
+                // href="https://docs.zkgun.org"
+                href="documentation"
                 target="_blank"
                 rel="noopener noreferrer"
               >

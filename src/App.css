@@ -136,3 +136,7 @@
         transform: translate(40px) rotate(10deg) skew(10deg) perspective(1000px);
     }
 }
+
+.shadow_doc{
+    box-shadow: 0px_0px_120.3px_0px_#0000000D;
+}

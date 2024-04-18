@@ -1,18 +1,13 @@
-import "./App.css";
-import Hero from "./components/Hero";
-import Footer from "./components/common/Footer";
-import Header from "./components/common/Header";
-import Finance from "./components/Finance";
-import JoinZkgun from "./components/JoinZkgun";
-import CoreValue from "./components/CoreValue";
-import OurEcosystem from "./components/OurEcosystem";
-import BackToTop from "./components/common/BackToTop";
-import Discover from "./components/Discover";
-import OurCapabilities from "./components/OurCapabilities";
-import Decentralized from "./components/Decentralized";
-import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Document from "./components/Document";
+import BackToTop from "./components/common/BackToTop";
+import Footer from "./components/common/Footer";
+import Header from "./components/common/Header";
+import HomePage from "./components/homepage/HomePage";
 
 function App() {
   useEffect(() => {
@@ -24,17 +19,14 @@ function App() {
 
   return (
     <>
-      <BackToTop />
-      <Header />
-      <div className="overflow-hidden">
-        <Hero />
-        <Finance />
-        <OurEcosystem />
-        <CoreValue />
-        <OurCapabilities />
-        <Discover />
-        <Decentralized />
-        <JoinZkgun />
+      <div className="overflow-x-hidden">
+        <BackToTop />
+        <Header />
+        <Routes>
+
+          <Route exact path="/" Component={HomePage} />
+          <Route exact path="/documentation" Component={Document} />
+        </Routes>
         <Footer />
       </div>
     </>

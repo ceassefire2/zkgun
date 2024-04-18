@@ -26,6 +26,7 @@ module.exports = {
       },
       fontSize: {
         "custom-sm": "22px",
+        "custom-2sm": "28px",
         "custom-md": "40px",
         "custom-2md": "52px",
         "custom-lg": "56px",
@@ -42,6 +43,7 @@ module.exports = {
           "linear-gradient(270deg, rgba(99, 199, 150, 0.0768) 0%, rgba(99, 199, 150, 0.32) 49.63%, rgba(99, 199, 150, 0.0768) 100%)",
         "scarlet-gradient":
           "linear-gradient(180deg, rgba(255, 33, 0, 0.00) -23.62%, #FF2100 55.73%)",
+        "doucmentation": "linear-gradient(180deg, rgba(255, 33, 0, 0) -23.62%, #FF2100 55.73%)",
       },
       screens: {
         "custom-2xs": { max: "401.98px" },

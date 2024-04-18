@@ -116,3 +116,77 @@ export const decentralizedList = [
     aosAnimation: "fade-left",
   },
 ];
+
+export const documentDataList = [
+  {
+    title: "Introduction",
+    description:
+      "Welcome to our documentation page! Here, you'll find everything you need to know about [product/tool]. Whether you're a beginner or an expert, our guides will help you navigate through installation, configuration, and usage effortlessly. Dive in to discover step-by-step instructions, troubleshooting tips, and insightful FAQs. Let's embark on a journey to unlock the full potential of [product/tool] together!",
+  },
+  {
+    title: "About this documents",
+    description:
+      "Experience seamless cross-chain crypto swaps with ease! Our platform taps into 20+ liquidity pools for instant transactions. Say goodbye to gas fees with our ERC-4337 wallet, your gateway to hassle-free crypto management. Plus, enjoy enhanced privacy with RAILGUN integration for secure transactions. Simplify your crypto journey today!",
+  },
+  {
+    title: "Description",
+    description:
+      "Effortlessly swap cryptocurrencies across different chains with our platform, utilizing our extensive liquidity pools sourced from over 20 providers. Our ERC-4337 wallet ensures a smooth and gas-free crypto experience, granting you seamless transactions. Integrated with RAILGUN for heightened privacy, your transactions are secure and confidential. Simplify your crypto transactions with ease.",
+  },
+  {
+    title: "Tutorials",
+    description:
+      "Welcome to our documentation page! Here, you'll find everything you need to know about [product/tool]. Whether you're a beginner or an expert, our guides will help you navigate through installation, configuration, and usage effortlessly. Dive in to discover step-by-step instructions, troubleshooting tips, and insightful FAQs. Let's embark on a journey to unlock the full potential of [product/tool] together!",
+  },
+  {
+    title: "Advanced Techniques",
+    description:
+      "Experience seamless cross-chain crypto swaps with ease! Our platform taps into 20+ liquidity pools for instant transactions. Say goodbye to gas fees with our ERC-4337 wallet, your gateway to hassle-free crypto management. Plus, enjoy enhanced privacy with RAILGUN integration for secure transactions. Simplify your crypto journey today!",
+  },
+  {
+    title: "Basic Usage",
+    description:
+      "Effortlessly swap cryptocurrencies across different chains with our platform, utilizing our extensive liquidity pools sourced from over 20 providers. Our ERC-4337 wallet ensures a smooth and gas-free crypto experience, granting you seamless transactions. Integrated with RAILGUN for heightened privacy, your transactions are secure and confidential. Simplify your crypto transactions with ease.",
+  },
+  {
+    title: "API Reference",
+    description:
+      "Experience seamless cross-chain crypto swaps with ease! Our platform taps into 20+ liquidity pools for instant transactions. Say goodbye to gas fees with our ERC-4337 wallet, your gateway to hassle-free crypto management. Plus, enjoy enhanced privacy with RAILGUN integration for secure transactions. Simplify your crypto journey today!",
+  },
+  {
+    title: "Endpoints",
+    description:
+      "Effortlessly swap cryptocurrencies across different chains with our platform, utilizing our extensive liquidity pools sourced from over 20 providers. Our ERC-4337 wallet ensures a smooth and gas-free crypto experience, granting you seamless transactions. Integrated with RAILGUN for heightened privacy, your transactions are secure and confidential. Simplify your crypto transactions with ease.",
+  },
+
+];
+
+export const documentationList = [
+  {
+    title: "Documentation",
+    firstLink: "Home",
+    secondLink: "Service",
+    thirdLink: "Community",
+    fourthLink: "Contact",
+    className:"text-opacity-100 max-w-[208px] w-full py-1.5 bg-white bg-opacity-5 border-s-[2px] border-white rounded-e-[4px]",
+  },
+  {
+    title: "Getting Started",
+    firstLink: "Introduction",
+    secondLink: "Configuration",
+  },
+  {
+    title: "Tutorials",
+    firstLink: "Basic Usage",
+    secondLink: "Advanced Techniques",
+  },
+  {
+    title: "API Reference",
+    firstLink: "Overview",
+    secondLink: "Endpoints",
+  },
+  {
+    title: "FAQs",
+    firstLink: "Support",
+  },
+]

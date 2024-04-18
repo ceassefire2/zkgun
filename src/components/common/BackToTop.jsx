@@ -22,7 +22,7 @@ const BackToTop = () => {
     <>
       <div>
         <div
-          className={` transition-all duration-300 z-50 back_to_top fixed right-5 bottom-5 sm:bottom-16 lg:bottom-20 sm:right-4 cursor-pointer`}
+          className={` transition-all duration-300 z-50 back_to_top fixed right-5 bottom-5 sm:bottom-16 lg:bottom-20 sm:right-4 custom-2xl:bottom-5 cursor-pointer`}
           onClick={scrollTop}
           style={{ display: showScroll ? "flex" : "none" }}
         >

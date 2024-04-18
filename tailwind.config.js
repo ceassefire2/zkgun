@@ -47,6 +47,7 @@ module.exports = {
         "custom-2xs": { max: "401.98px" },
         "custom-xs": { max: "374.98px" },
         "custom-sm": { max: "479.98px" },
+        "custom-2xl": { min: "1536px" },
       },
     },
   },

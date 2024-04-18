@@ -39,7 +39,7 @@ const OurCapabilities = () => {
         <div
 
           data-aos="zoom-in"
-          className="flex sm:justify-center mt-6 md:mt-8"
+          className="flex sm:justify-center w-full mt-6 md:mt-8"
         >
           <CommonBtn btntext="View all capabilities" />
         </div>

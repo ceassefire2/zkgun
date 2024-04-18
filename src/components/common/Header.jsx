@@ -94,7 +94,7 @@ const Header = () => {
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#home"
-                  className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+                  className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Home
                 </a>
@@ -104,7 +104,7 @@ const Header = () => {
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#services"
-                  className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+                  className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Services
                 </a>
@@ -114,7 +114,7 @@ const Header = () => {
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#community"
-                  className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+                  className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Community
                 </a>
@@ -124,14 +124,14 @@ const Header = () => {
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
                   href="#contact"
-                  className="font-manrope font-normal text-white relative text-2xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
+                  className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Contact
                 </a>
               </li>
               <li
 
-                className="custom-sm:w-full"
+                className="custom-sm:w-full flex justify-center"
               >
 
                 <CommonBtn btntext={"swap now"} />

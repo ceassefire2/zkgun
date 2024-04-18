@@ -24,9 +24,9 @@ function App() {
 
   return (
     <>
+      <BackToTop />
+      <Header />
       <div className="overflow-hidden">
-        <BackToTop />
-        <Header />
         <Hero />
         <Finance />
         <OurEcosystem />

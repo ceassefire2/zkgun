@@ -18,33 +18,6 @@ const Footer = () => {
             <PageIcon />
           </a>
           <div className="mt-8 sm:mt-0">
-            <div className="flex items-center gap-3 mb-4 justify-center sm:justify-end">
-              <a
-                className="cursor-pointer hover:scale-110 duration-300"
-                href="https://t.me/zkgunbot"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="w-[30px]"
-                  src={baselineTelegram}
-                  alt="baseline telegram"
-                />
-              </a>
-              <a
-                className="cursor-pointer hover:scale-110 duration-300"
-                // href="https://docs.zkgun.org"
-                href="documentation"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="w-[30px]"
-                  src={solarDocument}
-                  alt="baseline telegram"
-                />
-              </a>
-            </div>
             <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-6 sm:mt-0">
               <a
                 rel="noreferrer"

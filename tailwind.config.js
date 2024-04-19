@@ -23,6 +23,7 @@ module.exports = {
         funBlue: "#1952A8",
         fireBush: "#E59E2B",
         racingGreen: "#0A140F",
+        blackPearl: "#030621",
       },
       fontSize: {
         "custom-sm": "22px",

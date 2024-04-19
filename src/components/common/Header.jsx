@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import CommonBtn from "./CommonBtn";
 import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,13 +48,13 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a
+                  <Link
                     rel="noreferrer"
-                    href="#community"
+                    to="/documentation"
                     className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                   >
                     Community
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -110,14 +111,14 @@ const Header = () => {
                 </a>
               </li>
               <li className="!m-0">
-                <a
+                <Link
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#community"
+                  to="documentation"
                   className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Community
-                </a>
+                </Link>
               </li>
               <li className="!m-0">
                 <a

@@ -19,16 +19,13 @@ function App() {
 
   return (
     <>
-      <div >
-        <BackToTop />
-        <Header />
-        <Routes>
-          <Route exact path="/" Component={HomePage} />
-          <Route exact path="/documentation" Component={Document} />
-        </Routes>
-
-        <Footer />
-      </div>
+      <BackToTop />
+      <Header />
+      <Routes>
+        <Route exact path="/" Component={HomePage} />
+        <Route exact path="/documentation" Component={Document} />
+      </Routes>
+      <Footer />
     </>
   );
 }

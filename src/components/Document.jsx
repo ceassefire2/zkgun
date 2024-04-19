@@ -35,16 +35,16 @@ const Document = () => {
           <DocumentHexagonIcon />
         </span>
         <img
-          className="absolute bottom-0 start-0 max-w-[400px] hidden md:block w-full"
+          className="absolute bottom-0 start-0 max-w-[400px] hidden md:block w-full -z-[1]"
           src={documentHexagon}
           alt="document"
         />
-        <div className="danger_blur bg-primary-color-gradient blur-[1244px] h-[574px] w-[461px] absolute top-[48%] start-[60%] -translate-x-1/2 rounded-full hidden opacity-[18%] md:block"></div>
-        <div className="danger_blur bg-doucmentation blur-[844px] h-[776px] w-[436px] absolute top-[18%] -end-[53%] lg:-end-[40%] xl:-end-[26%] rounded-full hidden !opacity-[48%] md:block"></div>
-        <div className="max-w-[1400px] mx-auto px-4 md:px-5 pb-[50px] md:pb-16 xl:pb-20 ">
+        <div className="danger_blur bg-primary-color-gradient blur-[1244px] h-[574px] w-[461px] absolute top-[48%] start-[60%] -translate-x-1/2 rounded-full hidden opacity-[18%] md:block -z-[1]"></div>
+        <div className="danger_blur bg-doucmentation blur-[844px] h-[776px] w-[436px] absolute top-[18%] -end-[53%] lg:-end-[40%] xl:-end-[26%] rounded-full hidden !opacity-[48%] md:block -z-[1]"></div>
+        <div className="max-w-[1400px] mx-auto px-4 md:px-5 pb-[50px] md:pb-16 xl:pb-20">
           <div className="flex items-start md:gap-6 lg:gap-[34px] w-full">
             <div
-              className={`md:sticky fixed top-[0px] bg-blackPearl md:start-0 md:w-[28%] lg:w-[24%] xl:w-[22%] border-e border-white border-opacity-5 shadow-[0px_0px_120.3px_0px_#0000000D]
+              className={`md:sticky max-h-[1596px] fixed top-[0px] bg-blackPearl md:start-0 md:w-[28%] lg:w-[24%] xl:w-[22%] border-e border-white border-opacity-5 shadow-[0px_0px_120.3px_0px_#0000000D]
                     max-w-[230px] md:max-w-full w-full -start-[230px]  transition-all duration-300
                         ${isOpen ? "start-0 z-[200]" : ""}    `}
             >
@@ -57,7 +57,7 @@ const Document = () => {
                 >
                   <LeftArrowMobile />
                 </div>
-                <div className="h-[calc(100vh-100px)] max-h-[1596px] overflow-y-scroll">
+                <div className="h-[calc(100vh-100px)] overflow-y-scroll">
                   {documentationList.map((value, index) => {
                     return (
                       <div key={index} className="z-10 relative">

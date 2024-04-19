@@ -57,7 +57,7 @@ const Document = () => {
                 >
                   <LeftArrowMobile />
                 </div>
-                <div className="h-[calc(100vh-100px)] overflow-y-scroll">
+                <div className="h-[calc(100vh-80px)] overflow-y-scroll">
                   {documentationList.map((value, index) => {
                     return (
                       <div key={index} className="z-10 relative">

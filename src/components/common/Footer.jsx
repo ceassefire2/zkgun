@@ -3,6 +3,7 @@ import React from "react";
 import { HexagonIcon, PageIcon } from "./Icons";
 import baselineTelegram from "../../assets/images/svg/baseline-telegram.svg";
 import solarDocument from "../../assets/images/svg/solar-document.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -33,13 +34,13 @@ const Footer = () => {
               >
                 Services
               </a>
-              <a
+              <Link
                 rel="noreferrer"
-                href="#community"
+                to="/doumentation"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Community
-              </a>
+              </Link>
               <a
                 rel="noreferrer"
                 href="#contact"

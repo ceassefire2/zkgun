@@ -19,13 +19,15 @@ function App() {
 
   return (
     <>
+      <div className="overflow-x-clip">
       <BackToTop />
       <Header />
       <Routes>
         <Route exact path="/" Component={HomePage} />
         <Route exact path="/documentation" Component={Document} />
       </Routes>
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 }

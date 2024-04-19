@@ -15,18 +15,18 @@ const Footer = () => {
       </div>
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 pt-[50px] md:pt-16 xl:pt-20">
         <div className="flex flex-col items-center sm:flex-row custom-xs:flex-col  sm:justify-between sm:items-center pb-8 border-b border-b-white border-opacity-20 border-b-solid">
-          <a href="/" rel="noreferrer" className="text-white">
+          <Link to="/" rel="noreferrer" className="text-white">
             <PageIcon />
-          </a>
+          </Link>
           <div className="mt-8 sm:mt-0">
             <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-6 sm:mt-0">
-              <a
+              <Link
                 rel="noreferrer"
-                href="#home"
+                to="/"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Home
-              </a>
+              </Link>
               <a
                 rel="noreferrer"
                 href="#services"
@@ -36,7 +36,7 @@ const Footer = () => {
               </a>
               <Link
                 rel="noreferrer"
-                to="/doumentation"
+                to="/documentation"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Community

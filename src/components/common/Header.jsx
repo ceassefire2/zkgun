@@ -23,20 +23,20 @@ const Header = () => {
         <nav>
           <div className="flex items-center justify-between mt-6">
             <div className="flex-shrink-0">
-              <a href="/" rel="noreferrer" className="text-white">
+              <Link to="/" rel="noreferrer" className="text-white">
                 <PageIcon />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:block">
               <ul className="flex items-baseline gap-8">
                 <li>
-                  <a
+                  <Link
                     rel="noreferrer"
-                    href="#home"
+                    to="/"
                     className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -91,14 +91,14 @@ const Header = () => {
           >
             <ul className="px-4 pt-6 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
               <li className="!m-0">
-                <a
+                <Link
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#home"
+                  to="/"
                   className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="!m-0">
                 <a

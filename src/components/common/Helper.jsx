@@ -168,7 +168,7 @@ export const documentationList = [
     secondLink: "Service",
     thirdLink: "Community",
     fourthLink: "Contact",
-    className:"text-opacity-100 max-w-[208px] w-full py-1.5 bg-white bg-opacity-5 border-s-[2px] border-white rounded-e-[4px]",
+    className:"",
   },
   {
     title: "Getting Started",

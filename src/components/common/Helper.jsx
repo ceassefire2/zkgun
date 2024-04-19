@@ -168,7 +168,6 @@ export const documentationList = [
     secondLink: "Service",
     thirdLink: "Community",
     fourthLink: "Contact",
-    className:"",
   },
   {
     title: "Getting Started",

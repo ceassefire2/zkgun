@@ -31,11 +31,11 @@ const Document = () => {
                     max-w-[230px] md:max-w-full w-full -start-[230px]  transition-all duration-300 min-h-screen
                         ${isOpen ? "start-0 z-[200]" : ""}    `}>
                             <div className='relative pb-10 pt-16 md:pt-10 ps-4 md:ps-0 pe-4'>
-                                <span className='block w-[200%] min-h-screen h-full bg-blackPearl absolute end-0 top-0 z-0'></span>
+                                <span className='block w-[140%] min-h-screen h-full bg-blackPearl absolute end-0 top-0 z-0'></span>
+                                <div className="bg-primary-color-gradient blur-[534px] h-[418px] w-[235px] absolute top-[28%] start-1/2 -translate-x-1/2 rounded-full hidden opacity-[18%] md:block"></div>
                                 <div onClick={() => setIsOpen(false)} className="absolute inline-block top-4 end-4 cursor-pointer md:hidden">
                                     <LeftArrowMobile />
                                 </div>
-                                <div className="bg-primary-color-gradient blur-[534px] h-[418px] w-[235px] absolute top-[28%] start-1/2 -translate-x-1/2 rounded-full hidden opacity-[18%] md:block"></div>
                                 {documentationList.map((value, index) => {
                                     return (
                                         <div key={index} className='z-10 relative'>

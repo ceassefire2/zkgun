@@ -158,34 +158,41 @@ export const documentDataList = [
     description:
       "Effortlessly swap cryptocurrencies across different chains with our platform, utilizing our extensive liquidity pools sourced from over 20 providers. Our ERC-4337 wallet ensures a smooth and gas-free crypto experience, granting you seamless transactions. Integrated with RAILGUN for heightened privacy, your transactions are secure and confidential. Simplify your crypto transactions with ease.",
   },
-
 ];
 
 export const documentationList = [
   {
     title: "Documentation",
-    firstLink: "Home",
-    secondLink: "Service",
-    thirdLink: "Community",
-    fourthLink: "Contact",
+    links: [
+      { label: "Home", link: "/" },
+      { label: "Service", link: "/#services" },
+      { label: "Community", link: "/documentation" },
+      { label: "Contact", link: "/#contact" },
+    ],
   },
   {
     title: "Getting Started",
-    firstLink: "Introduction",
-    secondLink: "Configuration",
+    links: [
+      { label: "Introduction", link: "" },
+      { label: "Configuration", link: "" },
+    ],
   },
   {
     title: "Tutorials",
-    firstLink: "Basic Usage",
-    secondLink: "Advanced Techniques",
+    links: [
+      { label: "Basic Usage", link: "" },
+      { label: "Advanced Techniques", link: "" },
+    ],
   },
   {
     title: "API Reference",
-    firstLink: "Overview",
-    secondLink: "Endpoints",
+    links: [
+      { label: "Overview", link: "" },
+      { label: "Endpoints", link: "" },
+    ],
   },
   {
     title: "FAQs",
-    firstLink: "Support",
+    links: [{ label: "Support", link: "" }],
   },
-]
+];

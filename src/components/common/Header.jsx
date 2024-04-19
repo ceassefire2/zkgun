@@ -1,11 +1,12 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import CommonBtn from "./CommonBtn";
 import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -17,11 +18,26 @@ const Header = () => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.slice(1); // Remove the '#' symbol
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
   return (
     <>
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 ">
         <nav>
-          <div className="flex items-center justify-between mt-6">
+          <div
+            className={`flex items-center justify-between mt-6 ${
+              location.pathname === "/documentation" ? "mb-6" : ""
+            }`}
+          >
             <div className="flex-shrink-0">
               <Link to="/" rel="noreferrer" className="text-white">
                 <PageIcon />
@@ -39,13 +55,13 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     rel="noreferrer"
-                    href="#services"
+                    to="/#services"
                     className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -57,17 +73,17 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     rel="noreferrer"
-                    href="#contact"
+                    to="/#contact"
                     className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
-            <div className="hidden w-[200px] md:flex justify-end" >
+            <div className="hidden w-[200px] md:flex justify-end">
               <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
             </div>
 
@@ -85,8 +101,9 @@ const Header = () => {
             </div>
           </div>
           <div
-            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen pt-6 z-30 bg-dark top-0 start-0 ${isOpen ? "translate-x-0" : "translate-x-[-100%]"
-              }`}
+            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen pt-6 z-30 bg-dark top-0 start-0 ${
+              isOpen ? "translate-x-0" : "translate-x-[-100%]"
+            }`}
             id="mobile-menu"
           >
             <ul className="px-4 pt-6 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
@@ -101,43 +118,37 @@ const Header = () => {
                 </Link>
               </li>
               <li className="!m-0">
-                <a
+                <Link
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#services"
+                  to="/#services"
                   className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li className="!m-0">
                 <Link
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
-                  to="documentation"
+                  to="/documentation"
                   className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Community
                 </Link>
               </li>
               <li className="!m-0">
-                <a
+                <Link
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
-                  href="#contact"
+                  to="/#contact"
                   className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Contact
-                </a>
+                </Link>
               </li>
-              <li
-
-                className="custom-sm:w-full flex justify-center"
-              >
-
+              <li className="custom-sm:w-full flex justify-center">
                 <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
-
-
               </li>
             </ul>
           </div>

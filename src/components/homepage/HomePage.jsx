@@ -11,7 +11,7 @@ import JoinZkgun from '../JoinZkgun'
 const HomePage = () => {
     return (
         <>
-            <div className="overflow-hidden">
+            <div className="overflow-x-clip">
                 <Hero />
                 <Finance />
                 <OurEcosystem />

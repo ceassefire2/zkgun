@@ -1,12 +1,25 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useEffect } from "react";
 import { HexagonIcon, PageIcon } from "./Icons";
-import baselineTelegram from "../../assets/images/svg/baseline-telegram.svg";
-import solarDocument from "../../assets/images/svg/solar-document.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const targetId = location.hash.slice(1); // Remove the '#' symbol
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
   const year = new Date().getFullYear();
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="relative">
       <div className="bg-scarlet-gradient blur-[130px] h-[400px] w-[150px] absolute bottom-20 -end-[192px] rounded-full"></div>
@@ -21,33 +34,35 @@ const Footer = () => {
           <div className="mt-8 sm:mt-0">
             <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-6 sm:mt-0">
               <Link
+                onClick={scrollToTop}
                 rel="noreferrer"
                 to="/"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Home
               </Link>
-              <a
+              <Link
                 rel="noreferrer"
-                href="#services"
+                to="/#services"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Services
-              </a>
+              </Link>
               <Link
+                onClick={scrollToTop}
                 rel="noreferrer"
                 to="/documentation"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Community
               </Link>
-              <a
+              <Link
                 rel="noreferrer"
-                href="#contact"
+                to="/#contact"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>

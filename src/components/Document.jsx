@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { documentDataList, documentationList } from './common/Helper'
 import documentHexagon from '../assets/images/png/document-hexagon.png'
-import { CloseIcon, DocumentHexagonIcon, HeroRightHexagon, LeftArrowMobile, RightArrowMobile, ThreeDotsIcon } from './common/Icons'
+import { documentDataList, documentationList } from './common/Helper'
+import { DocumentHexagonIcon, LeftArrowMobile, RightArrowMobile } from './common/Icons'
 
 const Document = () => {
     const [isOpen, setIsOpen] = useState(false);

@@ -21,7 +21,7 @@ const CommonBtn = (props) => {
         <span className={`${buttonText === true ? "translate-y-0 rotate-0 " : " -translate-y-[120px] rotate-[45deg]  absolute"}
          transition-all ease-linear text-nowrap duration-300
          `}>
-          comming soon
+          coming soon
         </span>
       </button >
     </>

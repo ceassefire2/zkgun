@@ -4,13 +4,13 @@ import { documentDataList, documentationList } from './common/Helper'
 const Document = () => {
     return (
         <>
-            <div className="relative mt-3 border-t border-white border-opacity-5 overflow-x-hidden">
+            <div className="relative mt-3 border-t border-white border-opacity-5 ">
                 <div className="danger_blur bg-doucmentation blur-[844px] h-[776px] w-[436px] absolute top-[20%] -end-[45%] lg:-end-[26%] rounded-full hidden !opacity-[48%] sm:block"></div>
                 <div className="max-w-[1400px] mx-auto px-4 md:px-5 pb-[50px] md:pb-16 xl:pb-20 flex items-start md:gap-6 lg:gap-[34px]">
-                    <div className="md:sticky absolute top-[0px] bg-[#030621] md:start-0 md:w-[28%] lg:w-[24%] xl:w-[21%] border-e border-white border-opacity-5 shadow-[0px_0px_120.3px_0px_#0000000D]
+                    <div className="md:sticky fixed top-[0px] bg-[#030621] md:start-0 md:w-[28%] lg:w-[24%] xl:w-[21%] border-e border-white border-opacity-5 shadow-[0px_0px_120.3px_0px_#0000000D]
                     max-w-[250px] w-full -start-[230px] hover:start-0 transition-all duration-300 min-h-screen
                     ">
-                        <div className='relative py-10 ps-4'>
+                        <div className='relative py-10 ps-4 ps-md-0 pe-4'>
                             <span className='block w-[1000%] min-h-screen h-full bg-[#030621] absolute end-0 top-0 z-0'></span>
                             {documentationList.map((value, index) => {
                                 return (

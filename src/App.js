@@ -19,14 +19,14 @@ function App() {
 
   return (
     <>
-      <div className="overflow-x-hidden">
+      <div >
         <BackToTop />
         <Header />
         <Routes>
-
           <Route exact path="/" Component={HomePage} />
           <Route exact path="/documentation" Component={Document} />
         </Routes>
+
         <Footer />
       </div>
     </>

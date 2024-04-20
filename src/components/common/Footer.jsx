@@ -70,7 +70,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center sm:flex-row flex-wrap sm:justify-between sm:items-center pb-8 lg:pb-12 pt-8">
+        <div className="flex flex-col items-center sm:flex-row flex-wrap sm:justify-between sm:items-center pb-8 xl:pb-12 pt-8">
           <p className="text-white text-opacity-60 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center">
             © {year} ZKGUN All Rights Reserved
           </p>

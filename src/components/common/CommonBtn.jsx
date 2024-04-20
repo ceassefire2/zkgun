@@ -29,7 +29,7 @@ const CommonBtn = (props) => {
             : "translate-y-[120px] -rotate-[45deg]  w-full absolute"
         } ${
           props.btntext === "Support"
-            ? " !-translate-y-[0px] !rotate-[0deg] !relative"
+            ? "!-translate-y-[0px] !rotate-[0deg] !relative"
             : ""
         }
          transition-all duration-300 w-full ease-linear text-nowrap`}

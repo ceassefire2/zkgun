@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-5 sm:mt-0">
-            <a rel="noreferrer" href="mailto:support@zkgunproject.org">
+            <a rel="noreferrer" href="mailto:hello@zkgun.org">
               <CommonBtn btntext={"Support"} />
             </a>
           </div>
@@ -76,10 +76,10 @@ const Footer = () => {
           </p>
           <a
             rel="noreferrer"
-            href="mailto:support@zkgunproject.org"
+            href="mailto:hello@zkgun.org"
             className="text-white text-opacity-60 hover:text-opacity-100 duration-300 text-base sm:text-sm md:text-base font-normal font-manrope h-full text-center mt-4 mb-8 sm:my-0"
           >
-            support@zkgunproject.org
+            hello@zkgun.org
           </a>
         </div>
       </div>

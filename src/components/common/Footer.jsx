@@ -67,8 +67,21 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <a rel="noreferrer" href="mailto:support@zkgunproject.org">
-              <CommonBtn btntext={"Support"} />
+            <a
+              rel="noreferrer"
+              href="mailto:support@zkgunproject.org"
+              className="font-bold uppercase group font-manrope bg-primary text-racingGreen text-base relative flex items-center justify-center overflow-hidden hover:text-primary group !leading-5 rounded-[100px] py-3 sm:py-4 md:py-5 px-8 shadow-[0px_13px_48px_0px_#63C7967A] border border-transparent
+         hover:border-primary"
+            >
+              <span className="absolute w-full h-full rounded-md bg-black -translate-x-[110%] duration-200 group-hover:translate-x-0"></span>
+
+              <span
+                className={`${ "translate-y-[120px] -rotate-[45deg]  w-full absolute"
+                }
+         transition-all duration-300 w-full ease-linear text-nowrap`}
+              >
+                Support
+              </span>
             </a>
           </div>
         </div>

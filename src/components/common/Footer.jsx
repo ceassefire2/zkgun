@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { HexagonIcon, PageIcon } from "./Icons";
 import { Link, useLocation } from "react-router-dom";
+import CommonBtn from "./CommonBtn";
 
 const Footer = () => {
   const location = useLocation();
@@ -64,6 +65,11 @@ const Footer = () => {
                 Contact
               </Link>
             </div>
+          </div>
+          <div>
+            <a rel="noreferrer" href="mailto:support@zkgunproject.org">
+              <CommonBtn btntext={"Support"} />
+            </a>
           </div>
         </div>
         <div className="flex flex-col items-center sm:flex-row flex-wrap sm:justify-between sm:items-center pb-8 lg:pb-12 pt-8">

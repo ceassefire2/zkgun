@@ -37,7 +37,7 @@ export const ourEcoCardList = [
     title: "Anonymous cross-chain swap",
     description: "Trade without limits or custody.",
     spandescription:
-      " Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens",
+      " Our platform offers unmatched rates and fast swaps across an expansive network of blockchains and tokens.",
     image: ecoCardImg_first,
     hidden: "md:hidden",
     rotate: "rotate-[30deg] mt-[14px] sm:mt-0 !max-w-[238px]",

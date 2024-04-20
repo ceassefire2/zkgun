@@ -1,9 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from "react";
 import { HexagonIcon, PageIcon } from "./Icons";
 import { Link, useLocation } from "react-router-dom";
 import CommonBtn from "./CommonBtn";
-
 const Footer = () => {
   const location = useLocation();
   useEffect(() => {
@@ -33,7 +31,7 @@ const Footer = () => {
             <PageIcon />
           </Link>
           <div className="mt-8 sm:mt-0">
-            <div className="flex flex-col items-center sm:flex-row gap-6 sm:gap-8 mt-6 sm:mt-0">
+            <div className="flex flex-col items-center sm:flex-row gap-5 md:gap-8">
               <Link
                 onClick={scrollToTop}
                 rel="noreferrer"
@@ -66,22 +64,9 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div>
-            <a
-              rel="noreferrer"
-              href="mailto:support@zkgunproject.org"
-              className="font-bold uppercase group font-manrope bg-primary text-racingGreen text-base relative flex items-center justify-center overflow-hidden hover:text-primary group !leading-5 rounded-[100px] py-3 sm:py-4 md:py-5 px-8 shadow-[0px_13px_48px_0px_#63C7967A] border border-transparent
-         hover:border-primary"
-            >
-              <span className="absolute w-full h-full rounded-md bg-black -translate-x-[110%] duration-200 group-hover:translate-x-0"></span>
-
-              <span
-                className={`${ "translate-y-[120px] -rotate-[45deg]  w-full absolute"
-                }
-         transition-all duration-300 w-full ease-linear text-nowrap`}
-              >
-                Support
-              </span>
+          <div className="mt-5 sm:mt-0">
+            <a rel="noreferrer" href="mailto:support@zkgunproject.org">
+              <CommonBtn btntext={"Support"} />
             </a>
           </div>
         </div>
@@ -101,5 +86,4 @@ const Footer = () => {
     </div>
   );
 };
-
 export default Footer;

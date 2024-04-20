@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
 const CommonBtn = (props) => {
   const [buttonText, setButtonText] = useState(false);
-
   const handleButtonClick = () => {
     setButtonText(!buttonText);
   };
-
   return (
     <button
       type="button"
@@ -36,7 +33,6 @@ const CommonBtn = (props) => {
       >
         {props.btntext}
       </span>
-
       {props.btntext !== "Support" && (
         <span
           className={`${
@@ -53,10 +49,8 @@ const CommonBtn = (props) => {
     </button>
   );
 };
-
 CommonBtn.propTypes = {
   btntext: PropTypes.string.isRequired,
   maxWidth: PropTypes.string, // Ensure you define the type based on your usage
 };
-
 export default CommonBtn;

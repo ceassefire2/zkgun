@@ -14,7 +14,7 @@ import ReactParallaxTilt from "react-parallax-tilt";
 const Discover = () => {
   return (
     <>
-      <div className="max-w-[1400px] mx-auto px-4 md:px-5">
+      <div id="community" className="max-w-[1400px] mx-auto px-4 md:px-5">
         <div className="bg-white-gradient p-[1px] rounded-[32px] relative">
           <div className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 rounded-[32px] bg-firefly relative  overflow-hidden">
             <span className="block w-[234px] h-[643px] red_blur -bottom-[120px] start-[-285px] rounded-[50%] blur-[240px] bg-opacity-[48%] absolute"></span>
@@ -114,7 +114,7 @@ const Discover = () => {
               >
                 <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
               </div>
-              
+
             </div>
           </div>
         </div>

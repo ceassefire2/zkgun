@@ -34,9 +34,7 @@ const Header = () => {
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 ">
         <nav>
           <div
-            className={`flex items-center justify-between mt-6 ${
-              location.pathname === "/documentation" ? "mb-6" : ""
-            }`}
+            className={`flex items-center justify-between mt-6`}
           >
             <div className="flex-shrink-0">
               <Link to="/" rel="noreferrer" className="text-white">
@@ -66,7 +64,7 @@ const Header = () => {
                 <li>
                   <Link
                     rel="noreferrer"
-                    to="/documentation"
+                    to="#community"
                     className="font-manrope font-normal text-white relative text-sm md:text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                   >
                     Community
@@ -131,7 +129,7 @@ const Header = () => {
                 <Link
                   rel="noreferrer"
                   onClick={() => setIsOpen(!isOpen)}
-                  to="/documentation"
+                  to="#community"
                   className="font-manrope font-normal text-white relative text-xl after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
                 >
                   Community

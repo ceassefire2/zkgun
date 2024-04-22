@@ -50,7 +50,7 @@ const Footer = () => {
               <Link
                 onClick={scrollToTop}
                 rel="noreferrer"
-                to="/documentation"
+                to="#community"
                 className="font-manrope font-normal text-white relative :text-base after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all after:ease-in-out ease-in-out after:duration-300 after:bg-white after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%] !leading-5 rounded-md "
               >
                 Community

@@ -10,7 +10,7 @@ const JoinZkgun = () => {
         <JoinLeftHexagon />
       </div>
       <div
-        id="community"
+       
         className="max-w-[1400px] mx-auto px-4 md:px-5 py-[30px] md:py-16 xl:py-20"
       >
         <div className="text-center">

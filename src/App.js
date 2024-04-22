@@ -1,9 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Document from "./components/Document";
 import BackToTop from "./components/common/BackToTop";
 import Footer from "./components/common/Footer";
 import Header from "./components/common/Header";
@@ -20,12 +18,9 @@ function App() {
   return (
     <>
       <div className="overflow-x-clip">
-      <BackToTop />
-      <Header />
-      <Routes>
-        <Route exact path="/" Component={HomePage} />
-        <Route exact path="/documentation" Component={Document} />
-      </Routes>
+        <BackToTop />
+        <Header />
+        <HomePage />
         <Footer />
       </div>
     </>

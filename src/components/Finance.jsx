@@ -34,7 +34,7 @@ const Finance = () => {
             data-aos="zoom-out"
             className="font_actay_wide custom-2xs:text-custom-sm font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white"
           >
-            Swap crypto across chains without a hitch, leveraging our deep
+            Swap crypto across chains without a leaving a trace, leveraging our deep
             liquidity pools from over 20+ sources for instant, vast
             transactions.{" "}
             <span className="text-whiteBlue">

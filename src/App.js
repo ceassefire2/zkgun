@@ -21,7 +21,7 @@ function App() {
         <BackToTop />
         <Header />
         <HomePage />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

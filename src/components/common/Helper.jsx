@@ -45,10 +45,10 @@ export const ourEcoCardList = [
   },
   {
     badge: "ERC-4337",
-    title: "ERC-4337 compliant wallet",
+    title: "MULTI-CHAIN WALLET",
     description:
-      "Experience freedom with our seedless, gasless web3 wallet. Store, buy, exchange",
-    spandescription: ", and stake crypto on mobile and desktop platforms.",
+      "Our multi-chain self-custody cryptocurrency wallet is the house in which all our integrations live. Access hundreds of dApps directly inside our proprietary wallet,",
+    spandescription: "execute transactions seamlessly across dozens of blockchains, swap & transfer assets privately, track wallets on any chain and so much more.",
     image: ecoCardImg_second,
     rotate: "mt-8 sm:mt-0",
     badgeColor: "bg-neonCarrot",
@@ -105,7 +105,7 @@ export const decentralizedList = [
   {
     title: "More than just a swap service",
     description:
-      "zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet introduces gasless transactions to boost your crypto handling experience. Plus, our Telegram Bot brings swapping directly to your chat window for extra convenience.",
+      "zkGUN goes beyond basic swapping. We've integrated all our tools directly into a user-friendly wallet that prioritizes your privacy. Plus, our Telegram Bot brings swapping directly to your chat window for extra convenience.",
     order: "order-4",
     maxWidth: "sm:max-w-full max-w-[257px]",
     aosAnimation: "fade-right",

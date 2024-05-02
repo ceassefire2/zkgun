@@ -124,7 +124,7 @@ const OurEcosystem = () => {
                         alt="img"
                       />
                     </div>
-                    <div className="sm:pt-3.5">
+                    <div className="pt-5 sm:pt-3.5">
                       <h3 className="font_actay_wide custom-2xs:text-custom-sm uppercase font-bold custom-2xs:max-w-[250px] max-w-[273px] md:max-w-[425px] text-2xl md:text-3xl xl:text-4xl !leading-[100%] text-white">
                         {value.title}
                       </h3>

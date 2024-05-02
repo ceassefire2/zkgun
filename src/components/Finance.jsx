@@ -23,24 +23,19 @@ const Finance = () => {
           </div>
           <div data-aos="zoom-in">
             <div
-              
+
               className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8"
             >
               <CommonBtn btntext="learn more about us" maxWidth="max-w-[245px]" />
             </div>
-            
+
           </div>
           <h3
             data-aos="zoom-out"
             className="font_actay_wide custom-2xs:text-custom-sm font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white"
           >
-            Swap crypto across chains without a leaving a trace, leveraging our deep
-            liquidity pools from over 20+ sources for instant, vast
-            transactions.{" "}
-            <span className="text-whiteBlue">
-              Our ERC-4337 wallet is your ticket to a seamless, gas- free crypto
-              experience, integrated with RAILGUN for enhanced privacy when
-              performing transactions.
+            SWAP CRYPTO ACROSS CHAINS WITHOUT A HITCH, LEVERAGING OUR DEEP LIQUIDITY POOLS FROM OVER 20+ SOURCES FOR INSTANT, VAST TRANSACTIONS.
+            <span className="text-whiteBlue"> OUR SELF-CUSTODY WALLET IS YOUR GATEWAY TO A SECURE, PRIVATE & FEATURE RICH CRYPTO EXPERIENCE WITH THE FREEDOM TO SWAP WITHOUT CONSTRAINTS.
             </span>
           </h3>
         </div>

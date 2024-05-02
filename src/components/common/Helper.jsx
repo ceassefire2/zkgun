@@ -48,7 +48,7 @@ export const ourEcoCardList = [
     title: "MULTI-CHAIN WALLET",
     description:
       "Our multi-chain self-custody cryptocurrency wallet is the house in which all our integrations live. Access hundreds of dApps directly inside our proprietary wallet,",
-    spandescription: "execute transactions seamlessly across dozens of blockchains, swap & transfer assets privately, track wallets on any chain and so much more.",
+    spandescription: " execute transactions seamlessly across dozens of blockchains, swap & transfer assets privately, track wallets on any chain and so much more.",
     image: ecoCardImg_second,
     rotate: "mt-8 sm:mt-0",
     badgeColor: "bg-neonCarrot",

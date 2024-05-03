@@ -1,10 +1,9 @@
 import React from "react";
-import Lottie from "react-lottie-player";
-import heroLottie from "../assets/images/json/hero-lottie.json";
 import heroFtx from "../assets/images/png/hero-ftx.png";
 import heroGallery from "../assets/images/png/hero-gallery.png";
 import heroPolkadot from "../assets/images/png/hero-polkadot.png";
 import heroSkull from "../assets/images/png/hero-skull.png";
+import heroImg from "../assets/images/webp/hero-img.webp";
 import CommonBtn from "./common/CommonBtn";
 import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
 
@@ -67,14 +66,7 @@ const Hero = () => {
       >
         <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
       </div>
-
-
-      <Lottie
-        loop
-        animationData={heroLottie}
-        play
-        className="max-w-[500px] sm:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto px-5"
-      />
+      <img className="max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto" src={heroImg} alt="" />
     </div>
   );
 };

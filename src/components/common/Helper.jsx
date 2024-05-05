@@ -44,7 +44,7 @@ export const ourEcoCardList = [
     aosAnimation: "fade-left",
   },
   {
-    badge: "ERC-4337",
+    badge: "Feature-packed",
     title: "MULTI-CHAIN WALLET",
     description:
       "Our multi-chain self-custody cryptocurrency wallet is the house in which all our integrations live. Access hundreds of dApps directly inside our proprietary wallet,",

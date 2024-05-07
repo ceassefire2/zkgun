@@ -35,7 +35,7 @@ const Finance = () => {
             className="font_actay_wide custom-2xs:text-custom-sm font-bold uppercase !leading-[120%] sm:text-center text-2xl md:text-3xl xl:text-4xl text-white"
           >
             SWAP CRYPTO ACROSS CHAINS WITHOUT A HITCH, LEVERAGING OUR DEEP LIQUIDITY POOLS FROM OVER 20+ SOURCES FOR INSTANT, VAST TRANSACTIONS.
-            <span className="text-whiteBlue"> OUR SELF-CUSTODY WALLET IS YOUR GATEWAY TO A SECURE, PRIVATE & FEATURE RICH CRYPTO EXPERIENCE WITH THE FREEDOM TO SWAP WITHOUT CONSTRAINTS.
+            <span className="text-whiteBlue"> OUR SELF-CUSTODY WALLET IS YOUR GATEWAY TO A SECURE, PRIVATE & FEATURE-PACKED CRYPTO EXPERIENCE WITH THE FREEDOM TO SWAP WITHOUT CONSTRAINTS.
             </span>
           </h3>
         </div>

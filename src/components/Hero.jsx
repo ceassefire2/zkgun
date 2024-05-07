@@ -57,8 +57,7 @@ const Hero = () => {
         data-aos="fade-left"
         className="font-manrope font-normal text-base sm:text-xl text-white "
       >
-        Non-Custodial, Decentralized & Anonymous.{" "}
-        <br className="block lg:hidden" /> Freedom in every transaction.
+       A self-custody multi-chain wallet with a built-in privacy swap and multi-chain dex.
       </p>
       <div
         data-aos="zoom-in"

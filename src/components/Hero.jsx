@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="sm:mt-10 md:mt-12 xl:mt-14 custom-2xl:mt-16 text-center px-4 md:px-5 relative py-6 sm:py-0 sm:mb-24 md:mb-28 flex flex-col justify-center h-[calc(100vh-52px)] max-h-[610px] sm:h-full sm:max-h-full"
+      className="sm:mt-10 md:mt-12 xl:mt-14 custom-2xl:mt-16 text-center px-4 md:px-5 relative py-6 sm:py-0 sm:mb-24 md:mb-28 flex flex-col justify-center h-[calc(100vh-52px)] min-h-[520px] sm:min-h-full max-h-[630px] sm:h-full sm:max-h-full"
     >
       <img
         className="hero_gallery absolute top-24 sm:top-0 -start-4 sm:start-16 md:start-24 lg:start-36 max-w-[39px] sm:max-w-[64px] rounded-full bg-lightPink"
@@ -50,7 +50,7 @@ const Hero = () => {
         </p>
         <h1
           data-aos="fade-right"
-          className="font_actay_wide text-custom-md sm:text-custom-2md md:text-5xl lg:text-6xl xl:text-7xl custom-2xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4"
+          className="font_actay_wide text-custom-md custom-3xl:text-custom-2xl sm:text-custom-2md md:text-5xl lg:text-6xl xl:text-7xl custom-2xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4"
         >
           Break the <br /> Chains
         </h1>

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="sm:mt-[70px] text-center px-4 md:px-5 relative py-5 sm:py-0 sm:mb-24 md:mb-28 min-h-[calc(100vh-52px)] flex flex-col justify-center sm:min-h-full"
+      className="sm:mt-10 md:mt-12 xl:mt-14 custom-2xl:mt-16 text-center px-4 md:px-5 relative py-6 sm:py-0 sm:mb-24 md:mb-28 flex flex-col justify-center h-[calc(100vh-52px)] max-h-[610px] sm:h-full sm:max-h-full"
     >
       <img
         className="hero_gallery absolute top-24 sm:top-0 -start-4 sm:start-16 md:start-24 lg:start-36 max-w-[39px] sm:max-w-[64px] rounded-full bg-lightPink"
@@ -50,7 +50,7 @@ const Hero = () => {
         </p>
         <h1
           data-aos="fade-right"
-          className="font_actay_wide text-custom-md sm:text-custom-2md md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-3 sm:my-4"
+          className="font_actay_wide text-custom-md sm:text-custom-2md md:text-5xl lg:text-6xl xl:text-7xl custom-2xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4"
         >
           Break the <br /> Chains
         </h1>
@@ -62,12 +62,12 @@ const Hero = () => {
         </p>
         <div
           data-aos="zoom-in"
-          className="flex justify-center w-full mt-4 sm:my-8 md:mt-12 md:mb-10"
+          className="flex justify-center w-full mt-4 sm:my-8 custom-2xl:mt-12 custom-2xl:mb-10"
         >
           <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
         </div>
       </div>
-      <img className="max-w-[280px] mt-[5vh] sm:mt-0 sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto" src={heroImg} alt="" />
+      <img className="max-w-[240px] mt-8 sm:mt-0 sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] xl:max-w-[500px] custom-2xl:max-w-[700px] w-full mx-auto" src={heroImg} alt="" />
     </div>
   );
 };

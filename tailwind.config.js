@@ -31,7 +31,7 @@ module.exports = {
         "custom-md": "40px",
         "custom-2md": "52px",
         "custom-lg": "56px",
-        "custom-xl": "120px",
+        "custom-xl": "100px",
       },
       backgroundImage: {
         "white-gradient":

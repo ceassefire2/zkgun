@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="mt-[70px] text-center px-4 md:px-5 relative mb-24 md:mb-28"
+      className="sm:mt-[70px] text-center px-4 md:px-5 relative  sm:mb-24 md:mb-28 min-h-[calc(100vh-52px)] flex flex-col justify-center sm:min-h-full"
     >
       <img
         className="hero_gallery absolute top-24 sm:top-0 -start-4 sm:start-16 md:start-24 lg:start-36 max-w-[39px] sm:max-w-[64px] rounded-full bg-lightPink"
@@ -41,31 +41,33 @@ const Hero = () => {
         <HeroRightHexagon />
       </span>
       <div className="danger_blur bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
-      <p
-        data-aos="zoom-in"
-        className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase"
-      >
-        <NoKycIcon /> Private Efficient Confidential
-      </p>
-      <h1
-        data-aos="fade-right"
-        className="font_actay_wide custom-2xs:text-5xl text-custom-lg md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-4"
-      >
-        Break the <br /> Chains
-      </h1>
-      <p
-        data-aos="fade-left"
-        className="font-manrope font-normal text-base sm:text-xl text-white "
-      >
-       A self-custody multi-chain wallet with a built-in privacy swap and multi-chain dex.
-      </p>
-      <div
-        data-aos="zoom-in"
-        className="flex justify-center w-full my-8 md:mt-12 md:mb-10"
-      >
-        <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+      <div className="pt-3">
+        <p
+          data-aos="zoom-in"
+          className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase"
+        >
+          <NoKycIcon /> Private Efficient Confidential
+        </p>
+        <h1
+          data-aos="fade-right"
+          className="font_actay_wide text-custom-md sm:text-custom-2md md:text-7xl lg:text-8xl xl:text-custom-xl text-white font-bold uppercase !leading-[100%] my-3 sm:my-4"
+        >
+          Break the <br /> Chains
+        </h1>
+        <p
+          data-aos="fade-left"
+          className="font-manrope font-normal text-base sm:text-xl text-white "
+        >
+          A self-custody multi-chain wallet with a built-in privacy swap and multi-chain dex.
+        </p>
+        <div
+          data-aos="zoom-in"
+          className="flex justify-center w-full mt-4 sm:my-8 md:mt-12 md:mb-10"
+        >
+          <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+        </div>
       </div>
-      <img className="max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto" src={heroImg} alt="" />
+      <img className="max-w-[280px] mt-[7vh] sm:mt-0 sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto" src={heroImg} alt="" />
     </div>
   );
 };

@@ -34,7 +34,7 @@ const Header = () => {
       <div className="max-w-[1400px] mx-auto px-4 md:px-5 ">
         <nav>
           <div
-            className={`flex items-center justify-between mt-6`}
+            className={`flex items-center justify-between mt-3 sm:mt-6`}
           >
             <div className="flex-shrink-0">
               <Link to="/" rel="noreferrer" className="text-white">

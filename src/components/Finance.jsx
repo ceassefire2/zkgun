@@ -5,7 +5,7 @@ import { ClipboardData } from "./common/Icons";
 const Finance = () => {
   return (
     <>
-      <div className="relative pt-12 sm:pt-0">
+      <div className="relative pt-7 sm:pt-0">
         <img
           src={financeHexagonImg}
           alt="financeHexagonImg"

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="sm:mt-[70px] text-center px-4 md:px-5 relative  sm:mb-24 md:mb-28 min-h-[calc(100vh-52px)] flex flex-col justify-center sm:min-h-full"
+      className="sm:mt-[70px] text-center px-4 md:px-5 relative py-5 sm:py-0 sm:mb-24 md:mb-28 min-h-[calc(100vh-52px)] flex flex-col justify-center sm:min-h-full"
     >
       <img
         className="hero_gallery absolute top-24 sm:top-0 -start-4 sm:start-16 md:start-24 lg:start-36 max-w-[39px] sm:max-w-[64px] rounded-full bg-lightPink"
@@ -41,7 +41,7 @@ const Hero = () => {
         <HeroRightHexagon />
       </span>
       <div className="danger_blur bg-scarlet-gradient blur-[160px] h-[450px] w-[160px] absolute top-[36%] -end-36 rounded-full hidden sm:block"></div>
-      <div className="pt-3">
+      <div className="pt-0">
         <p
           data-aos="zoom-in"
           className="flex items-center gap-3 text-primary font-manrope text-base font-bold justify-center uppercase"
@@ -67,7 +67,7 @@ const Hero = () => {
           <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
         </div>
       </div>
-      <img className="max-w-[280px] mt-[7vh] sm:mt-0 sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto" src={heroImg} alt="" />
+      <img className="max-w-[280px] mt-[5vh] sm:mt-0 sm:max-w-[500px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[836px] w-full mx-auto" src={heroImg} alt="" />
     </div>
   );
 };

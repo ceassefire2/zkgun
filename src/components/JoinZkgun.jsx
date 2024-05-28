@@ -1,6 +1,6 @@
 import React from "react";
 import joinZKlogo from "../assets/images/png/z-logo.png";
-import { JoinLeftHexagon, Telegram, Twitter } from "./common/Icons";
+import { JoinLeftHexagon, MediumIcon, Telegram, Twitter } from "./common/Icons";
 import ReactParallaxTilt from "react-parallax-tilt";
 
 const JoinZkgun = () => {
@@ -47,7 +47,14 @@ const JoinZkgun = () => {
         <div
           data-aos="fade-zoom-in"
           className="mt-2 flex justify-center gap-[22px] sm:gap-3 w-full"
-        >
+        >          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://medium.com/@zkgun"
+            className="py-[15px] px-8 hover:scale-105 duration-300 rounded-[100px] w-full flex justify-center items-center sm:w-auto bg-white cursor-pointer"
+          >
+            <MediumIcon />
+          </a>
           <a
             rel="noreferrer"
             target="_blank"

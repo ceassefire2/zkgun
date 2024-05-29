@@ -47,7 +47,7 @@ const JoinZkgun = () => {
         <div
           data-aos="fade-zoom-in"
           className="mt-2 flex justify-center gap-[22px] sm:gap-3 w-full"
-        >          <a
+        >    <a
             rel="noreferrer"
             target="_blank"
             href="https://medium.com/@zkgun"

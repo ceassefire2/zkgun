@@ -171,10 +171,7 @@ const Decentralized = () => {
                 More than just <br /> a swap service
               </h3>
               <p className="font-manrope font-normal !leading-[130%] text-white text-opacity-60 mt-4">
-                zkGUN goes beyond basic swapping. Our ERC-4337 compliant wallet
-                introduces gasless transactions to boost your crypto handling
-                experience. Plus, our Telegram Bot brings swapping directly to
-                your chat window for extra convenience.
+                zkGUN goes beyond basic swapping. We've integrated all our tools directly into a user-friendly wallet that prioritizes your privacy. Plus, our Telegram Bot brings swapping directly to your chat window for extra convenience.
               </p>
             </div>
           </ReactParallaxTilt>

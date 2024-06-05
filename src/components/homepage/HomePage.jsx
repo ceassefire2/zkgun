@@ -7,6 +7,8 @@ import OurCapabilities from '../OurCapabilities'
 import Discover from '../Discover'
 import Decentralized from '../Decentralized'
 import JoinZkgun from '../JoinZkgun'
+import ContractDetails from "../ContractDetails";
+
 
 const HomePage = () => {
     return (
@@ -20,6 +22,7 @@ const HomePage = () => {
                 <Discover />
                 <Decentralized />
                 <JoinZkgun />
+                <ContractDetails />
             </div>
         </>
     )

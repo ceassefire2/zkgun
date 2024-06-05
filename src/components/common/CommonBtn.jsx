@@ -36,6 +36,6 @@ const CommonBtn = (props) => {
 CommonBtn.propTypes = {
   btntext: PropTypes.string.isRequired,
   maxWidth: PropTypes.string, // Ensure you define the type based on your usage,
-  icon: PropTypes.any
+  icon: PropTypes.elementType
 };
 export default CommonBtn;

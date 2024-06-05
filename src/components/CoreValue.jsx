@@ -9,6 +9,7 @@ import { coreValueCardList } from "./common/Helper";
 import { CoreValueRightHexagon, CoreValuesIcon } from "./common/Icons";
 import Lottie from "react-lottie-player";
 import OurCrypto from "./OurCrypto";
+import { Link } from "react-router-dom";
 
 const CoreValue = () => {
   return (
@@ -40,7 +41,14 @@ const CoreValue = () => {
             data-aos="zoom-out"
             className="text-center sm:justify-center sm:mb-8 md:mb-12 lg:mb-16 xl:mb-20 hidden sm:flex"
           >
-            <CommonBtn btntext={"Learn about us"} maxWidth="max-w-[197px]" />
+            <Link
+              rel="noreferrer"
+              target="_blank"
+              to="https://docs.zkgun.org"
+              className=""
+            >
+              <CommonBtn btntext={"Learn about us"} maxWidth="max-w-[197px]" />
+            </Link>
           </div>
           <div className=" lg:hidden">
 

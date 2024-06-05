@@ -4,6 +4,7 @@ import CommonBtn from "./common/CommonBtn";
 import { ourEcoCardList } from "./common/Helper";
 import { EcoSystem, HeroLeftHexagon } from "./common/Icons";
 import ReactParallaxTilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 
 const OurEcosystem = () => {
   return (
@@ -34,7 +35,14 @@ const OurEcosystem = () => {
             data-aos="zoom-out"
             className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8 md:mb-0"
           >
-            <CommonBtn btntext="Learn more about our services" maxWidth="max-w-[338px]" />
+            <Link
+              rel="noreferrer"
+              target="_blank"
+              to="https://docs.zkgun.org"
+              className=""
+            >
+              <CommonBtn btntext="Learn more about our services" maxWidth="max-w-[338px]" />
+            </Link>
           </div>
 
           <ReactParallaxTilt

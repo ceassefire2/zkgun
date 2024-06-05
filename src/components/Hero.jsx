@@ -6,6 +6,7 @@ import heroSkull from "../assets/images/png/hero-skull.png";
 import heroImg from "../assets/images/webp/hero-img.webp";
 import CommonBtn from "./common/CommonBtn";
 import { HeroLeftHexagon, HeroRightHexagon, NoKycIcon } from "./common/Icons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -64,7 +65,14 @@ const Hero = () => {
           data-aos="zoom-in"
           className="flex justify-center w-full mt-4 sm:my-8 custom-2xl:mt-12 custom-2xl:mb-10"
         >
-          <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+          <Link
+            rel="noreferrer"
+            target="_blank"
+            to="https://app.zkgun.org"
+            className=""
+          >
+            <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+          </Link>
         </div>
       </div>
       <img className="max-w-[240px] mt-8 sm:mt-0 sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] xl:max-w-[500px] custom-2xl:max-w-[700px] w-full mx-auto" src={heroImg} alt="" />

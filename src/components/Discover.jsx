@@ -10,6 +10,7 @@ import gradient from "../assets/images/webp/gradient.webp";
 import CommonBtn from "./common/CommonBtn";
 import { GradientImage, MobileGradientImage } from "./common/Icons";
 import ReactParallaxTilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 
 const Discover = () => {
   return (
@@ -112,7 +113,14 @@ const Discover = () => {
                 data-aos="zoom-in"
                 className="flex justify-center w-full mt-2 mb-6 md:mb-0"
               >
-                <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+                <Link
+                  rel="noreferrer"
+                  target="_blank"
+                  to="https://app.zkgun.org"
+                  className=""
+                >
+                  <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+                </Link>
               </div>
 
             </div>

@@ -4,6 +4,7 @@ import capabilitiesLottie from "../assets/images/json/capabilities.json";
 import capabilitiesHexagonImg from "../assets/images/png/capabilities-hexagon.png";
 import CommonBtn from "./common/CommonBtn";
 import Lottie from "react-lottie-player";
+import { Link } from "react-router-dom";
 
 const OurCapabilities = () => {
   return (
@@ -41,7 +42,14 @@ const OurCapabilities = () => {
           data-aos="zoom-in"
           className="flex sm:justify-center w-full mt-6 md:mt-8"
         >
-          <CommonBtn btntext="View all capabilities" maxWidth="max-w-[242px]" />
+          <Link
+            rel="noreferrer"
+            target="_blank"
+            to="https://docs.zkgun.org"
+            className=""
+          >
+            <CommonBtn btntext="View all capabilities" maxWidth="max-w-[242px]" />
+          </Link>
         </div>
         
         <Lottie

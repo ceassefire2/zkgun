@@ -2,6 +2,8 @@ import React from "react";
 import financeHexagonImg from "../assets/images/png/finance-hexagon.png";
 import CommonBtn from "./common/CommonBtn";
 import { ClipboardData } from "./common/Icons";
+import { Link } from "react-router-dom";
+
 const Finance = () => {
   return (
     <>
@@ -26,7 +28,14 @@ const Finance = () => {
 
               className="flex sm:justify-center mt-4 sm:mt-6 md:mt-8 mb-8"
             >
-              <CommonBtn btntext="learn more about us" maxWidth="max-w-[245px]" />
+              <Link
+                rel="noreferrer"
+                target="_blank"
+                to="https://docs.zkgun.org"
+                className=""
+              >
+                <CommonBtn btntext="learn more about us" maxWidth="max-w-[245px]" />
+              </Link>
             </div>
 
           </div>

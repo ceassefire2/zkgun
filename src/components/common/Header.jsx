@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CommonBtn from "./CommonBtn";
-import { CloseIcon, MenuIcon, PageIcon } from "./Icons";
+import { CloseIcon, MenuIcon, PageIcon, LinkTreeIcon } from "./Icons";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -82,7 +82,14 @@ const Header = () => {
               </ul>
             </div>
             <div className="hidden w-[200px] md:flex justify-end">
-              <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+              <Link
+                rel="noreferrer"
+                target="_blank"
+                to="https://linktr.ee/zkgun"
+                className=""
+              >
+                <CommonBtn btntext={"LinkTree"} icon={<LinkTreeIcon className="h-[20px]" />} />
+              </Link>
             </div>
 
             <div className="flex md:hidden">
@@ -99,9 +106,8 @@ const Header = () => {
             </div>
           </div>
           <div
-            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen pt-6 z-30 bg-dark top-0 start-0 ${
-              isOpen ? "translate-x-0" : "translate-x-[-100%]"
-            }`}
+            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen pt-6 z-30 bg-dark top-0 start-0 ${isOpen ? "translate-x-0" : "translate-x-[-100%]"
+              }`}
             id="mobile-menu"
           >
             <ul className="px-4 pt-6 pb-3 space-y-1 flex flex-col justify-center items-center h-full gap-8">
@@ -146,7 +152,14 @@ const Header = () => {
                 </Link>
               </li>
               <li className="custom-sm:w-full flex justify-center">
-                <CommonBtn btntext={"swap now"} maxWidth="max-w-[152px]" />
+                <Link
+                  rel="noreferrer"
+                  target="_blank"
+                  to="https://linktr.ee/zkgun"
+                  className=""
+                >
+                  <CommonBtn btntext={"LinkTree"} icon={<LinkTreeIcon className="h-[20px]" />} />
+                </Link>
               </li>
             </ul>
           </div>
